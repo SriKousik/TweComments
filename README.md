@@ -67,7 +67,7 @@ See [CHECKLIST.md](CHECKLIST.md) for every extension. Rules written so far:
 | qq-comments | Mangabat, Mangakakalot, Kun Manga, Zinmanga, ZetTruyen | ✅ | ✅ | ⏳ like, reply |
 | aethon | Aethon Webcomics | ✅ | — | — |
 | otranslations | O Translations | ✅ | ✅ | — |
-| toongod | ToonGod | ✅ first batch | ✅ first batch | — |
+| toongod | ToonGod | ✅ first batch (+ first image) | ✅ first batch | — |
 | comicfury | Comic Fury | ✅ | — | — |
 | saymanhwa | SayManhwa | ✅ | — | — |
 | global: wpdiscuz | any wpDiscuz site | ✅ | ✅ | ⏳ |
@@ -84,12 +84,18 @@ See [CHECKLIST.md](CHECKLIST.md) for every extension. Rules written so far:
 
 ToonGod uses its TNGD JSON API, so reading avoids the widget's shadow root and does not
 need a saved Cloudflare cookie. The rule covers title and chapter threads, author names,
-avatars, timestamps, scores, spoiler flags and replies. Tested through the running
+avatars, timestamps, scores, spoiler flags, the first media attachment and replies. Image-only
+comments are included. Tested through the running
 Turnstile-Slip service on 2026-11-04: 16 title comments, 6 chapter comments and a 3-reply
 thread on Return of the Mount Hua Sect. The API needs a browser user agent; the tested
 Android user agent is included in the rule. Only the first batch of comments and replies
 is supported: TNGD returns `nextCursor`, while Twe's current rule format supports page
-numbers and offsets. Posting, voting, media markup and cursor paging remain unsupported.
+numbers and offsets. The image mapping (`media.0.url`) uses the current loader's dotted-path
+support; additional attachments and inline `[img]` / `[gif]` formatting need loader support.
+The image CDN requires a browser user agent and page Referer on image requests. Twe's
+comment image loader must send both for thumbnails and full-screen images; a rule update
+alone cannot set image request headers (the rule's `api.headers` apply only to JSON requests).
+Posting, voting and cursor paging remain unsupported.
 
 ## Matching order
 

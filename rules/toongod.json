@@ -33,6 +33,7 @@
         "text": "content",
         "time": "createdAt",
         "avatar": "user.avatarUrl",
+        "images": "media.0.url",
         "likes": "score",
         "spoiler": "isSpoiler",
         "parent": "parentId",
