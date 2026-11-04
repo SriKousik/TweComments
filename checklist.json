@@ -769,6 +769,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.cocomic",
+  "name": "Cocomic",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://cocomic.co",
+  "sources": [
+   "3544369893051520689"
+  ],
+  "theme": null,
+  "system": "wordpress",
+  "rule": "wordpress",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 1 comments; author/text selectors verified"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.cucumbermanga",
   "name": "Cucumber Manga",
   "lang": "en",
@@ -787,6 +807,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.darklegacycomics",
+  "name": "Dark Legacy Comics",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://www.darklegacycomics.com",
+  "sources": [
+   "1650720534254409337"
+  ],
+  "theme": null,
+  "system": "darklegacy-vuukle",
+  "rule": "darklegacy-vuukle",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 9 comments via Vuukle; HTML images and nested replies mapped; first batch only"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.decadencescans",
@@ -867,6 +907,46 @@
   "comment": "-",
   "login": "-",
   "note": "found on a second check"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.girlstop",
+  "name": "GirlsTop",
+  "lang": "en",
+  "nsfw": true,
+  "home": "https://en.girlstop.info",
+  "sources": [
+   "1368670128695001652"
+  ],
+  "theme": null,
+  "system": "girlstop",
+  "rule": "girlstop",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 8 comments; author/text selectors verified"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.gourmetscans",
+  "name": "Gourmet Scans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://gourmetsupremacy.com",
+  "sources": [
+   "3694940277826033657"
+  ],
+  "theme": null,
+  "system": "madara-wpdiscuz",
+  "rule": "madara-wpdiscuz",
+  "read": "yes",
+  "replies": "-",
+  "like": "wait",
+  "comment": "wait",
+  "login": "WordPress",
+  "status": "works",
+  "note": "✅ Working: 15 comments; author/text selectors verified"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.grimscans",
@@ -1089,6 +1169,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.kaizenscan",
+  "name": "Kaizen Scan",
+  "lang": "en",
+  "nsfw": true,
+  "home": "https://kaizenscan.com",
+  "sources": [
+   "1145415569668934781"
+  ],
+  "theme": null,
+  "system": "zmio",
+  "rule": "zmio",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 1 comment via existing zmio API rule"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.kenscans",
   "name": "Ken Scans",
   "lang": "en",
@@ -1147,6 +1247,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.kissmangain",
+  "name": "Kissmanga.in",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://kissmanga.in",
+  "sources": [
+   "3112384885023225761"
+  ],
+  "theme": null,
+  "system": "madara-wpdiscuz",
+  "rule": "madara-wpdiscuz",
+  "read": "yes",
+  "replies": "-",
+  "like": "wait",
+  "comment": "wait",
+  "login": "WordPress",
+  "status": "works",
+  "note": "✅ Working: 3 comments read with wpDiscuz selectors"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.kitsunedawn",
@@ -1229,6 +1349,26 @@
   "note": "API answers"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.lhtranslation",
+  "name": "LHTranslation",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://lhtranslation.net",
+  "sources": [
+   "8802607595629671202"
+  ],
+  "theme": null,
+  "system": "wordpress",
+  "rule": "wordpress",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 39 comments read; author/text selectors verified"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.lovesjanescans",
   "name": "Lovesjane Scans",
   "lang": "en",
@@ -1269,6 +1409,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.mangademon",
+  "name": "Manga Demon",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://demonicscans.org",
+  "sources": [
+   "2900023289777642714"
+  ],
+  "theme": null,
+  "system": "demonicscans",
+  "rule": "demonicscans",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 7 title / 2 chapter comments; 62 Eleceed roots and a 4-reply thread; first batch only; media markup not parsed"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangadistrict",
   "name": "Manga District",
   "lang": "en",
@@ -1287,6 +1447,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.mangadrama",
+  "name": "Manga Drama",
+  "lang": "en",
+  "nsfw": true,
+  "home": "https://mangadrama.com",
+  "sources": [
+   "3174596843279946873"
+  ],
+  "theme": "Iken",
+  "system": "mangadrama",
+  "rule": "mangadrama",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 3 comments; author/text selectors verified"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangaeclipse",
@@ -1369,6 +1549,28 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.mangadotnet",
+  "name": "MangaDot",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://mangadot.net",
+  "sources": [
+   "5133570518916566066",
+   "4728703871864086205",
+   "4621039982977056475"
+  ],
+  "theme": null,
+  "system": "mangadot",
+  "rule": "mangadot",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 4 comments; author/text selectors verified"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangafree",
   "name": "Mangafree",
   "lang": "en",
@@ -1427,6 +1629,26 @@
   "comment": "wait",
   "login": "WordPress",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.mangahubio",
+  "name": "MangaHub",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://mangahub.io",
+  "sources": [
+   "4758858684982406533"
+  ],
+  "theme": "MangaBox",
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 34 nondeleted One Piece comments via Remark42; flat reply parents and HTML images mapped"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangakakalot",
@@ -1549,6 +1771,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.manhuaus",
+  "name": "ManhuaUS",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://manhuaus.com",
+  "sources": [
+   "4005973248538140146"
+  ],
+  "theme": null,
+  "system": "wordpress",
+  "rule": "wordpress",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 853 comments; author/text selectors verified"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.manhwatoon",
   "name": "Manhwa Toon",
   "lang": "en",
@@ -1589,6 +1831,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.manhwalike",
+  "name": "Manhwalike",
+  "lang": "en",
+  "nsfw": true,
+  "home": "https://manhwalike.com",
+  "sources": [
+   "3472935303493224823"
+  ],
+  "theme": null,
+  "system": "manhwalike-disqus",
+  "rule": "manhwalike-disqus",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 2 Disqus posts read"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.manhwanex",
   "name": "ManhwaNex",
   "lang": "en",
@@ -1607,6 +1869,46 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.manhwaread",
+  "name": "ManhwaRead",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://manhwaread.com",
+  "sources": [
+   "492596911850505683"
+  ],
+  "theme": null,
+  "system": "madara-wpdiscuz",
+  "rule": "madara-wpdiscuz",
+  "read": "yes",
+  "replies": "-",
+  "like": "wait",
+  "comment": "wait",
+  "login": "WordPress",
+  "status": "works",
+  "note": "✅ Working: 67 comments read with wpDiscuz selectors"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.manhwatop",
+  "name": "Manhwatop",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://manhwatop.com",
+  "sources": [
+   "5177484976652938680"
+  ],
+  "theme": null,
+  "system": "wordpress",
+  "rule": "wordpress",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 1 comments read; author/text selectors verified"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mehgazone",
@@ -2049,6 +2351,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.erosscans",
+  "name": "Scythe Scans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://scythescans.com",
+  "sources": [
+   "1124131000360667434"
+  ],
+  "theme": null,
+  "system": "madara-wpdiscuz",
+  "rule": "madara-wpdiscuz",
+  "read": "yes",
+  "replies": "-",
+  "like": "wait",
+  "comment": "wait",
+  "login": "WordPress",
+  "status": "works",
+  "note": "✅ Working: 3 comments read with wpDiscuz selectors"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.sirenscans",
   "name": "Siren Scans",
   "lang": "en",
@@ -2087,6 +2409,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.snafucomic",
+  "name": "Snafu Comics",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://www.snafu-comics.com",
+  "sources": [
+   "5425488988830744299"
+  ],
+  "theme": null,
+  "system": "snafucomic-disqus",
+  "rule": "snafucomic-disqus",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 50 Disqus posts read"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.tcbscans",
@@ -2169,6 +2511,26 @@
   "note": "16 title / 6 chapter comments; 3 replies checked; first batch only (cursor paging pending)"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.toonily",
+  "name": "Toonily",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://toonily.com",
+  "sources": [
+   "5190569675461947007"
+  ],
+  "theme": null,
+  "system": "toonily",
+  "rule": "toonily",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: title and chapter API each returned 1 comment; offset paging mapped; rich media markup not parsed"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.topmanhua",
   "name": "Top Manhua",
   "lang": "en",
@@ -2187,6 +2549,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.topmanhuanet",
+  "name": "TopManhua.net",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://topmanhua.net",
+  "sources": [
+   "6421630287504544593"
+  ],
+  "theme": null,
+  "system": "topmanhuanet-disqus",
+  "rule": "topmanhuanet-disqus",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 1 Disqus posts read"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.tritiniascans",
@@ -2269,6 +2651,26 @@
   "note": "found on a second check"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.xlecx",
+  "name": "XlecX",
+  "lang": "en",
+  "nsfw": true,
+  "home": "https://xlecx.one",
+  "sources": [
+   "3691755476092994375"
+  ],
+  "theme": null,
+  "system": "xlecx",
+  "rule": "xlecx",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 2 comments; author/text selectors verified"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.yaoihot",
   "name": "YaoiHot",
   "lang": "en",
@@ -2287,6 +2689,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.yaoiscan",
+  "name": "YaoiScan",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://yaoiscan.com",
+  "sources": [
+   "4439807782838127935"
+  ],
+  "theme": null,
+  "system": "wordpress",
+  "rule": "wordpress",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "✅ Working: 2 comments; author/text selectors verified"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.zinmanganet",
@@ -8109,8 +8531,15 @@
    "6314378952940608115"
   ],
   "theme": null,
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.eightmuses",
@@ -8295,19 +8724,6 @@
   "note": "Cloudflare"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.cocomic",
-  "name": "Cocomic",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://cocomic.co",
-  "sources": [
-   "3544369893051520689"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "Cloudflare"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.collectedcurios",
   "name": "Collected Curios",
   "lang": "en",
@@ -8408,19 +8824,6 @@
    "491094567635736188"
   ],
   "theme": "Next.js",
-  "status": "check",
-  "note": "no title page found from the home page"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.darklegacycomics",
-  "name": "Dark Legacy Comics",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://www.darklegacycomics.com",
-  "sources": [
-   "1650720534254409337"
-  ],
-  "theme": null,
   "status": "check",
   "note": "no title page found from the home page"
  },
@@ -8568,19 +8971,6 @@
   "note": "no title page found from the home page"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.girlstop",
-  "name": "GirlsTop",
-  "lang": "en",
-  "nsfw": true,
-  "home": "https://en.girlstop.info",
-  "sources": [
-   "1368670128695001652"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "no title page found from the home page"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.goda",
   "name": "Goda",
   "lang": "en",
@@ -8588,19 +8978,6 @@
   "home": "https://manhuascans.org",
   "sources": [
    "4273874799952447458"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "Cloudflare"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.gourmetscans",
-  "name": "Gourmet Scans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://gourmetsupremacy.com",
-  "sources": [
-   "3694940277826033657"
   ],
   "theme": null,
   "status": "check",
@@ -8811,8 +9188,15 @@
    "8953466777316975228"
   ],
   "theme": null,
+  "system": "madara-wpdiscuz",
+  "rule": "madara-wpdiscuz",
+  "read": "-",
+  "replies": "-",
+  "like": "wait",
+  "comment": "wait",
+  "login": "WordPress",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.komix",
@@ -8837,8 +9221,15 @@
    "7925933833035450162"
   ],
   "theme": null,
+  "system": "madara-wpdiscuz",
+  "rule": "madara-wpdiscuz",
+  "read": "-",
+  "replies": "-",
+  "like": "wait",
+  "comment": "wait",
+  "login": "WordPress",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.leslievictims",
@@ -8852,19 +9243,6 @@
   "theme": null,
   "status": "check",
   "note": "no title page found from the home page"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.lhtranslation",
-  "name": "LHTranslation",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://lhtranslation.net",
-  "sources": [
-   "8802607595629671202"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "Cloudflare"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.lilymanga",
@@ -8941,8 +9319,35 @@
    "1698654724978495521"
   ],
   "theme": null,
+  "system": "luminare",
+  "rule": "luminare",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 API rule linked; two sampled series returned empty threads; first batch only"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.lunatoons",
+  "name": "Luna Toons",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://lunatoons.net",
+  "sources": [
+   "4513668905743562887"
+  ],
+  "theme": null,
+  "system": "zmio",
+  "rule": "zmio",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "check",
+  "note": "🟡 zmio rule linked; post resolved, sampled API thread has no comments"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.madaradex",
@@ -8967,34 +9372,15 @@
    "6802623574377987877"
   ],
   "theme": null,
+  "system": "manga18x-disqus",
+  "rule": "manga18x-disqus",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.mangademon",
-  "name": "Manga Demon",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://demonicscans.org",
-  "sources": [
-   "2900023289777642714"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "Cloudflare"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.mangadrama",
-  "name": "Manga Drama",
-  "lang": "en",
-  "nsfw": true,
-  "home": "https://mangadrama.com",
-  "sources": [
-   "3174596843279946873"
-  ],
-  "theme": "Iken",
-  "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Disqus rule linked; API confirms empty sampled thread"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangauno",
@@ -9045,8 +9431,15 @@
    "8144054169452081697"
   ],
   "theme": null,
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangahereonl",
@@ -9058,21 +9451,15 @@
    "3901872639081578162"
   ],
   "theme": null,
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.mangahubio",
-  "name": "MangaHub",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://mangahub.io",
-  "sources": [
-   "4758858684982406533"
-  ],
-  "theme": "MangaBox",
-  "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangabuddy",
@@ -9097,8 +9484,15 @@
    "6491120161556233904"
   ],
   "theme": null,
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangalix",
@@ -9136,8 +9530,15 @@
    "678343830630527432"
   ],
   "theme": null,
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.manganow",
@@ -9162,8 +9563,15 @@
    "5320360676060919240"
   ],
   "theme": "MangaBox",
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangaowlio",
@@ -9188,8 +9596,15 @@
    "7661417715431651982"
   ],
   "theme": null,
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangaparktv",
@@ -9214,8 +9629,15 @@
    "2527199067559866087"
   ],
   "theme": null,
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangatoday",
@@ -9227,8 +9649,15 @@
    "868511056418443637"
   ],
   "theme": "MangaBox",
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.manhuaplus",
@@ -9253,8 +9682,15 @@
    "7638481723868333116"
   ],
   "theme": null,
+  "system": "madara-wpdiscuz",
+  "rule": "madara-wpdiscuz",
+  "read": "-",
+  "replies": "-",
+  "like": "wait",
+  "comment": "wait",
+  "login": "WordPress",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.manhuatop",
@@ -9305,34 +9741,15 @@
    "2676315620251021475"
   ],
   "theme": null,
+  "system": "manhwa68-disqus",
+  "rule": "manhwa68-disqus",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.manhwalike",
-  "name": "Manhwalike",
-  "lang": "en",
-  "nsfw": true,
-  "home": "https://manhwalike.com",
-  "sources": [
-   "3472935303493224823"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "no title page found from the home page"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.manhwatop",
-  "name": "Manhwatop",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://manhwatop.com",
-  "sources": [
-   "5177484976652938680"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Disqus rule linked; API confirms empty sampled thread"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.manhwazone",
@@ -9487,8 +9904,15 @@
    "1622381620031536307"
   ],
   "theme": null,
+  "system": "mangahub-remark42",
+  "rule": "mangahub-remark42",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.onlythebesthentai",
@@ -9582,6 +10006,26 @@
   "note": "no title page found from the home page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.ragescans",
+  "name": "Rage Scans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://ragescans.com",
+  "sources": [
+   "8692263513374836785"
+  ],
+  "theme": null,
+  "system": "madara-wpdiscuz",
+  "rule": "madara-wpdiscuz",
+  "read": "-",
+  "replies": "-",
+  "like": "wait",
+  "comment": "wait",
+  "login": "WordPress",
+  "status": "check",
+  "note": "🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.readberserkmanga",
   "name": "Read Berserk Manga",
   "lang": "en",
@@ -9669,8 +10113,15 @@
    "6875037148225675112"
   ],
   "theme": null,
+  "system": "revivalscans",
+  "rule": "revivalscans",
+  "read": "-",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Series API rule linked; sampled thread is empty; chapter comments not verified"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.roliascan",
@@ -9751,19 +10202,6 @@
   "note": "Cloudflare"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.erosscans",
-  "name": "Scythe Scans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://scythescans.com",
-  "sources": [
-   "1124131000360667434"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "Cloudflare"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.armageddon",
   "name": "SilentQuill",
   "lang": "en",
@@ -9775,19 +10213,6 @@
   "theme": null,
   "status": "check",
   "note": "Cloudflare"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.snafucomic",
-  "name": "Snafu Comics",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://www.snafu-comics.com",
-  "sources": [
-   "5425488988830744299"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "no title page found from the home page"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.solarandsundry",
@@ -9868,19 +10293,6 @@
   "note": "no title page found from the home page"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.toonily",
-  "name": "Toonily",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://toonily.com",
-  "sources": [
-   "5190569675461947007"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "Cloudflare"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.toonilyme",
   "name": "Toonily.me",
   "lang": "en",
@@ -9901,19 +10313,6 @@
   "home": "https://toonkotsu.com",
   "sources": [
    "3504033188132514684"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "Cloudflare"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.topmanhuanet",
-  "name": "TopManhua.net",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://topmanhua.net",
-  "sources": [
-   "6421630287504544593"
   ],
   "theme": null,
   "status": "check",
@@ -10047,21 +10446,15 @@
    "6540843430852844328"
   ],
   "theme": null,
+  "system": "madara-wpdiscuz",
+  "rule": "madara-wpdiscuz",
+  "read": "-",
+  "replies": "-",
+  "like": "wait",
+  "comment": "wait",
+  "login": "WordPress",
   "status": "check",
-  "note": "Cloudflare"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.xlecx",
-  "name": "XlecX",
-  "lang": "en",
-  "nsfw": true,
-  "home": "https://xlecx.one",
-  "sources": [
-   "3691755476092994375"
-  ],
-  "theme": null,
-  "status": "check",
-  "note": "no title page found from the home page"
+  "note": "🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.xoxocomics",
@@ -10099,8 +10492,15 @@
    "5990114708086767078"
   ],
   "theme": null,
+  "system": "madara-wpdiscuz",
+  "rule": "madara-wpdiscuz",
+  "read": "-",
+  "replies": "-",
+  "like": "wait",
+  "comment": "wait",
+  "login": "WordPress",
   "status": "check",
-  "note": "Cloudflare"
+  "note": "🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.es.catharsisworld",
@@ -17184,32 +17584,6 @@
   "note": "HTTP Error 403: Forbidden"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.kaizenscan",
-  "name": "Kaizen Scan",
-  "lang": "en",
-  "nsfw": true,
-  "home": "https://kaizenscan.com",
-  "sources": [
-   "1145415569668934781"
-  ],
-  "theme": null,
-  "status": "down",
-  "note": "HTTP Error 403: Forbidden"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.kissmangain",
-  "name": "Kissmanga.in",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://kissmanga.in",
-  "sources": [
-   "3112384885023225761"
-  ],
-  "theme": null,
-  "status": "down",
-  "note": "HTTP Error 403: Forbidden"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.lgbtics",
   "name": "Lgbtics",
   "lang": "en",
@@ -17217,19 +17591,6 @@
   "home": "https://lgbtics.com",
   "sources": [
    "4306337471481207984"
-  ],
-  "theme": null,
-  "status": "down",
-  "note": "HTTP Error 403: Forbidden"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.lunatoons",
-  "name": "Luna Toons",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://lunatoons.net",
-  "sources": [
-   "4513668905743562887"
   ],
   "theme": null,
   "status": "down",
@@ -17275,21 +17636,6 @@
   "note": "HTTP Error 403: Forbidden"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.mangadotnet",
-  "name": "MangaDot",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://mangadot.net",
-  "sources": [
-   "5133570518916566066",
-   "4728703871864086205",
-   "4621039982977056475"
-  ],
-  "theme": null,
-  "status": "down",
-  "note": "HTTP Error 403: Forbidden"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangahe",
   "name": "MangaHe",
   "lang": "en",
@@ -17329,19 +17675,6 @@
   "note": "HTTP Error 503: Service Unavailable"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.manhuaus",
-  "name": "ManhuaUS",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://manhuaus.com",
-  "sources": [
-   "4005973248538140146"
-  ],
-  "theme": null,
-  "status": "down",
-  "note": "HTTP Error 403: Forbidden"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.manhwa18today",
   "name": "Manhwa18.today",
   "lang": "en",
@@ -17366,19 +17699,6 @@
   "theme": null,
   "status": "down",
   "note": "<urlopen error [Errno 104] Connection reset by peer>"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.manhwaread",
-  "name": "ManhwaRead",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://manhwaread.com",
-  "sources": [
-   "492596911850505683"
-  ],
-  "theme": null,
-  "status": "down",
-  "note": "HTTP Error 403: Forbidden"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.meitoon",
@@ -17483,19 +17803,6 @@
   "theme": null,
   "status": "down",
   "note": "The read operation timed out"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.ragescans",
-  "name": "Rage Scans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://ragescans.com",
-  "sources": [
-   "8692263513374836785"
-  ],
-  "theme": null,
-  "status": "down",
-  "note": "HTTP Error 403: Forbidden"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.ravenscans",
@@ -17717,19 +18024,6 @@
   "theme": null,
   "status": "down",
   "note": "HTTP Error 502: Bad Gateway"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.yaoiscan",
-  "name": "YaoiScan",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://yaoiscan.com",
-  "sources": [
-   "4439807782838127935"
-  ],
-  "theme": null,
-  "status": "down",
-  "note": "HTTP Error 403: Forbidden"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.es.barmanga",

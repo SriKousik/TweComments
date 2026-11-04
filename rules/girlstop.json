@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "girlstop",
+  "rules": [
+    {
+      "id": "girlstop",
+      "name": "girlstop",
+      "type": "page",
+      "page": {
+        "item": "div.comment[id^=\"comment_\"]",
+        "author": ".comment-firsttd > a",
+        "text": "tr:nth-child(2) > td.comment-secondtd",
+        "time": ".comment-date",
+        "avatar": ".ava-wrap img",
+        "likes": ".clikes"
+      }
+    }
+  ]
+}

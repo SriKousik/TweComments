@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "Manga 18x",
+  "rules": [
+    {
+      "id": "manga18x-disqus",
+      "name": "Manga 18x \u00b7 Disqus",
+      "type": "disqus",
+      "disqus": {
+        "forum": "manga18x-net",
+        "url": "{pageUrl}",
+        "identifier": "{identifier}"
+      },
+      "vars": {
+        "identifier": {
+          "from": "html",
+          "regex": "disqusIdentifier[\"\\']?\\s*:\\s*[\"\\']([^\"\\']+)"
+        }
+      }
+    }
+  ]
+}

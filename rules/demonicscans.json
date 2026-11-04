@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "name": "Manga Demon",
+  "rules": [
+    {
+      "id": "demonicscans",
+      "name": "Manga Demon",
+      "type": "api",
+      "vars": {
+        "chapterId": {
+          "from": "fetch",
+          "regex": "id=\"cw-comments\"[^>]*data-chapter=\"(\\d+)\""
+        }
+      },
+      "api": {
+        "url": "{origin}/comments_api.php?chapterid={chapterId}&sort=newest&offset=0",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": "items",
+        "id": "id",
+        "author": "username",
+        "text": "content",
+        "time": "created_at",
+        "avatar": "avatar",
+        "likes": "likes",
+        "replyCount": "reply_count",
+        "total": "total",
+        "replies": {
+          "url": "{origin}/comments_api.php?chapterid={chapterId}&thread={id}&offset=0",
+          "list": "items"
+        }
+      }
+    }
+  ]
+}

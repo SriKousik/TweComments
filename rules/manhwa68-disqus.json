@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "Manhwa68",
+  "rules": [
+    {
+      "id": "manhwa68-disqus",
+      "name": "Manhwa68 \u00b7 Disqus",
+      "type": "disqus",
+      "disqus": {
+        "forum": "manhwa68",
+        "url": "{pageUrl}",
+        "identifier": "{postId} https://manhwa68.com/?post_type=wp-manga&p={postId}"
+      },
+      "vars": {
+        "postId": {
+          "from": "html",
+          "regex": "postid-(\\d+)"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "name": "Luminare Translations",
+  "rules": [
+    {
+      "id": "luminare",
+      "name": "Luminare Translations",
+      "type": "api",
+      "vars": {
+        "kind": {
+          "from": "fetch",
+          "regex": "commentableType&quot;:&quot;([^&]+)"
+        },
+        "slug": {
+          "from": "fetch",
+          "regex": "commentableSlug&quot;:&quot;([^&]+)"
+        }
+      },
+      "api": {
+        "url": "{origin}/wp-json/yarnovel/v1/comments?type={kind}&slug={slug}&page=1&sort=newest",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": "data",
+        "id": "id",
+        "author": "user.name",
+        "text": "content",
+        "time": "created_at",
+        "avatar": "user.avatar_url",
+        "likes": "likes_count",
+        "replyCount": "replies_count",
+        "total": "meta.total",
+        "replies": {
+          "url": "{origin}/wp-json/yarnovel/v1/comments/{id}/replies",
+          "list": "data"
+        }
+      }
+    }
+  ]
+}

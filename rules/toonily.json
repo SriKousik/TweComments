@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "name": "Toonily",
+  "rules": [
+    {
+      "id": "toonily",
+      "name": "Toonily",
+      "type": "api",
+      "vars": {
+        "postId": {
+          "from": "fetch",
+          "regex": "data-post-id=\"(\\d+)\""
+        },
+        "chapterId": {
+          "from": "fetch",
+          "regex": "data-chapter=\"([^\"]+)\""
+        }
+      },
+      "api": {
+        "url": "https://comments.tnlycdn.com/api/comments/{postId}?chapterId={chapterId}&sort=newest&limit=50&offset={offset}",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "pageSize": 50,
+        "list": "comments",
+        "id": "id",
+        "author": "display_name",
+        "text": "content",
+        "time": "created_at",
+        "avatar": "wp_avatar_url",
+        "likes": "upvotes",
+        "spoiler": "is_spoiler",
+        "parent": "parent_id",
+        "hasMore": "hasMore",
+        "total": "totalCount"
+      }
+    }
+  ]
+}

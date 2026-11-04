@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "name": "Revival Scans",
+  "rules": [
+    {
+      "id": "revivalscans",
+      "name": "Revival Scans",
+      "type": "api",
+      "vars": {
+        "slug": {
+          "from": "url",
+          "regex": "/series/([^/?#]+)"
+        }
+      },
+      "api": {
+        "url": "{origin}/api/series/{slug}/comments",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": ".",
+        "id": "id",
+        "author": "authorName",
+        "text": "content",
+        "time": "createdAt",
+        "children": "replies"
+      }
+    }
+  ]
+}

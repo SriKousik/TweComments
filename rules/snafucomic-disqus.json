@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "Snafu Comics",
+  "rules": [
+    {
+      "id": "snafucomic-disqus",
+      "name": "Snafu Comics \u00b7 Disqus",
+      "type": "disqus",
+      "disqus": {
+        "forum": "snafu",
+        "url": "{pageUrl}",
+        "identifier": "{identifier}"
+      },
+      "vars": {
+        "identifier": {
+          "from": "html",
+          "regex": "this\\.page\\.identifier\\s*=\\s*[\"\\']([^\"\\']+)"
+        }
+      }
+    }
+  ]
+}

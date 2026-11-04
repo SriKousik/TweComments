@@ -44,12 +44,23 @@ python3 tools/checklist.py tools/survey.jsonl CHECKLIST.md checklist.json
 ```
 
 Rows tested by hand are kept in `MANUAL` in `tools/checklist.py`; add a site there when you confirm it.
+The English blocked-site pass also reads verified overrides from
+`tools/blocked-english-status.json`. Empty threads remain unverified in the checklist.
 
 ## Blocked sites
 
 Sites behind a Cloudflare check can't be surveyed by script. [BLOCKED-SITES.md](BLOCKED-SITES.md)
 says what Twe needs for them and how to collect what a rule needs with
 [`tools/collect.js`](tools/collect.js), pasted into the browser console on the site.
+
+The English audit is resumable: install `beautifulsoup4`, then run
+`python tools/blocked_english.py`, `python tools/blocked_english.py --service`, and
+`python tools/deepen_blocked_english.py` from this directory. The service pass uses
+the existing Turnstile-Slip API at `127.0.0.1:3000`; it never restarts it. For dynamic
+widgets, `node tools/inspect_blocked_browser.mjs` uses its installed browser dependency
+in headless mode (`TURNSTILE_SLIP_ROOT` can override the sibling directory). After
+recording a verified result, run `python tools/update_blocked_english.py` to refresh
+the English progress column without changing the other languages.
 
 ## Sites with rules
 

@@ -11,6 +11,7 @@ Statuses:
 """
 import json
 import sys
+from pathlib import Path
 
 SURVEY, OUT_MD, OUT_JSON = sys.argv[1], sys.argv[2], sys.argv[3]
 
@@ -74,6 +75,22 @@ MANUAL = {
     "eu.kanade.tachiyomi.extension.en.swordscomic": dict(system="Discourse", rule="global: discourse", read="yes", replies="-", like="-",
                                                          comment="-", login="-", status="complete", note="embed read with the comic as referer"),
 }
+
+# The English blocked-site pass keeps its evidence and progress in one place.
+# Empty threads and unavailable services remain unverified in the main checklist.
+blocked_progress = Path(__file__).with_name("blocked-english-status.json")
+if blocked_progress.exists():
+    for pkg, evidence in json.loads(blocked_progress.read_text()).items():
+        rule = evidence.get("rule")
+        if not rule:
+            continue
+        working = evidence.get("status") == "working"
+        MANUAL[pkg] = dict(system=evidence.get("system", rule), rule=rule,
+                           read="yes" if working else "-", replies=evidence.get("replies", "-"),
+                           like="wait" if rule == "madara-wpdiscuz" else "-",
+                           comment="wait" if rule == "madara-wpdiscuz" else "-",
+                           login="WordPress" if rule == "madara-wpdiscuz" else "-",
+                           status="works" if working else "check", note=evidence["note"])
 
 # Checked by hand: what's there and what a rule still needs.
 NOTES = {

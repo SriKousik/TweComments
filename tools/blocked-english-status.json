@@ -1,0 +1,380 @@
+{
+  "eu.kanade.tachiyomi.extension.en.lhtranslation": {
+    "home": "https://lhtranslation.net",
+    "name": "LHTranslation",
+    "status": "working",
+    "rule": "wordpress",
+    "url": "https://lhtranslation.net/manga/the-new-gate/",
+    "note": "\u2705 Working: 39 comments read; author/text selectors verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhwatop": {
+    "home": "https://manhwatop.com",
+    "name": "Manhwatop",
+    "status": "working",
+    "rule": "wordpress",
+    "url": "https://manhwatop.com/manga/pick-me-up/",
+    "note": "\u2705 Working: 1 comments read; author/text selectors verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.girlstop": {
+    "home": "https://en.girlstop.info",
+    "name": "GirlsTop",
+    "rule": "girlstop",
+    "status": "working",
+    "url": "https://me.girlstop.info/psto.php?id=256520",
+    "note": "\u2705 Working: 8 comments; author/text selectors verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangadrama": {
+    "home": "https://mangadrama.com",
+    "name": "Manga Drama",
+    "rule": "mangadrama",
+    "status": "working",
+    "url": "https://mangadrama.com/manga/shark/",
+    "note": "\u2705 Working: 3 comments; author/text selectors verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangadotnet": {
+    "home": "https://mangadot.net",
+    "name": "MangaDot",
+    "rule": "mangadot",
+    "status": "working",
+    "url": "https://mangadot.net/manga/41",
+    "note": "\u2705 Working: 4 comments; author/text selectors verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.xlecx": {
+    "home": "https://xlecx.one",
+    "name": "XlecX",
+    "rule": "xlecx",
+    "status": "working",
+    "url": "https://xlecx.one/64666-lickin-it.html",
+    "note": "\u2705 Working: 2 comments; author/text selectors verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.kingcomix": {
+    "home": "https://kingcomix.com",
+    "name": "KingComiX",
+    "rule": "madara-wpdiscuz",
+    "status": "configured",
+    "url": "https://kingcomix.com/redacted-yazen/",
+    "note": "\ud83d\udfe1 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
+  },
+  "eu.kanade.tachiyomi.extension.en.lagoonscans": {
+    "home": "https://lagoonscans.com",
+    "name": "Lagoon Scans",
+    "rule": "madara-wpdiscuz",
+    "status": "configured",
+    "url": "https://lagoonscans.com/manga/eleceed/",
+    "note": "\ud83d\udfe1 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhuahot": {
+    "home": "https://manhuahot.com",
+    "name": "ManhuaHot",
+    "rule": "madara-wpdiscuz",
+    "status": "configured",
+    "url": "https://manhuahot.com/manga/whisper/",
+    "note": "\ud83d\udfe1 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
+  },
+  "eu.kanade.tachiyomi.extension.en.erosscans": {
+    "home": "https://scythescans.com",
+    "name": "Scythe Scans",
+    "rule": "madara-wpdiscuz",
+    "status": "working",
+    "url": "https://scythescans.com/manga/the-shepherd-wizard/",
+    "note": "\u2705 Working: 3 comments read with wpDiscuz selectors"
+  },
+  "eu.kanade.tachiyomi.extension.en.wuxiaworld": {
+    "home": "https://wuxiaworld.site",
+    "name": "WuxiaWorld",
+    "rule": "madara-wpdiscuz",
+    "status": "configured",
+    "url": "https://wuxiaworld.site/novel/pick-me-up/",
+    "note": "\ud83d\udfe1 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
+  },
+  "eu.kanade.tachiyomi.extension.en.zinmanga": {
+    "home": "https://mangazin.org",
+    "name": "Zinmanga",
+    "rule": "madara-wpdiscuz",
+    "status": "configured",
+    "url": "https://mangazin.org/manga/breakers/",
+    "note": "\ud83d\udfe1 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
+  },
+  "eu.kanade.tachiyomi.extension.en.kissmangain": {
+    "home": "https://kissmanga.in",
+    "name": "Kissmanga.in",
+    "rule": "madara-wpdiscuz",
+    "status": "working",
+    "url": "https://kissmanga.in/kissmanga/fog-land/",
+    "note": "\u2705 Working: 3 comments read with wpDiscuz selectors"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhwaread": {
+    "home": "https://manhwaread.com",
+    "name": "ManhwaRead",
+    "rule": "madara-wpdiscuz",
+    "status": "working",
+    "url": "https://manhwaread.com/manhwa/queen-bee/",
+    "note": "\u2705 Working: 67 comments read with wpDiscuz selectors"
+  },
+  "eu.kanade.tachiyomi.extension.en.ragescans": {
+    "home": "https://ragescans.com",
+    "name": "Rage Scans",
+    "rule": "madara-wpdiscuz",
+    "status": "configured",
+    "url": "https://ragescans.com/manga/devil-ice/",
+    "note": "\ud83d\udfe1 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments"
+  },
+  "eu.kanade.tachiyomi.extension.en.onemangaco": {
+    "home": "https://1manga.co",
+    "name": "1Manga.co",
+    "rule": "mangahub-remark42",
+    "status": "configured",
+    "url": "https://1manga.co/manga/mao",
+    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangafoxfun": {
+    "home": "https://mangafox.fun",
+    "name": "MangaFox.fun",
+    "rule": "mangahub-remark42",
+    "status": "configured",
+    "url": "https://mangafox.fun/manga/zipang",
+    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangahereonl": {
+    "home": "https://mangahere.onl",
+    "name": "MangaHere.onl",
+    "rule": "mangahub-remark42",
+    "status": "configured",
+    "url": "https://mangahere.onl/manga/zipang",
+    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangahubio": {
+    "home": "https://mangahub.io",
+    "name": "MangaHub",
+    "rule": "mangahub-remark42",
+    "status": "working",
+    "url": "https://mangahub.io/manga/one-piece",
+    "note": "\u2705 Working: 34 nondeleted One Piece comments via Remark42; flat reply parents and HTML images mapped"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangakakalotfun": {
+    "home": "https://mangakakalot.fun",
+    "name": "Mangakakalot.fun",
+    "rule": "mangahub-remark42",
+    "status": "configured",
+    "url": "https://mangakakalot.fun/manga/mao",
+    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+  },
+  "eu.kanade.tachiyomi.extension.en.manganel": {
+    "home": "https://manganel.me",
+    "name": "MangaNel",
+    "rule": "mangahub-remark42",
+    "status": "configured",
+    "url": "https://manganel.me/manga/wee",
+    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangaonlinefun": {
+    "home": "https://mangaonline.fun",
+    "name": "MangaOnline.fun",
+    "rule": "mangahub-remark42",
+    "status": "configured",
+    "url": "https://mangaonline.fun/manga/wee",
+    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangapandaonl": {
+    "home": "https://mangapanda.onl",
+    "name": "MangaPanda.onl",
+    "rule": "mangahub-remark42",
+    "status": "configured",
+    "url": "https://mangapanda.onl/manga/zipang",
+    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangareadersite": {
+    "home": "https://mangareader.site",
+    "name": "MangaReader.site",
+    "rule": "mangahub-remark42",
+    "status": "configured",
+    "url": "https://mangareader.site/manga/zipang",
+    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangatoday": {
+    "home": "https://mangatoday.fun",
+    "name": "MangaToday",
+    "rule": "mangahub-remark42",
+    "status": "configured",
+    "url": "https://mangatoday.fun/manga/wee",
+    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+  },
+  "eu.kanade.tachiyomi.extension.en.onemangainfo": {
+    "home": "https://onemanga.info",
+    "name": "OneManga.info",
+    "rule": "mangahub-remark42",
+    "status": "configured",
+    "url": "https://onemanga.info/manga/wee",
+    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+  },
+  "eu.kanade.tachiyomi.extension.en.manga18x": {
+    "home": "https://manga18x.net",
+    "name": "Manga 18x",
+    "rule": "manga18x-disqus",
+    "status": "configured",
+    "url": "https://manga18x.net/manga/set-it/",
+    "note": "\ud83d\udfe1 Disqus rule linked; API confirms empty sampled thread"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhwa68": {
+    "home": "https://manhwa68.com",
+    "name": "Manhwa68",
+    "rule": "manhwa68-disqus",
+    "status": "configured",
+    "url": "https://manhwa68.com/manga/set-it/",
+    "note": "\ud83d\udfe1 Disqus rule linked; API confirms empty sampled thread"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhwalike": {
+    "home": "https://manhwalike.com",
+    "name": "Manhwalike",
+    "rule": "manhwalike-disqus",
+    "status": "working",
+    "url": "https://manhwalike.com/manga-queen-bee",
+    "note": "\u2705 Working: 2 Disqus posts read"
+  },
+  "eu.kanade.tachiyomi.extension.en.snafucomic": {
+    "home": "https://www.snafu-comics.com",
+    "name": "Snafu Comics",
+    "rule": "snafucomic-disqus",
+    "status": "working",
+    "url": "https://www.snafu-comics.com/grimtales",
+    "note": "\u2705 Working: 50 Disqus posts read"
+  },
+  "eu.kanade.tachiyomi.extension.en.topmanhuanet": {
+    "home": "https://topmanhua.net",
+    "name": "TopManhua.net",
+    "rule": "topmanhuanet-disqus",
+    "status": "working",
+    "url": "https://topmanhua.net/manga/overgeared/",
+    "note": "\u2705 Working: 1 Disqus posts read"
+  },
+  "eu.kanade.tachiyomi.extension.en.toonily": {
+    "home": "https://toonily.com",
+    "name": "Toonily",
+    "rule": "toonily",
+    "status": "working",
+    "url": "https://toonily.com/serie/overgeared-86ba23b3/",
+    "note": "\u2705 Working: title and chapter API each returned 1 comment; offset paging mapped; rich media markup not parsed"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangademon": {
+    "home": "https://demonicscans.org",
+    "name": "Manga Demon",
+    "rule": "demonicscans",
+    "status": "working",
+    "url": "https://demonicscans.org/manga/Talker",
+    "note": "\u2705 Working: 7 title / 2 chapter comments; 62 Eleceed roots and a 4-reply thread; first batch only; media markup not parsed"
+  },
+  "eu.kanade.tachiyomi.extension.en.cocomic": {
+    "home": "https://cocomic.co",
+    "name": "Cocomic",
+    "rule": "wordpress",
+    "status": "working",
+    "url": "https://cocomic.co/manga/open-the-door/",
+    "note": "\u2705 Working: 1 comments; author/text selectors verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.gourmetscans": {
+    "home": "https://gourmetsupremacy.com",
+    "name": "Gourmet Scans",
+    "rule": "madara-wpdiscuz",
+    "status": "working",
+    "url": "https://gourmetsupremacy.com/project/lb/",
+    "note": "\u2705 Working: 15 comments; author/text selectors verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhuaus": {
+    "home": "https://manhuaus.com",
+    "name": "ManhuaUS",
+    "rule": "wordpress",
+    "status": "working",
+    "url": "https://manhuaus.com/manga/magic-emperor-0/",
+    "note": "\u2705 Working: 853 comments; author/text selectors verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.yaoiscan": {
+    "home": "https://yaoiscan.com",
+    "name": "YaoiScan",
+    "rule": "wordpress",
+    "status": "working",
+    "url": "https://yaoiscan.com/read/hwan/",
+    "note": "\u2705 Working: 2 comments; author/text selectors verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.darklegacycomics": {
+    "home": "https://www.darklegacycomics.com",
+    "name": "Dark Legacy Comics",
+    "rule": "darklegacy-vuukle",
+    "status": "working",
+    "url": "https://www.darklegacycomics.com/1",
+    "note": "\u2705 Working: 9 comments via Vuukle; HTML images and nested replies mapped; first batch only"
+  },
+  "eu.kanade.tachiyomi.extension.en.luminaretranslations": {
+    "home": "https://luminaretranslations.com",
+    "name": "Luminare Translations",
+    "rule": "luminare",
+    "status": "configured",
+    "url": "https://luminaretranslations.com/series/sherlock-academy/",
+    "note": "\ud83d\udfe1 API rule linked; two sampled series returned empty threads; first batch only"
+  },
+  "eu.kanade.tachiyomi.extension.en.revivalscans": {
+    "home": "https://www.revivalscans.com",
+    "name": "Revival Scans",
+    "rule": "revivalscans",
+    "status": "configured",
+    "url": "https://www.revivalscans.com/series/cctv",
+    "note": "\ud83d\udfe1 Series API rule linked; sampled thread is empty; chapter comments not verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.kaizenscan": {
+    "home": "https://kaizenscan.com",
+    "name": "Kaizen Scan",
+    "rule": "zmio",
+    "status": "working",
+    "url": "https://kaizenscan.com/hwan",
+    "note": "\u2705 Working: 1 comment via existing zmio API rule"
+  },
+  "eu.kanade.tachiyomi.extension.en.lunatoons": {
+    "home": "https://lunatoons.net",
+    "name": "Luna Toons",
+    "rule": "zmio",
+    "status": "configured",
+    "url": "https://lunatoons.net/lust",
+    "note": "\ud83d\udfe1 zmio rule linked; post resolved, sampled API thread has no comments"
+  },
+  "eu.kanade.tachiyomi.extension.en.hotcomics": {
+    "home": "https://hotcomics.io",
+    "name": "HotComics",
+    "status": "unavailable",
+    "url": "https://hotcomics.io/en/bad-guy/cIHiI5CC.html",
+    "note": "\u26d4 Cusdis comment service returned HTTP 502; rule cannot be verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.infernalvoidscans": {
+    "home": "https://hivetoons.org",
+    "name": "Hive Scans",
+    "status": "unavailable",
+    "url": "https://hivetoons.org/series/lookism",
+    "note": "\u26d4 Disqus forum hiiv returned load error (code 15); not working"
+  },
+  "eu.kanade.tachiyomi.extension.en.magusmanga": {
+    "home": "https://magustoon.org",
+    "name": "Magus Manga",
+    "status": "unavailable",
+    "url": "https://magustoon.org/series/peach-heart",
+    "note": "\u26d4 Disqus forum magusmanga-3 returned load error (code 15); not working"
+  },
+  "eu.kanade.tachiyomi.extension.en.ravenscans": {
+    "home": "https://ravenscans.org",
+    "name": "Raven Scans",
+    "status": "unavailable",
+    "url": "https://ravenscans.org/manga/lookism/",
+    "note": "\u26d4 Disqus forum ravenscans returned load error (code 15); not working"
+  },
+  "eu.kanade.tachiyomi.extension.en.towerofgodmangaonline": {
+    "home": "https://w82.thetowerofgod.com",
+    "name": "Tower Of God Manga Online",
+    "status": "unavailable",
+    "url": "https://w85.thetowerofgod.com/manga/tower-of-god-chapter-9/",
+    "note": "\u26d4 Disqus forum towerofgod returned load error (code 15); not working"
+  },
+  "eu.kanade.tachiyomi.extension.en.webtoonxyz": {
+    "home": "https://www.webtoon.xyz",
+    "name": "WebtoonXYZ",
+    "status": "unavailable",
+    "url": "https://www.webtoon.xyz/read/get-out/",
+    "note": "\u26d4 Disqus forum webtoonxyz returned load error (code 15); not working"
+  }
+}

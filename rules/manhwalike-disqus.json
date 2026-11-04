@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "name": "Manhwalike",
+  "rules": [
+    {
+      "id": "manhwalike-disqus",
+      "name": "Manhwalike \u00b7 Disqus",
+      "type": "disqus",
+      "disqus": {
+        "forum": "manhwalike",
+        "url": "{pageUrl}"
+      }
+    }
+  ]
+}

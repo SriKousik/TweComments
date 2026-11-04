@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "mangadot",
+  "rules": [
+    {
+      "id": "mangadot",
+      "name": "mangadot",
+      "type": "page",
+      "page": {
+        "item": "div[id^=\"comment-\"]",
+        "author": "a[href^=\"/user/\"]",
+        "text": ".markdown-content",
+        "time": "div.mb-1\\.5 > span",
+        "avatar": "img[data-slot=\"avatar-image\"], img",
+        "likes": "span.tabular-nums"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "TopManhua.net",
+  "rules": [
+    {
+      "id": "topmanhuanet-disqus",
+      "name": "TopManhua.net \u00b7 Disqus",
+      "type": "disqus",
+      "disqus": {
+        "forum": "topmanhua-net",
+        "url": "{pageUrl}",
+        "identifier": "{identifier}"
+      },
+      "vars": {
+        "identifier": {
+          "from": "html",
+          "regex": "disqusIdentifier[\"\\']?\\s*:\\s*[\"\\']([^\"\\']+)"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "name": "Dark Legacy Comics \u00b7 Vuukle",
+  "rules": [
+    {
+      "id": "darklegacy-vuukle",
+      "name": "Dark Legacy Comics \u00b7 Vuukle",
+      "type": "api",
+      "vars": {
+        "apiKey": {
+          "from": "fetch",
+          "regex": "[\"\\']apiKey[\"\\']\\s*:\\s*[\"\\']([^\"\\']+)"
+        },
+        "articleId": {
+          "from": "fetch",
+          "regex": "[\"\\']articleId[\"\\']\\s*:\\s*[\"\\']([^\"\\']+)"
+        }
+      },
+      "api": {
+        "url": "https://api.vuukle.com/api/v1/Comments/getCommentFeedBySort?apiKey={apiKey}&articleId={articleId}&host=darklegacycomics.com&pageSize=25&sortBy=newest&start=0",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": "data.comments.items",
+        "id": "id",
+        "author": "name",
+        "text": "commentText",
+        "html": true,
+        "time": "createdTimestamp",
+        "avatar": "pictureUrl",
+        "likes": "likeCount",
+        "children": "replies",
+        "replyCount": "replyCount"
+      }
+    }
+  ]
+}

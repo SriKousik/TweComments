@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "xlecx",
+  "rules": [
+    {
+      "id": "xlecx",
+      "name": "xlecx",
+      "type": "page",
+      "page": {
+        "item": "div[id^=\"comment-id-\"]",
+        "author": ".comment-item__author",
+        "text": ".comment-item__main",
+        "time": ".comment-item__date",
+        "avatar": ".comment-item__img img",
+        "likes": "[data-comments-likes-id]"
+      }
+    }
+  ]
+}

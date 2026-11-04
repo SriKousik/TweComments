@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "name": "MangaHub \u00b7 Remark42",
+  "rules": [
+    {
+      "id": "mangahub-remark42",
+      "name": "MangaHub \u00b7 Remark42",
+      "type": "api",
+      "vars": {
+        "threadUrl": {
+          "from": "url",
+          "regex": "^(https?://[^#]+)"
+        }
+      },
+      "api": {
+        "url": "https://comment.mangahub.io/api/v1/find?site=mangahub&url={threadUrl}",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": "comments",
+        "id": "id",
+        "author": "user.name",
+        "text": "text",
+        "html": true,
+        "time": "time",
+        "avatar": "user.picture",
+        "likes": "score",
+        "parent": "pid",
+        "total": "info.count"
+      }
+    }
+  ]
+}

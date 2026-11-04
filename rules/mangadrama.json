@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "mangadrama",
+  "rules": [
+    {
+      "id": "mangadrama",
+      "name": "mangadrama",
+      "type": "page",
+      "page": {
+        "item": "li.comment",
+        "author": ".uk-comment-title a",
+        "text": ".init-comment-content",
+        "time": ".uk-comment-meta",
+        "avatar": ".uk-comment-avatar",
+        "likes": ".like-count"
+      }
+    }
+  ]
+}
