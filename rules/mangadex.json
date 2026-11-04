@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "name": "MangaDex",
   "rules": [
     {
@@ -50,7 +50,7 @@
         "text": ".message-body .bbWrapper",
         "time": "time.u-dt",
         "avatar": ".message-avatar img",
-        "more": "a.pageNav-jump--next"
+        "more": "a.pageNav-jump--next, a.pageNavSimple-el--next"
       },
       "actions": {
         "login": "https://forums.mangadex.org/login/"
