@@ -113,6 +113,71 @@
       }
     },
     {
+      "id": "livewire-discussion",
+      "name": "Discussion (Livewire)",
+      "match": {
+        "detect": "[data-testid='comment-discussion']"
+      },
+      "type": "page",
+      "page": {
+        "item": "article[data-testid='comment-card']",
+        "author": "a[href*='/users/'].font-semibold, a[href*='/users/']:not(.shrink-0)",
+        "time": "time",
+        "text": ".comment-content",
+        "avatar": "img",
+        "spoiler": ".comment-spoiler"
+      }
+    },
+    {
+      "id": "manga-comments-pro",
+      "name": "Manga Comments Pro",
+      "match": {
+        "detect": "#mcp-list, .mcp-thread"
+      },
+      "type": "page",
+      "page": {
+        "item": ".mcp-thread",
+        "author": ".mcp-author",
+        "time": ".mcp-time",
+        "text": ".mcp-content",
+        "likes": ".mcp-like-count",
+        "avatar": "img.mcp-avatar"
+      }
+    },
+    {
+      "id": "discourse",
+      "name": "Discourse",
+      "match": {
+        "detect": "[data-discourse-url], #discourse-comments"
+      },
+      "type": "page",
+      "vars": {
+        "forum": {
+          "from": "fetch",
+          "regex": "data-discourse-url=\"([^\"]+?)/?\"",
+          "fallback": [
+            {
+              "from": "fetch",
+              "regex": "discourseUrl\\s*:\\s*['\"]([^'\"]+?)/?['\"]"
+            }
+          ]
+        }
+      },
+      "entry": {
+        "url": "{forum}/embed/comments?embed_url={pageUrl}"
+      },
+      "chapter": {
+        "url": "{forum}/embed/comments?embed_url={pageUrl}"
+      },
+      "page": {
+        "item": "article.post",
+        "author": ".username",
+        "time": ".post-date",
+        "text": ".cooked",
+        "avatar": ".author img"
+      }
+    },
+    {
       "id": "disqus",
       "name": "Disqus",
       "match": {

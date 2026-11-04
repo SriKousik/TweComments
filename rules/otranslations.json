@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "name": "O Translations",
+  "rules": [
+    {
+      "id": "otranslations",
+      "name": "Koe comments",
+      "type": "api",
+      "vars": {
+        "ref": {
+          "from": "fetch",
+          "regex": "thread-ref=\"([^\"]+)\""
+        },
+        "threadId": {
+          "from": "json",
+          "url": "{origin}/api/comments/v1/threads/by-ref/{ref}",
+          "path": "id"
+        },
+        "count": {
+          "from": "json",
+          "url": "{origin}/api/comments/v1/threads/by-ref/{ref}",
+          "path": "commentCount"
+        }
+      },
+      "total": "{count}",
+      "api": {
+        "url": "{origin}/api/comments/v1/threads/{threadId}/comments",
+        "list": "comments",
+        "id": "id",
+        "author": "authorName",
+        "avatar": "authorAvatarUrl",
+        "text": "bodyHtml",
+        "html": true,
+        "time": "createdAt",
+        "likes": "upvotes",
+        "children": "children"
+      }
+    }
+  ]
+}

@@ -66,6 +66,46 @@
   "note": "comments in the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.aethonwebcomics",
+  "name": "Aethon Webcomics",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://aethonwebcomics.com",
+  "sources": [
+   "5210693156893032326"
+  ],
+  "theme": null,
+  "system": "ModFarm (WordPress)",
+  "rule": "aethon",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "complete",
+  "note": "comments read from its API/page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.aquamanga",
+  "name": "Aqua Manga",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://aquareader.org",
+  "sources": [
+   "626267698662819838"
+  ],
+  "theme": "Madara",
+  "system": "Manga Comments Pro",
+  "rule": "global: manga-comments-pro",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "complete",
+  "note": "1 comment read"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.asmotoon",
   "name": "Asmodeus Scans",
   "lang": "en",
@@ -124,6 +164,66 @@
   "login": "-",
   "status": "complete",
   "note": "71 comments read"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.otranslations",
+  "name": "O Translations",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://otl.moe",
+  "sources": [
+   "8863679261776988936"
+  ],
+  "theme": "Astro",
+  "system": "Koe comments",
+  "rule": "otranslations",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "complete",
+  "note": "5 comments read"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.ritharscans",
+  "name": "RitharScans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://ritharscans.com",
+  "sources": [
+   "8220771912098311271"
+  ],
+  "theme": null,
+  "system": "Livewire discussion",
+  "rule": "global: livewire-discussion",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "complete",
+  "note": "10 comments read"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.swordscomic",
+  "name": "Swords Comic",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://swordscomic.com",
+  "sources": [
+   "4098334577101891258"
+  ],
+  "theme": null,
+  "system": "Discourse",
+  "rule": "global: discourse",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "complete",
+  "note": "embed read with the comic as referer"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.shojoscans",
@@ -547,6 +647,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.artlapsa",
+  "name": "Art Lapsa",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://artlapsa.com",
+  "sources": [
+   "734404203508686053"
+  ],
+  "theme": null,
+  "system": "Livewire discussion",
+  "rule": "global: livewire-discussion",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "same platform as RitharScans"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.asterscans",
@@ -987,6 +1107,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.kitsunedawn",
+  "name": "Kitsune Dawn",
+  "lang": "en",
+  "nsfw": true,
+  "home": "https://kitsunedawn.com",
+  "sources": [
+   "7739452864322240494"
+  ],
+  "theme": null,
+  "system": "Livewire discussion",
+  "rule": "global: livewire-discussion",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "same platform as RitharScans"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.wearehunger",
@@ -4319,20 +4459,6 @@
   "note": "Checked: Article comments platform (global rule); none on the sampled title"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.aethonwebcomics",
-  "name": "Aethon Webcomics",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://aethonwebcomics.com",
-  "sources": [
-   "5210693156893032326"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "Checked: WordPress REST: /wp-json/modfarm/v1/comments/{id}/batch"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.allporncomicio",
   "name": "AllPornComic.io",
   "lang": "en",
@@ -4347,20 +4473,6 @@
   "note": "13 mentions of \"comment\""
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.aquamanga",
-  "name": "Aqua Manga",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://aquareader.org",
-  "sources": [
-   "626267698662819838"
-  ],
-  "theme": "Madara",
-  "status": "rule",
-  "system": "Own",
-  "note": "Checked: Manga Comments Pro WordPress plugin"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.arenascans",
   "name": "Arena Scans",
   "lang": "en",
@@ -4373,20 +4485,6 @@
   "status": "rule",
   "system": "Own",
   "note": "8 mentions of \"comment\""
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.artlapsa",
-  "name": "Art Lapsa",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://artlapsa.com",
-  "sources": [
-   "734404203508686053"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "Checked: React discussion component (same as RitharScans, Kitsune Dawn)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.coffeemangaunoriginal",
@@ -4610,21 +4708,7 @@
   "theme": "Madara",
   "status": "rule",
   "system": "Own",
-  "note": "Checked: Own WordPress plugin (kensscan-comments)"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.kitsunedawn",
-  "name": "Kitsune Dawn",
-  "lang": "en",
-  "nsfw": true,
-  "home": "https://kitsunedawn.com",
-  "sources": [
-   "7739452864322240494"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "Checked: React discussion component (same as Art Lapsa)"
+  "note": "Checked: Own WordPress plugin (kensscan-comments); no comments on sampled titles to read its markup"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.madarascans",
@@ -4750,7 +4834,7 @@
   "theme": "Iken",
   "status": "rule",
   "system": "Own",
-  "note": "Checked: Astro CommentPanel"
+  "note": "Checked: Astro CommentPanel with a private /api/v1"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mgreadio",
@@ -4791,20 +4875,6 @@
   "status": "rule",
   "system": "Own",
   "note": "Checked: Article comments platform (global rule); none on the sampled title"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.otranslations",
-  "name": "O Translations",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://otl.moe",
-  "sources": [
-   "8863679261776988936"
-  ],
-  "theme": "Astro",
-  "status": "rule",
-  "system": "Own",
-  "note": "Checked: Own API: /api/comments/v1"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.orchisasia",
@@ -4863,20 +4933,6 @@
   "note": "11 mentions of \"comment\""
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.ritharscans",
-  "name": "RitharScans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://ritharscans.com",
-  "sources": [
-   "8220771912098311271"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "Checked: React discussion component (same as Art Lapsa)"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.stonescape",
   "name": "StoneScape",
   "lang": "en",
@@ -4889,20 +4945,6 @@
   "status": "rule",
   "system": "Own",
   "note": "/api/comments/recent"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.swordscomic",
-  "name": "Swords Comic",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://swordscomic.com",
-  "sources": [
-   "4098334577101891258"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "Checked: Discourse embed"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.tailspace",
@@ -4930,7 +4972,7 @@
   "theme": "Madara",
   "status": "rule",
   "system": "Own",
-  "note": "Checked: QQ Comment Service, but its list API refuses (405)"
+  "note": "Checked: older QQ Comment Service: draws comments as HTML (no list API); rule pending"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.es.apollcomics",

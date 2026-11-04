@@ -6,9 +6,9 @@ Rows marked by hand were tested in a browser; update them here when something is
 
 | Status | Count | Meaning |
 |---|---|---|
-| ✅ Complete | 9 | Rule written and checked by hand for everything it supports. |
-| 🟢 Works | 187 | Reading works (checked, or through a comment system Twe reads on any site). Liking and posting need a signed-in check. |
-| 🔍 Needs rule | 169 | The site has comments, but in a form Twe needs a rule for. |
+| ✅ Complete | 14 | Rule written and checked by hand for everything it supports. |
+| 🟢 Works | 189 | Reading works (checked, or through a comment system Twe reads on any site). Liking and posting need a signed-in check. |
+| 🔍 Needs rule | 162 | The site has comments, but in a form Twe needs a rule for. |
 | ⚠️ Unsupported | 13 | Facebook comments: only shown inside Facebook's frame. Twe offers WebView. |
 | 🛡️ Check in app | 583 | The site blocks scripts (Cloudflare), so this survey couldn't see it. Open Comments in Twe to check. |
 | ➖ No comments | 184 | No comment section found on the site. |
@@ -16,21 +16,26 @@ Rows marked by hand were tested in a browser; update them here when something is
 
 Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not available.
 
-## ✅ Complete (9)
+## ✅ Complete (14)
 
 | Extension | Lang | Comments | Rule | Read | Replies | Like | Comment / reply | Sign-in | Notes |
 |---|---|---|---|---|---|---|---|---|---|
 | Comic Fury | all | Own (in page) | comicfury | ✅ | — | — | — | - | comments in the page |
 | MangaDex | all | Forum | mangadex | ✅ | — | — | — | - | forum threads via MangaDex API; quotes inline |
 | SayManhwa | all | Own (in page) | saymanhwa | ✅ | — | — | — | - | comments in the page |
+| Aethon Webcomics | en | ModFarm (WordPress) | aethon | ✅ | — | — | — | - | comments read from its API/page |
+| Aqua Manga | en | Manga Comments Pro | global: manga-comments-pro | ✅ | ✅ | — | — | - | 1 comment read |
 | Asmodeus Scans | en | zmio | zmio | ✅ | ✅ | — | — | - | zmio API; 2 comments read on a sample |
 | Asura Scans | en | Own API | asura | ✅ | ✅ | — | — | - | 331 title / 323 chapter comments, paging, GIFs |
 | MangaKatana | en | Own API | mangakatana | ✅ | ✅ | — | — | - | 71 comments read |
+| O Translations | en | Koe comments | otranslations | ✅ | ✅ | — | — | - | 5 comments read |
+| RitharScans | en | Livewire discussion | global: livewire-discussion | ✅ | — | — | — | - | 10 comments read |
+| Swords Comic | en | Discourse | global: discourse | ✅ | — | — | — | - | embed read with the comic as referer |
 | Violet Scans | en | Manga Comments System | global: mcs | ✅ | ✅ | — | — | - | 17 comments on a sample |
 | Weeb Central | en | Own | weebcentral | ✅ | — | — | — | - | title and chapter |
 | YaoiScan (Unoriginal) | en | Article comments | global: comment-body-articles | ✅ | — | — | — | - | posting needs a guest name (not in Twe yet) |
 
-## 🟢 Works (187)
+## 🟢 Works (189)
 
 | Extension | Lang | Comments | Rule | Read | Replies | Like | Comment / reply | Sign-in | Notes |
 |---|---|---|---|---|---|---|---|---|---|
@@ -52,6 +57,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | 18 Porn Comic 🔞 | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Akaza Scans | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | AP Comics 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
+| Art Lapsa | en | Livewire discussion | global: livewire-discussion | ✅ | — | — | — | - | same platform as RitharScans |
 | Aster Scans | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | aurora | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Bun Manga | en | wpDiscuz | global: wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | recognised on the page |
@@ -74,6 +80,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Ken Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Kewn Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | King of Shojo | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| Kitsune Dawn 🔞 | en | Livewire discussion | global: livewire-discussion | ✅ | — | — | — | - | same platform as RitharScans |
 | KokoMangas | en | wpDiscuz | global: wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | recognised on the page |
 | KSGroupScans | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Kun Manga Online | en | QQ Comment Service | qq-comments | ✅ | ✅ | ⏳ | ⏳ | Site | API answers |
@@ -222,7 +229,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | TuSachXinhXinh | vi | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | HANMAN18 🔞 | zh | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 
-## 🔍 Needs rule (169)
+## 🔍 Needs rule (162)
 
 | Extension | Lang | Site | Template | Notes |
 |---|---|---|---|---|
@@ -253,11 +260,8 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | ProComic | ar | https://procomic.pro | Madara | Own: 67 mentions of "comment" |
 | Rocks Manga | ar | https://rocksmanga.com | Madara | Own: 9 mentions of "comment" |
 | 4PornComic 🔞 | en | https://4porncomic.com |  | Own: Checked: Article comments platform (global rule); none on the sampled title |
-| Aethon Webcomics | en | https://aethonwebcomics.com |  | Own: Checked: WordPress REST: /wp-json/modfarm/v1/comments/{id}/batch |
 | AllPornComic.io 🔞 | en | https://allporncomic.io | Madara | Own: 13 mentions of "comment" |
-| Aqua Manga | en | https://aquareader.org | Madara | Own: Checked: Manga Comments Pro WordPress plugin |
 | Arena Scans | en | https://arenascan.com | MangaThemesia | Own: 8 mentions of "comment" |
-| Art Lapsa | en | https://artlapsa.com |  | Own: Checked: React discussion component (same as RitharScans, Kitsune Dawn) |
 | Coffee Manga (Unoriginal) | en | https://coffeemanga.net | Liliana | Own: Checked: Comments behind a sign-in gate |
 | Comivex | en | https://comivex.com |  | Commento: Checked: Loaded by script |
 | Doujins 🔞 | en | https://doujins.com |  | Own: /comments, /comments/antispam, /comments?post_id=8488 |
@@ -273,8 +277,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | INKR | en | https://comics.inkr.com | Next.js | Own: 35 mentions of "comment" |
 | K Manga | en | https://kmanga.kodansha.com |  | Own: 20 mentions of "comment" |
 | KaliScans.org (unoriginal) | en | https://kaliscans.org |  | Own: Checked: Loaded by script (getComments) |
-| Kensscan | en | https://kensscan.com | Madara | Own: Checked: Own WordPress plugin (kensscan-comments) |
-| Kitsune Dawn 🔞 | en | https://kitsunedawn.com |  | Own: Checked: React discussion component (same as Art Lapsa) |
+| Kensscan | en | https://kensscan.com | Madara | Own: Checked: Own WordPress plugin (kensscan-comments); no comments on sampled titles to read its markup |
 | Madara Scans | en | https://madarascans.net | Madara | Own: 69 mentions of "comment" |
 | Manga18.Club 🔞 | en | https://manga18.club |  | Own: Checked: /api/comments (unconfirmed) |
 | Manga18Free 🔞 | en | https://manga18free.com | Madara | Own: 16 mentions of "comment" |
@@ -283,20 +286,17 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | ManhwaDen 🔞 | en | https://www.manhwaden.com | Madara | Own: 26 mentions of "comment" |
 | ManhwaHub.to 🔞 | en | https://manhwahub.to | Madara | Own: 12 mentions of "comment" |
 | ManhwaOnline | en | https://manhwaonline.org |  | Own: Checked: Article comments platform (global rule); none on the sampled title |
-| ManhwaZ | en | https://manhwaz.cc | Iken | Own: Checked: Astro CommentPanel |
+| ManhwaZ | en | https://manhwaz.cc | Iken | Own: Checked: Astro CommentPanel with a private /api/v1 |
 | Mgread.io | en | https://mgread.io | Madara | Commento:  |
 | MurimScan | en | https://www.murimscans.site | Blogger | Valine:  |
 | MyReadingComic 🔞 | en | https://myreadingcomic.com |  | Own: Checked: Article comments platform (global rule); none on the sampled title |
-| O Translations | en | https://otl.moe | Astro | Own: Checked: Own API: /api/comments/v1 |
 | Orchisasia 🔞 | en | https://www.orchisasia.org | Madara | Own: 15 mentions of "comment" |
 | Paritehaber 🔞 | en | https://www.paritehaber.com | Madara | Own: 17 mentions of "comment" |
 | Petrotechsociety 🔞 | en | https://www.petrotechsociety.org | Madara | Own: 13 mentions of "comment" |
 | Read Horimiya Online | en | https://read-horimiya.online | MangaBox | Own: 11 mentions of "comment" |
-| RitharScans | en | https://ritharscans.com |  | Own: Checked: React discussion component (same as Art Lapsa) |
 | StoneScape | en | https://stonescape.xyz |  | Own: /api/comments/recent |
-| Swords Comic | en | https://swordscomic.com |  | Own: Checked: Discourse embed |
 | Tailspace 🔞 | en | https://tailspace.com |  | Own: /assets/comment-utils-CI9ItubT.js |
-| Zazamanga | en | https://www.zazamanga.com | Madara | Own: Checked: QQ Comment Service, but its list API refuses (405) |
+| Zazamanga | en | https://www.zazamanga.com | Madara | Own: Checked: older QQ Comment Service: draws comments as HTML (no list API); rule pending |
 | ApollComics 🔞 | es | https://apollcomics.es | Madara | Own: 33 mentions of "comment" |
 | Asia Lotus 🔞 | es | https://asialotuss.com | MangaThemesia | Own: 17 mentions of "comment" |
 | Bymichi Scan 🔞 | es | https://bymichiby.com | MangaThemesia | Own: 8 mentions of "comment" |

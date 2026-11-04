@@ -17,7 +17,9 @@
     "eu.kanade.tachiyomi.extension.en.mangakakalot": "rules/qq-comments.json",
     "eu.kanade.tachiyomi.extension.en.zazamanga": "rules/qq-comments.json",
     "eu.kanade.tachiyomi.extension.all.comicfury": "rules/comicfury.json",
-    "eu.kanade.tachiyomi.extension.all.saymanhwa": "rules/saymanhwa.json"
+    "eu.kanade.tachiyomi.extension.all.saymanhwa": "rules/saymanhwa.json",
+    "eu.kanade.tachiyomi.extension.en.aethonwebcomics": "rules/aethon.json",
+    "eu.kanade.tachiyomi.extension.en.otranslations": "rules/otranslations.json"
   },
   "domains": {
     "mangaread.org": "rules/madara-wpdiscuz.json",
@@ -38,7 +40,9 @@
     "kakamanga.com": "rules/qq-comments.json",
     "zazamanga.com": "rules/qq-comments.json",
     "comicfury.com": "rules/comicfury.json",
-    "saymanhwa.net": "rules/saymanhwa.json"
+    "saymanhwa.net": "rules/saymanhwa.json",
+    "aethonwebcomics.com": "rules/aethon.json",
+    "otl.moe": "rules/otranslations.json"
   },
   "sources": {
     "734865402529567092": "rules/mangageko.json",

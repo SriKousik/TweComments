@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "name": "Aethon Webcomics",
+  "rules": [
+    {
+      "id": "aethon",
+      "name": "ModFarm comments",
+      "type": "page",
+      "page": {
+        "wait": "li.mfc-comment",
+        "item": "li.mfc-comment",
+        "author": ".mfc-comment-author",
+        "time": ".mfc-comment-date",
+        "text": ".mfc-comment-content",
+        "likes": ".mfc-comment-like-count",
+        "avatar": ".mfc-comment-avatar img"
+      }
+    }
+  ]
+}

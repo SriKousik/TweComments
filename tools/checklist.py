@@ -55,11 +55,26 @@ MANUAL = {
     "eu.kanade.tachiyomi.extension.en.yaoiscanme": dict(system="Article comments", rule="global: comment-body-articles", read="yes",
                                                         replies="-", like="-", comment="-", login="-", status="complete",
                                                         note="posting needs a guest name (not in Twe yet)"),
+    # English one-offs (2026-11-04).
+    "eu.kanade.tachiyomi.extension.en.aethonwebcomics": dict(system="ModFarm (WordPress)", rule="aethon", read="yes", replies="-", like="-",
+                                                             comment="-", login="-", status="complete", note="comments read from its API/page"),
+    "eu.kanade.tachiyomi.extension.en.otranslations": dict(system="Koe comments", rule="otranslations", read="yes", replies="yes", like="-",
+                                                           comment="-", login="-", status="complete", note="5 comments read"),
+    "eu.kanade.tachiyomi.extension.en.ritharscans": dict(system="Livewire discussion", rule="global: livewire-discussion", read="yes",
+                                                         replies="-", like="-", comment="-", login="-", status="complete", note="10 comments read"),
+    "eu.kanade.tachiyomi.extension.en.artlapsa": dict(system="Livewire discussion", rule="global: livewire-discussion", read="yes",
+                                                      replies="-", like="-", comment="-", login="-", status="works", note="same platform as RitharScans"),
+    "eu.kanade.tachiyomi.extension.en.kitsunedawn": dict(system="Livewire discussion", rule="global: livewire-discussion", read="yes",
+                                                         replies="-", like="-", comment="-", login="-", status="works", note="same platform as RitharScans"),
+    "eu.kanade.tachiyomi.extension.en.aquamanga": dict(system="Manga Comments Pro", rule="global: manga-comments-pro", read="yes",
+                                                       replies="yes", like="-", comment="-", login="-", status="complete", note="1 comment read"),
+    "eu.kanade.tachiyomi.extension.en.swordscomic": dict(system="Discourse", rule="global: discourse", read="yes", replies="-", like="-",
+                                                         comment="-", login="-", status="complete", note="embed read with the comic as referer"),
 }
 
 # Checked by hand: what's there and what a rule still needs.
 NOTES = {
-    "eu.kanade.tachiyomi.extension.en.zazamanga": "QQ Comment Service, but its list API refuses (405)",
+    "eu.kanade.tachiyomi.extension.en.zazamanga": "older QQ Comment Service: draws comments as HTML (no list API); rule pending",
     "eu.kanade.tachiyomi.extension.en.manhwaonline": "Article comments platform (global rule); none on the sampled title",
     "eu.kanade.tachiyomi.extension.en.myreadingcomic": "Article comments platform (global rule); none on the sampled title",
     "eu.kanade.tachiyomi.extension.en.fourporncomic": "Article comments platform (global rule); none on the sampled title",
@@ -72,10 +87,10 @@ NOTES = {
     "eu.kanade.tachiyomi.extension.en.ritharscans": "React discussion component (same as Art Lapsa)",
     "eu.kanade.tachiyomi.extension.en.kitsunedawn": "React discussion component (same as Art Lapsa)",
     "eu.kanade.tachiyomi.extension.en.aquamanga": "Manga Comments Pro WordPress plugin",
-    "eu.kanade.tachiyomi.extension.en.kensscan": "Own WordPress plugin (kensscan-comments)",
+    "eu.kanade.tachiyomi.extension.en.kensscan": "Own WordPress plugin (kensscan-comments); no comments on sampled titles to read its markup",
     "eu.kanade.tachiyomi.extension.en.coffeemangaunoriginal": "Comments behind a sign-in gate",
     "eu.kanade.tachiyomi.extension.en.swordscomic": "Discourse embed",
-    "eu.kanade.tachiyomi.extension.en.manhwaz": "Astro CommentPanel",
+    "eu.kanade.tachiyomi.extension.en.manhwaz": "Astro CommentPanel with a private /api/v1",
     "eu.kanade.tachiyomi.extension.en.kaliscansorg": "Loaded by script (getComments)",
     "eu.kanade.tachiyomi.extension.en.mangamob": "Loaded by script",
 }
