@@ -82,6 +82,8 @@ Templates use `{pageUrl}` (the title or chapter page), `{entryUrl}` / `{chapterU
 ```
 
 - `url`: a regex on the page address (first group).
+- `fetch`: a regex on the page's HTML, downloaded without opening it (quick).
+- `fallback`: a list of alternatives tried in order when a variable finds nothing.
 - `html`: a regex on the page's HTML (opens the page).
 - `page`: an element's attribute (`attr`) or text, optionally narrowed with `regex`.
 

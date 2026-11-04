@@ -8,8 +8,14 @@
       "type": "api",
       "vars": {
         "slug": {
-          "from": "url",
-          "regex": "/(?:manga|reader/[a-z-]+)/([^/?#]+)"
+          "from": "fetch",
+          "regex": "submitComment\\('([^']+)'\\)",
+          "fallback": [
+            {
+              "from": "url",
+              "regex": "/(?:manga|reader/[a-z-]+)/([^/?#]+)"
+            }
+          ]
         }
       },
       "api": {
