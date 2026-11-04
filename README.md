@@ -19,11 +19,13 @@ rules/<name>.json           rules for particular extensions or sites
   "version": 2,
   "global": "rules/global.json",
   "extensions": { "eu.kanade.tachiyomi.extension.en.mangareadorg": "rules/madara-wpdiscuz.json" },
+  "sources": { "734865402529567092": "rules/mangageko.json" },
   "domains": { "mangaread.org": "rules/madara-wpdiscuz.json" }
 }
 ```
 
-- `extensions` links an extension (its package ID) to a rule file; `domains` links a site.
+- `extensions` links an extension (its package ID, as in keiyoushi's index), `sources` a source
+  (its ID), `domains` a site.
   Several extensions or sites can link to the same file (sites on the same theme share one).
 - Rules in a linked file apply to that extension or site directly (no `match` needed).
 - Paths are relative to the index (or full addresses).
