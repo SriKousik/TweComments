@@ -17,6 +17,9 @@ SURVEY, OUT_MD, OUT_JSON = sys.argv[1], sys.argv[2], sys.argv[3]
 # Rules written and checked by hand. Feature values: yes, no (site has none), wait (written,
 # needs a signed-in account to confirm), "-" (not supported by the rule yet).
 MANUAL = {
+    "eu.kanade.tachiyomi.extension.en.toongod": dict(system="TNGD API", rule="toongod", read="yes", replies="yes",
+                                                       like="-", comment="-", login="-", status="works",
+                                                       note="16 title / 6 chapter comments; 3 replies checked; first batch only (cursor paging pending)"),
     "eu.kanade.tachiyomi.extension.en.mangareadorg": dict(system="wpDiscuz", rule="madara-wpdiscuz", read="yes", replies="yes",
                                                           like="wait", comment="wait", login="WordPress", status="works",
                                                           note="886 title / 436 chapter comments read; View replies checked"),

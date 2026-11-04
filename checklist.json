@@ -2149,6 +2149,26 @@
   "note": "found on a second check"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.toongod",
+  "name": "ToonGod",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://www.toongod.org",
+  "sources": [
+   "2054192099319007885"
+  ],
+  "theme": null,
+  "system": "TNGD API",
+  "rule": "toongod",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "16 title / 6 chapter comments; 3 replies checked; first batch only (cursor paging pending)"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.topmanhua",
   "name": "Top Manhua",
   "lang": "en",
@@ -17580,19 +17600,6 @@
   "theme": null,
   "status": "down",
   "note": "HTTP Error 502: Bad Gateway"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.toongod",
-  "name": "ToonGod",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://www.toongod.org",
-  "sources": [
-   "2054192099319007885"
-  ],
-  "theme": null,
-  "status": "down",
-  "note": "HTTP Error 403: Forbidden"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.heytoon",

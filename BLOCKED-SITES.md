@@ -61,8 +61,10 @@ working without updating the app, unless the site needs something Twe can't do y
 
 ## Example: ToonGod
 
-ToonGod (`toongod.org`, extension `en.toongod`) blocks scripts with a Cloudflare check, so the
-survey marked it "down" (403). To add it: open a ToonGod title in your browser, pass the check,
-scroll to its comments, run `tools/collect.js`, and send the report (and a chapter page's, if
-chapters have comments). If the report says `systems: ["wpDiscuz"]` or `["Disqus"]`, Twe already
-reads it: open the title in Twe, pass the check there once, and comments load.
+ToonGod (`toongod.org`, extension `en.toongod`) blocks page downloads with a Cloudflare check,
+so the original survey marked it "down" (403). It now has a rule:
+[`rules/toongod.json`](rules/toongod.json), checked on 2026-11-04 using the running
+Turnstile-Slip service. Its custom widget lives in `#tngd-comments.shadowRoot`, but its
+TNGD JSON API can read title and chapter threads directly with the rule's browser user
+agent, without saved clearance cookies. Reading and replies are checked; only the first
+batch is supported because cursor paging is not yet available in Twe's rule format.

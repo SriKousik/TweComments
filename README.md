@@ -67,6 +67,7 @@ See [CHECKLIST.md](CHECKLIST.md) for every extension. Rules written so far:
 | qq-comments | Mangabat, Mangakakalot, Kun Manga, Zinmanga, ZetTruyen | ✅ | ✅ | ⏳ like, reply |
 | aethon | Aethon Webcomics | ✅ | — | — |
 | otranslations | O Translations | ✅ | ✅ | — |
+| toongod | ToonGod | ✅ first batch | ✅ first batch | — |
 | comicfury | Comic Fury | ✅ | — | — |
 | saymanhwa | SayManhwa | ✅ | — | — |
 | global: wpdiscuz | any wpDiscuz site | ✅ | ✅ | ⏳ |
@@ -80,6 +81,15 @@ See [CHECKLIST.md](CHECKLIST.md) for every extension. Rules written so far:
 | global: blogger | Blogger / ZeistManga sites | ✅ | — | — |
 
 ⏳ written from the site's own requests; needs a signed-in check to mark ✅.
+
+ToonGod uses its TNGD JSON API, so reading avoids the widget's shadow root and does not
+need a saved Cloudflare cookie. The rule covers title and chapter threads, author names,
+avatars, timestamps, scores, spoiler flags and replies. Tested through the running
+Turnstile-Slip service on 2026-11-04: 16 title comments, 6 chapter comments and a 3-reply
+thread on Return of the Mount Hua Sect. The API needs a browser user agent; the tested
+Android user agent is included in the rule. Only the first batch of comments and replies
+is supported: TNGD returns `nextCursor`, while Twe's current rule format supports page
+numbers and offsets. Posting, voting, media markup and cursor paging remain unsupported.
 
 ## Matching order
 

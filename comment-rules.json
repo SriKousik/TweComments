@@ -3,6 +3,7 @@
   "name": "TweComments",
   "global": "rules/global.json",
   "extensions": {
+    "eu.kanade.tachiyomi.extension.en.toongod": "rules/toongod.json",
     "eu.kanade.tachiyomi.extension.en.mangareadorg": "rules/madara-wpdiscuz.json",
     "eu.kanade.tachiyomi.extension.en.mangarawclub": "rules/mangageko.json",
     "eu.kanade.tachiyomi.extension.all.mangadex": "rules/mangadex.json",
@@ -28,6 +29,7 @@
     "eu.kanade.tachiyomi.extension.en.writerscans": "rules/zmio.json"
   },
   "domains": {
+    "toongod.org": "rules/toongod.json",
     "mangaread.org": "rules/madara-wpdiscuz.json",
     "mgeko.cc": "rules/mangageko.json",
     "mgeko.com": "rules/mangageko.json",
@@ -57,6 +59,7 @@
     "writerscans.com": "rules/zmio.json"
   },
   "sources": {
+    "2054192099319007885": "rules/toongod.json",
     "734865402529567092": "rules/mangageko.json",
     "2681651342533848540": "rules/madara-wpdiscuz.json",
     "6247824327199706550": "rules/asura.json",

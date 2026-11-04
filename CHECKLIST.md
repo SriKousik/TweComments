@@ -7,12 +7,12 @@ Rows marked by hand were tested in a browser; update them here when something is
 | Status | Count | Meaning |
 |---|---|---|
 | ✅ Complete | 14 | Rule written and checked by hand for everything it supports. |
-| 🟢 Works | 199 | Reading works (checked, or through a comment system Twe reads on any site). Liking and posting need a signed-in check. |
+| 🟢 Works | 200 | Reading works (checked, or through a comment system Twe reads on any site). Liking and posting need a signed-in check. |
 | 🔍 Needs rule | 158 | The site has comments, but in a form Twe needs a rule for. |
 | ⚠️ Unsupported | 13 | Facebook comments: only shown inside Facebook's frame. Twe offers WebView. |
 | 🛡️ Check in app | 583 | The site blocks scripts (Cloudflare), so this survey couldn't see it. Open Comments in Twe to check. |
 | ➖ No comments | 178 | No comment section found on the site. |
-| ❌ Site down | 313 | The site didn't answer, or the extension has no site. |
+| ❌ Site down | 312 | The site didn't answer, or the extension has no site. |
 
 Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not available.
 
@@ -35,7 +35,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Weeb Central | en | Own | weebcentral | ✅ | — | — | — | - | title and chapter |
 | YaoiScan (Unoriginal) | en | Article comments | global: comment-body-articles | ✅ | — | — | — | - | posting needs a guest name (not in Twe yet) |
 
-## 🟢 Works (199)
+## 🟢 Works (200)
 
 | Extension | Lang | Comments | Rule | Read | Replies | Like | Comment / reply | Sign-in | Notes |
 |---|---|---|---|---|---|---|---|---|---|
@@ -132,6 +132,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | TCB Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Thunder Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | TimelessToons | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
+| ToonGod | en | TNGD API | toongod | ✅ | ✅ | — | — | - | 16 title / 6 chapter comments; 3 replies checked; first batch only (cursor paging pending) |
 | Top Manhua | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | TritiniaScans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Vixen Logic 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
@@ -1191,7 +1192,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | NNHanman 🔞 | zh | https://nnhanman.xyz |  |  |
 | Toptoon.net | zh | https://www.toptoon.net |  |  |
 
-## ❌ Site down (313)
+## ❌ Site down (312)
 
 | Extension | Lang | Site | Template | Notes |
 |---|---|---|---|---|
@@ -1278,7 +1279,6 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Team Shadowi | en | https://www.team-shadowi.com |  | HTTP Error 403: Forbidden |
 | The Blank 🔞 | en | https://theblank.net |  | HTTP Error 403: Forbidden |
 | TodayManga | en | https://todaymanga.com |  | HTTP Error 502: Bad Gateway |
-| ToonGod | en | https://www.toongod.org |  | HTTP Error 403: Forbidden |
 | ToonHey 🔞 | en | https://toonhey.com |  | HTTP Error 403: Forbidden |
 | Vision Haze | en | https://www.visionhaze.com |  | HTTP Error 403: Forbidden |
 | VyvyManga | en | https://mangavyvy.net |  | HTTP Error 403: Forbidden |

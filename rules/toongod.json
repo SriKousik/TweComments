@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "name": "ToonGod",
+  "rules": [
+    {
+      "id": "toongod",
+      "name": "ToonGod",
+      "type": "api",
+      "vars": {
+        "targetId": {
+          "from": "url",
+          "regex": "/webtoon/([^?#]+?)/?(?:[?#]|$)"
+        }
+      },
+      "entry": {
+        "vars": {
+          "targetType": { "from": "value", "value": "SERIES" }
+        }
+      },
+      "chapter": {
+        "vars": {
+          "targetType": { "from": "value", "value": "CHAPTER" }
+        }
+      },
+      "api": {
+        "url": "https://comments.toongod.org/tngd-api/comments?targetType={targetType}&targetId={targetId}&sort=top",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": "items",
+        "id": "id",
+        "author": "user.displayName",
+        "text": "content",
+        "time": "createdAt",
+        "avatar": "user.avatarUrl",
+        "likes": "score",
+        "spoiler": "isSpoiler",
+        "parent": "parentId",
+        "replyCount": "replyCount",
+        "total": "total",
+        "replies": {
+          "url": "https://comments.toongod.org/tngd-api/comments/{id}/replies",
+          "list": "items"
+        }
+      }
+    }
+  ]
+}
