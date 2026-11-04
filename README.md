@@ -31,6 +31,19 @@ rules/<name>.json           rules for particular extensions or sites
 - Paths are relative to the index (or full addresses).
 - Twe checks the index once a day and downloads every linked file.
 
+## Checklist
+
+[CHECKLIST.md](CHECKLIST.md) lists every keiyoushi extension (1,458) with its comment status:
+complete, works, needs rule, unsupported, check in app, no comments, or site down, and for the
+working ones whether reading, replies, liking, commenting and sign-in work. Regenerate it with:
+
+```
+python3 tools/survey.py index.json tools/survey.jsonl     # keiyoushi's index.json; resumes where it stopped
+python3 tools/checklist.py tools/survey.jsonl CHECKLIST.md checklist.json
+```
+
+Rows tested by hand are kept in `MANUAL` in `tools/checklist.py`; add a site there when you confirm it.
+
 ## Sites with rules
 
 | Site | Extension | Read | Replies | Like / comment / reply |
