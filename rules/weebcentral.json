@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "name": "Weeb Central",
+  "rules": [
+    {
+      "id": "weebcentral",
+      "name": "Weeb Central",
+      "type": "page",
+      "vars": {
+        "wcId": {
+          "from": "url",
+          "regex": "/(?:series|chapters)/([0-9A-Z]{26})"
+        }
+      },
+      "entry": {
+        "url": "https://weebcentral.com/comments/contents/{wcId}?content_type=series"
+      },
+      "chapter": {
+        "url": "https://weebcentral.com/comments/contents/{wcId}?content_type=chapter"
+      },
+      "page": {
+        "item": "[id^='comment-']",
+        "author": "a[href*='/users/'] span",
+        "text": "p.whitespace-pre-wrap",
+        "time": "time",
+        "avatar": "img"
+      }
+    }
+  ]
+}

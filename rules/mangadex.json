@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "name": "MangaDex",
+  "rules": [
+    {
+      "id": "mangadex",
+      "name": "MangaDex forums",
+      "type": "page",
+      "vars": {
+        "mdId": {
+          "from": "url",
+          "regex": "/(?:title|chapter)/([0-9a-f-]{36})"
+        }
+      },
+      "entry": {
+        "url": "https://forums.mangadex.org/threads/{threadId}/",
+        "vars": {
+          "threadId": {
+            "from": "json",
+            "url": "https://api.mangadex.org/statistics/manga/{mdId}",
+            "path": "statistics.{mdId}.comments.threadId"
+          },
+          "replies": {
+            "from": "json",
+            "url": "https://api.mangadex.org/statistics/manga/{mdId}",
+            "path": "statistics.{mdId}.comments.repliesCount"
+          }
+        }
+      },
+      "chapter": {
+        "url": "https://forums.mangadex.org/threads/{threadId}/",
+        "vars": {
+          "threadId": {
+            "from": "json",
+            "url": "https://api.mangadex.org/statistics/chapter/{mdId}",
+            "path": "statistics.{mdId}.comments.threadId"
+          },
+          "replies": {
+            "from": "json",
+            "url": "https://api.mangadex.org/statistics/chapter/{mdId}",
+            "path": "statistics.{mdId}.comments.repliesCount"
+          }
+        }
+      },
+      "total": "{replies}",
+      "page": {
+        "wait": "article.message--post",
+        "item": "article.message--post",
+        "author": ".message-name",
+        "text": ".message-body .bbWrapper",
+        "time": "time.u-dt",
+        "avatar": ".message-avatar img",
+        "more": "a.pageNav-jump--next"
+      },
+      "actions": {
+        "login": "https://forums.mangadex.org/login/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "name": "Asura Scans",
+  "rules": [
+    {
+      "id": "asura",
+      "name": "Asura Scans",
+      "type": "api",
+      "entry": {
+        "vars": {
+          "cid": {
+            "from": "fetch",
+            "regex": "seriesId&quot;:\\[0,(\\d+)\\]"
+          },
+          "kind": {
+            "from": "value",
+            "value": "series"
+          }
+        }
+      },
+      "chapter": {
+        "vars": {
+          "cid": {
+            "from": "fetch",
+            "regex": "chapterId&quot;:\\[0,(\\d+)\\]"
+          },
+          "kind": {
+            "from": "value",
+            "value": "chapters"
+          }
+        }
+      },
+      "api": {
+        "url": "https://api.asurascans.com/api/{kind}/{cid}/comments?sort=top&limit=20&offset={offset}",
+        "pageSize": 20,
+        "list": "data",
+        "id": "id",
+        "author": "user.username",
+        "text": "content",
+        "time": "created_at",
+        "avatar": "user.profile_picture_url",
+        "likes": "upvotes",
+        "images": "media_urls",
+        "children": "replies",
+        "replyCount": "reply_count",
+        "hasMore": "meta.has_more",
+        "total": "meta.total"
+      }
+    }
+  ]
+}

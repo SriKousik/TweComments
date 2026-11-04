@@ -31,6 +31,19 @@ rules/<name>.json           rules for particular extensions or sites
 - Paths are relative to the index (or full addresses).
 - Twe checks the index once a day and downloads every linked file.
 
+## Sites with rules
+
+| Site | Extension | Read | Replies | Like / comment / reply |
+|---|---|---|---|---|
+| MangaRead.org | en.mangareadorg | ✅ wpDiscuz | ✅ View replies | ✅ (WordPress sign-in) |
+| MangaGeko | en.mangarawclub | ✅ API | ✅ | ✅ (site sign-in) |
+| Asura Scans | en.asurascans | ✅ API (+ GIFs) | ✅ nested | read only |
+| MangaDex | all.mangadex | ✅ forum threads | quotes inline | read only |
+| Weeb Central | en.weebcentral | ✅ | — | read only |
+| MangaKatana | en.mangakatana | ✅ API | ✅ | read only |
+| Any wpDiscuz site | (recognised on the page) | ✅ | ✅ | ✅ |
+| Any Disqus / WordPress site | (recognised on the page) | ✅ | ✅ | read only |
+
 ## Matching order
 
 1. A rule whose `match.sources`, `match.extensions` or `match.domains` fits the source or site.
@@ -83,6 +96,9 @@ Templates use `{pageUrl}` (the title or chapter page), `{entryUrl}` / `{chapterU
 
 - `url`: a regex on the page address (first group).
 - `fetch`: a regex on the page's HTML, downloaded without opening it (quick).
+- `json`: `url` and `path` (both templated): a value from a JSON API.
+- `value`: a fixed `value`.
+- `entry.vars` / `chapter.vars`: values only for titles or only for chapters.
 - `fallback`: a list of alternatives tried in order when a variable finds nothing.
 - `html`: a regex on the page's HTML (opens the page).
 - `page`: an element's attribute (`attr`) or text, optionally narrowed with `regex`.

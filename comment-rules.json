@@ -4,16 +4,28 @@
   "global": "rules/global.json",
   "extensions": {
     "eu.kanade.tachiyomi.extension.en.mangareadorg": "rules/madara-wpdiscuz.json",
-    "eu.kanade.tachiyomi.extension.en.mangarawclub": "rules/mangageko.json"
+    "eu.kanade.tachiyomi.extension.en.mangarawclub": "rules/mangageko.json",
+    "eu.kanade.tachiyomi.extension.all.mangadex": "rules/mangadex.json",
+    "eu.kanade.tachiyomi.extension.en.asurascans": "rules/asura.json",
+    "eu.kanade.tachiyomi.extension.en.weebcentral": "rules/weebcentral.json",
+    "eu.kanade.tachiyomi.extension.en.mangakatana": "rules/mangakatana.json"
   },
   "domains": {
     "mangaread.org": "rules/madara-wpdiscuz.json",
     "mgeko.cc": "rules/mangageko.json",
     "mgeko.com": "rules/mangageko.json",
-    "mangageko.com": "rules/mangageko.json"
+    "mangageko.com": "rules/mangageko.json",
+    "mangadex.org": "rules/mangadex.json",
+    "asurascans.com": "rules/asura.json",
+    "asuracomic.net": "rules/asura.json",
+    "weebcentral.com": "rules/weebcentral.json",
+    "mangakatana.com": "rules/mangakatana.json"
   },
   "sources": {
     "734865402529567092": "rules/mangageko.json",
-    "2681651342533848540": "rules/madara-wpdiscuz.json"
+    "2681651342533848540": "rules/madara-wpdiscuz.json",
+    "6247824327199706550": "rules/asura.json",
+    "2131019126180322627": "rules/weebcentral.json",
+    "3170561626848540385": "rules/mangakatana.json"
   }
 }

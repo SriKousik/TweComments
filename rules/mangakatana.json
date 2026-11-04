@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "name": "MangaKatana",
+  "rules": [
+    {
+      "id": "mangakatana",
+      "name": "MangaKatana",
+      "type": "api",
+      "vars": {
+        "pid": {
+          "from": "fetch",
+          "regex": "page_cm_id\\s*=\\s*['\"]?(\\d+)"
+        }
+      },
+      "api": {
+        "url": "https://mangakatana.com/",
+        "method": "POST",
+        "body": "comment_data=&page_id={pid}",
+        "headers": {
+          "X-Requested-With": "XMLHttpRequest"
+        },
+        "list": "comments",
+        "id": "_key",
+        "author": "name",
+        "text": "msg",
+        "html": true,
+        "time": "time",
+        "likes": "up",
+        "parent": "parent"
+      }
+    }
+  ]
+}

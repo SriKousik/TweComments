@@ -4,8 +4,21 @@
   "rules": [
     {
       "id": "madara-wpdiscuz",
-      "name": "Madara \u00b7 wpDiscuz",
+      "name": "Madara · wpDiscuz",
       "type": "page",
+      "vars": {
+        "mangaChapter": {
+          "from": "page",
+          "selector": "input[name=wp_manga_chapter_id]",
+          "attr": "value",
+          "fallback": [
+            {
+              "from": "value",
+              "value": "0"
+            }
+          ]
+        }
+      },
       "page": {
         "wait": ".wpd-comment",
         "item": ".wpd-comment",
@@ -17,7 +30,53 @@
         "spoiler": ".wpd-spoiler, .spoiler",
         "more": ".wpd-load-more-submit",
         "total": ".wpd-thread-info",
-        "totalAttr": "data-comments-count"
+        "totalAttr": "data-comments-count",
+        "replyCount": ".wpd-toggle .wpd-view-replies",
+        "repliesToggle": ".wpd-toggle"
+      },
+      "actions": {
+        "login": "{origin}/wp-login.php",
+        "loggedOut": "wc_login_to_vote",
+        "ids": {
+          "cid": "wpd-comm-(\\d+)_",
+          "uid": "wpd-comm-(.+)$"
+        },
+        "like": {
+          "url": "{origin}/wp-admin/admin-ajax.php",
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "X-Requested-With": "XMLHttpRequest"
+          },
+          "body": "action=wpdVoteOnComment&commentId={cid}&voteType=1&postId={js:wpdiscuzAjaxObj.wc_post_id}"
+        },
+        "dislike": {
+          "url": "{origin}/wp-admin/admin-ajax.php",
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "X-Requested-With": "XMLHttpRequest"
+          },
+          "body": "action=wpdVoteOnComment&commentId={cid}&voteType=-1&postId={js:wpdiscuzAjaxObj.wc_post_id}"
+        },
+        "post": {
+          "url": "{origin}/wp-admin/admin-ajax.php",
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "X-Requested-With": "XMLHttpRequest"
+          },
+          "body": "action=wpdAddComment&wc_comment={text}&wpdiscuz_unique_id=0_0&wpd_comment_depth=1&wp_manga_chapter_id={mangaChapter}&postId={js:wpdiscuzAjaxObj.wc_post_id}&wpdiscuz_zs={js:wpdiscuzAjaxObj.wpdiscuz_zs}"
+        },
+        "reply": {
+          "url": "{origin}/wp-admin/admin-ajax.php",
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "X-Requested-With": "XMLHttpRequest"
+          },
+          "body": "action=wpdAddComment&wc_comment={text}&wpdiscuz_unique_id={uid}&wpd_comment_depth={replyDepth}&wp_manga_chapter_id={mangaChapter}&postId={js:wpdiscuzAjaxObj.wc_post_id}&wpdiscuz_zs={js:wpdiscuzAjaxObj.wpdiscuz_zs}"
+        }
       }
     }
   ]
