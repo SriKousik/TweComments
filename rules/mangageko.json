@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "name": "MangaGeko",
+  "rules": [
+    {
+      "id": "mangageko",
+      "name": "MangaGeko",
+      "type": "api",
+      "vars": {
+        "slug": {
+          "from": "url",
+          "regex": "/(?:manga|reader/[a-z-]+)/([^/?#]+)"
+        }
+      },
+      "api": {
+        "url": "{origin}/cmt/get/comments/?page={page}&slug={slug}&sort=top",
+        "headers": {
+          "X-Requested-With": "XMLHttpRequest"
+        },
+        "list": "comments",
+        "id": "id",
+        "author": "author",
+        "text": "data",
+        "html": true,
+        "time": "added",
+        "avatar": "thumb",
+        "likes": "likes",
+        "spoiler": "spoiler",
+        "children": "replies",
+        "lastPage": "last_page"
+      }
+    }
+  ]
+}

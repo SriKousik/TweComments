@@ -3,9 +3,14 @@
   "name": "TweComments",
   "global": "rules/global.json",
   "extensions": {
-    "eu.kanade.tachiyomi.extension.en.mangareadorg": "rules/madara-wpdiscuz.json"
+    "eu.kanade.tachiyomi.extension.en.mangareadorg": "rules/madara-wpdiscuz.json",
+    "eu.kanade.tachiyomi.extension.en.mangarawclub": "rules/mangageko.json",
+    "eu.kanade.tachiyomi.extension.en.mangageko": "rules/mangageko.json"
   },
   "domains": {
-    "mangaread.org": "rules/madara-wpdiscuz.json"
+    "mangaread.org": "rules/madara-wpdiscuz.json",
+    "mgeko.cc": "rules/mangageko.json",
+    "mgeko.com": "rules/mangageko.json",
+    "mangageko.com": "rules/mangageko.json"
   }
 }
