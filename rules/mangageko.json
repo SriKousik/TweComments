@@ -27,7 +27,53 @@
         "likes": "likes",
         "spoiler": "spoiler",
         "children": "replies",
-        "lastPage": "last_page"
+        "lastPage": "last_page",
+        "replyCount": "reply_count",
+        "replies": {
+          "url": "{origin}/cmt/get/comments/?mode=replies&slug={slug}&root_id={id}&page={page}",
+          "list": "replies",
+          "lastPage": "last_page"
+        }
+      },
+      "actions": {
+        "login": "{origin}/portal/api/login/",
+        "loggedOut": "not_logged_in",
+        "like": {
+          "url": "{origin}/cmt/add/comment/like/",
+          "method": "POST",
+          "body": "comment_id={id}",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "X-CSRFToken": "{cookie:csrftoken}"
+          }
+        },
+        "dislike": {
+          "url": "{origin}/cmt/add/comment/dislike/",
+          "method": "POST",
+          "body": "comment_id={id}",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "X-CSRFToken": "{cookie:csrftoken}"
+          }
+        },
+        "post": {
+          "url": "{origin}/cmt/new/comment/",
+          "method": "POST",
+          "body": "comment={text}&location={slug}&spoiler={spoiler}",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "X-CSRFToken": "{cookie:csrftoken}"
+          }
+        },
+        "reply": {
+          "url": "{origin}/cmt/new/reply/",
+          "method": "POST",
+          "body": "comment={text}&reply_id={id}&location={slug}&spoiler={spoiler}",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "X-CSRFToken": "{cookie:csrftoken}"
+          }
+        }
       }
     }
   ]

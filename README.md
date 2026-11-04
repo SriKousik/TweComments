@@ -143,3 +143,29 @@ the page as Referer are sent too.
 
 For comment systems Twe can't read (Facebook's plugin): the reader sees `message` and an
 "Open in WebView" button.
+
+### Actions (like, comment, reply)
+
+Sent from the site's own page in Twe's hidden web view, so your sign-in there (in WebView) and
+its cookies go with them. Templates can use `{id}` (the comment), `{text}`, `{spoiler}`
+(`true`/`false`), `{cookie:name}` (a cookie's value, e.g. a CSRF token) and the rule's values.
+
+```json
+"actions": {
+  "login": "{origin}/login/",
+  "loggedOut": "not_logged_in",
+  "like":  { "url": "{origin}/comments/like/",  "method": "POST", "body": "comment_id={id}",
+             "headers": { "Content-Type": "application/x-www-form-urlencoded", "X-CSRFToken": "{cookie:csrftoken}" } },
+  "dislike": { … },
+  "post":  { "url": "{origin}/comments/new/",   "method": "POST", "body": "comment={text}&location={slug}&spoiler={spoiler}", "headers": { … } },
+  "reply": { "url": "{origin}/comments/reply/", "method": "POST", "body": "comment={text}&reply_id={id}&location={slug}", "headers": { … } }
+}
+```
+
+`loggedOut` is text in the site's answer that means "not signed in" (401/403 answers count too);
+Twe then offers the `login` page in WebView.
+
+### Threads
+
+API rules can give `replyCount` (a path) and `replies` (`url` with `{id}`, `list`, `lastPage`)
+for sites that send replies separately; Twe shows "View N replies" and fetches them when opened.
