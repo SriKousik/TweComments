@@ -15,11 +15,17 @@
     "eu.kanade.tachiyomi.extension.en.zinmanganet": "rules/qq-comments.json",
     "eu.kanade.tachiyomi.extension.en.mangabat": "rules/qq-comments.json",
     "eu.kanade.tachiyomi.extension.en.mangakakalot": "rules/qq-comments.json",
-    "eu.kanade.tachiyomi.extension.en.zazamanga": "rules/qq-comments.json",
     "eu.kanade.tachiyomi.extension.all.comicfury": "rules/comicfury.json",
     "eu.kanade.tachiyomi.extension.all.saymanhwa": "rules/saymanhwa.json",
     "eu.kanade.tachiyomi.extension.en.aethonwebcomics": "rules/aethon.json",
-    "eu.kanade.tachiyomi.extension.en.otranslations": "rules/otranslations.json"
+    "eu.kanade.tachiyomi.extension.en.otranslations": "rules/otranslations.json",
+    "eu.kanade.tachiyomi.extension.vi.zettruyen": "rules/qq-comments.json",
+    "eu.kanade.tachiyomi.extension.en.suryascans": "rules/zmio.json",
+    "eu.kanade.tachiyomi.extension.en.grimscans": "rules/zmio.json",
+    "eu.kanade.tachiyomi.extension.en.mistscans": "rules/zmio.json",
+    "eu.kanade.tachiyomi.extension.en.nyanukafe": "rules/zmio.json",
+    "eu.kanade.tachiyomi.extension.en.timelesstoons": "rules/zmio.json",
+    "eu.kanade.tachiyomi.extension.en.writerscans": "rules/zmio.json"
   },
   "domains": {
     "mangaread.org": "rules/madara-wpdiscuz.json",
@@ -38,11 +44,17 @@
     "zinmanga.net": "rules/qq-comments.json",
     "mangabats.com": "rules/qq-comments.json",
     "kakamanga.com": "rules/qq-comments.json",
-    "zazamanga.com": "rules/qq-comments.json",
     "comicfury.com": "rules/comicfury.json",
     "saymanhwa.net": "rules/saymanhwa.json",
     "aethonwebcomics.com": "rules/aethon.json",
-    "otl.moe": "rules/otranslations.json"
+    "otl.moe": "rules/otranslations.json",
+    "zettruyen5.com": "rules/qq-comments.json",
+    "genztoons.org": "rules/zmio.json",
+    "grimscans.com": "rules/zmio.json",
+    "mistscans.com": "rules/zmio.json",
+    "nyanukafe.com": "rules/zmio.json",
+    "timelesstoons.org": "rules/zmio.json",
+    "writerscans.com": "rules/zmio.json"
   },
   "sources": {
     "734865402529567092": "rules/mangageko.json",

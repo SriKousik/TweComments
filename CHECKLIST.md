@@ -7,11 +7,11 @@ Rows marked by hand were tested in a browser; update them here when something is
 | Status | Count | Meaning |
 |---|---|---|
 | ✅ Complete | 14 | Rule written and checked by hand for everything it supports. |
-| 🟢 Works | 189 | Reading works (checked, or through a comment system Twe reads on any site). Liking and posting need a signed-in check. |
-| 🔍 Needs rule | 162 | The site has comments, but in a form Twe needs a rule for. |
+| 🟢 Works | 199 | Reading works (checked, or through a comment system Twe reads on any site). Liking and posting need a signed-in check. |
+| 🔍 Needs rule | 158 | The site has comments, but in a form Twe needs a rule for. |
 | ⚠️ Unsupported | 13 | Facebook comments: only shown inside Facebook's frame. Twe offers WebView. |
 | 🛡️ Check in app | 583 | The site blocks scripts (Cloudflare), so this survey couldn't see it. Open Comments in Twe to check. |
-| ➖ No comments | 184 | No comment section found on the site. |
+| ➖ No comments | 178 | No comment section found on the site. |
 | ❌ Site down | 313 | The site didn't answer, or the extension has no site. |
 
 Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not available.
@@ -35,7 +35,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Weeb Central | en | Own | weebcentral | ✅ | — | — | — | - | title and chapter |
 | YaoiScan (Unoriginal) | en | Article comments | global: comment-body-articles | ✅ | — | — | — | - | posting needs a guest name (not in Twe yet) |
 
-## 🟢 Works (189)
+## 🟢 Works (199)
 
 | Extension | Lang | Comments | Rule | Read | Replies | Like | Comment / reply | Sign-in | Notes |
 |---|---|---|---|---|---|---|---|---|---|
@@ -67,6 +67,8 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Decadence Scans | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | GakaMangas | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | GalaxyDegenScans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| Genz Toons | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
+| Grim Scans | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
 | Grrl Power Comic | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Hentai1.io 🔞 | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Hentai20 (Unoriginal) 🔞 | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
@@ -104,8 +106,11 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | ManhwaBuddy | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | ManhwaNex | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Mehgazone 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
+| Mist Scans | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
 | Multporn 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
+| MurimScan | en | Blogger | global: blogger | ✅ | — | — | — | - | found on a second check |
 | Nux Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| Nyanu Kafe | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
 | Nyx Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | OctopusManga 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Omega Scans 🔞 | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
@@ -126,10 +131,12 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Sleepy Translations | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | TCB Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Thunder Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| TimelessToons | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
 | Top Manhua | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | TritiniaScans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Vixen Logic 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Vortex Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| Writer Scans | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
 | YaoiHot 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Zinmanga.net | en | QQ Comment Service | qq-comments | ✅ | ✅ | ⏳ | ⏳ | Site | API answers |
 | Cerberus Series | es | wpDiscuz | global: wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | recognised on the page |
@@ -168,6 +175,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | NgamenKomik | id | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Noromax | id | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Ota Scans | id | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| ReYume | id | Blogger | global: blogger | ✅ | — | — | — | - | found on a second check |
 | Rosyscans | id | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Sekte Doujin 🔞 | id | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Sekte Komik | id | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
@@ -182,6 +190,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Café com Yaoi | pt | wpDiscuz | global: wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | recognised on the page |
 | Coven Scan 🔞 | pt | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Euphoria Scan 🔞 | pt | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| GALAX Scans | pt | Blogger | global: blogger | ✅ | — | — | — | - | found on a second check |
 | Hanmokku Scan | pt | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Hentai Comics 🔞 | pt | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Hentai Kai 🔞 | pt | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
@@ -227,9 +236,10 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | TruyenTini | vi | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | TruyenTuoiTho | vi | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | TuSachXinhXinh | vi | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
+| ZetTruyen | vi | QQ Comment Service | qq-comments | ✅ | ✅ | ⏳ | ⏳ | Site | found on a second check |
 | HANMAN18 🔞 | zh | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 
-## 🔍 Needs rule (162)
+## 🔍 Needs rule (158)
 
 | Extension | Lang | Site | Template | Notes |
 |---|---|---|---|---|
@@ -288,7 +298,6 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | ManhwaOnline | en | https://manhwaonline.org |  | Own: Checked: Article comments platform (global rule); none on the sampled title |
 | ManhwaZ | en | https://manhwaz.cc | Iken | Own: Checked: Astro CommentPanel with a private /api/v1 |
 | Mgread.io | en | https://mgread.io | Madara | Commento:  |
-| MurimScan | en | https://www.murimscans.site | Blogger | Valine:  |
 | MyReadingComic 🔞 | en | https://myreadingcomic.com |  | Own: Checked: Article comments platform (global rule); none on the sampled title |
 | Orchisasia 🔞 | en | https://www.orchisasia.org | Madara | Own: 15 mentions of "comment" |
 | Paritehaber 🔞 | en | https://www.paritehaber.com | Madara | Own: 17 mentions of "comment" |
@@ -317,7 +326,6 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Komiku | id | https://komiku.org |  | Commento:  |
 | ManhwaDesu 🔞 | id | https://manhwadesu.rest | MangaThemesia | Own: 9 mentions of "comment" |
 | Pramramadhan | id | https://01.pramramadhan.my.id | Iken | Own: /images/comments.svg |
-| ReYume | id | https://www.re-yume.my.id | ZeistManga | Own: /feeds/comments/default?alt=json&max-results=30 |
 | VoraToon | id | https://voratoon.co | Iken | Own: 300 mentions of "comment" |
 | West Manga | id | https://v1.westmanga.my |  | Own: /assets/comment-CsWYXIYf.js |
 | Wurmz | id | https://wurmz.net | Next.js | Valine:  |
@@ -336,7 +344,6 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Azuretoons | pt | https://azuretoons.com | Iken | Commento:  |
 | Bakai 🔞 | pt | https://bakai.org |  | Own: 21 mentions of "comment" |
 | Capitoons | pt | https://capitoons.com |  | Own: 18 mentions of "comment" |
-| GALAX Scans | pt | https://galaxscanlator.blogspot.com | ZeistManga | Own: /feeds/comments/default?alt=json&max-results=30 |
 | Hanami Heaven 🔞 | pt | https://hanamiheaven.org | Madara | Own: 25 mentions of "comment" |
 | Hentai Fusion 🔞 | pt | https://hentaifusion.me |  | Own: 11 mentions of "comment" |
 | Hora Hentai 🔞 | pt | https://horahentai.com |  | Own: 99 mentions of "comment" |
@@ -385,7 +392,6 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | TruyenTVN 🔞 | vi | https://truyentvn.net |  | Own: /comments |
 | TuiTruyen | vi | https://tuitruyen.top |  | Own: /comment-emoji.js?t=786d1ef9db7ab055, /comments.js?t=786d1ef9db7ab055, /fast-nav |
 | VinaHentai 🔞 | vi | https://vinahentai.beer | Iken | Own: /assets/comment-detail-DeezZOgW.js, /assets/comment-reaction-D4xAKJkl.js |
-| ZetTruyen | vi | https://www.zettruyen5.com |  | Own: 69 mentions of "comment" |
 | 6Manhua 🔞 | zh | https://www.liumanhua.com |  | Own: /user/comment |
 | Dongman Manhua | zh | https://www.dongmanmanhua.cn |  | Own: /js/comment/likeItTitle.js?t=20200714 |
 | FavComic | zh | https://www.favcomic.com |  | Own: 16 mentions of "comment" |
@@ -1002,7 +1008,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Zazhimi | zh | https://www.zazhimi.net |  | no title page found from the home page |
 | Zerobyw | zh | http://www.zerobyw33.com |  | no title page found from the home page |
 
-## ➖ No comments (184)
+## ➖ No comments (178)
 
 | Extension | Lang | Site | Template | Notes |
 |---|---|---|---|---|
@@ -1037,8 +1043,6 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Existential Comics | en | https://existentialcomics.com |  |  |
 | EZmanga | en | https://ezmanga.org |  |  |
 | Frieren Online | en | https://www.frieren.online | Madara |  |
-| Genz Toons | en | https://genztoons.org |  |  |
-| Grim Scans | en | https://grimscans.com |  |  |
 | Guya | en | https://guya.cubari.moe | Blogger |  |
 | Hachirumi | en | https://hachirumi.com |  |  |
 | HentaiKisu 🔞 | en | https://hentaikisu.com |  |  |
@@ -1070,9 +1074,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Manhwaddict | en | https://manhwaddict.com |  |  |
 | ManhwaGalaxy | en | https://manhwagalaxy.com |  |  |
 | ManhwaUS 🔞 | en | https://manhwaus.net |  |  |
-| Mist Scans | en | https://mistscans.com |  |  |
 | NexComic | en | https://nexcomic.com | Iken |  |
-| Nyanu Kafe | en | https://nyanukafe.com |  |  |
 | Oh Joy Sex Toy 🔞 | en | https://www.ohjoysextoy.com |  |  |
 | Omoi | en | https://www.omoi.com |  | checked by hand |
 | One Punch Man Online | en | https://w20.1punchman.com |  |  |
@@ -1092,7 +1094,6 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Tapas | en | https://tapas.io | Next.js |  |
 | The Duck Webcomics | en | https://www.theduckwebcomics.com |  |  |
 | The Girl from Random Chatting Manga Online | en | https://thegirlfromrandomchatting.com |  |  |
-| TimelessToons | en | https://timelesstoons.org |  |  |
 | ToonGod (Unoriginal) | en | https://toongod.cc |  |  |
 | ToonGrab | en | https://toongrab.com | Next.js |  |
 | Toonizy | en | https://toonizy.com | Madara | checked by hand |
@@ -1101,7 +1102,6 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Webnex | en | https://webnex.cc | Madara |  |
 | WebtoonClub | en | https://webtoonclub.com | Next.js |  |
 | WitchScans | en | https://witchtoons.net | Next.js |  |
-| Writer Scans | en | https://writerscans.com |  |  |
 | AKAYA | es | https://akaya.io |  |  |
 | AnzManga | es | https://www.anzmanga25.com | Iken |  |
 | Celestial Moon | es | https://lecturacelestialmoon.site |  |  |

@@ -849,6 +849,46 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.suryascans",
+  "name": "Genz Toons",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://genztoons.org",
+  "sources": [
+   "1061713767402958340"
+  ],
+  "theme": null,
+  "status": "works",
+  "system": "zmio",
+  "rule": "zmio",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "note": "found on a second check"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.grimscans",
+  "name": "Grim Scans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://grimscans.com",
+  "sources": [
+   "8588684547293952127"
+  ],
+  "theme": null,
+  "status": "works",
+  "system": "zmio",
+  "rule": "zmio",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "note": "found on a second check"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.grrlpower",
   "name": "Grrl Power Comic",
   "lang": "en",
@@ -1589,6 +1629,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.mistscans",
+  "name": "Mist Scans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://mistscans.com",
+  "sources": [
+   "80073424419623517"
+  ],
+  "theme": null,
+  "status": "works",
+  "system": "zmio",
+  "rule": "zmio",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "note": "found on a second check"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.multporn",
   "name": "Multporn",
   "lang": "en",
@@ -1609,6 +1669,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.murimscan",
+  "name": "MurimScan",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://www.murimscans.site",
+  "sources": [
+   "5524031489110351257"
+  ],
+  "theme": "Blogger",
+  "status": "works",
+  "system": "Blogger",
+  "rule": "global: blogger",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "note": "found on a second check"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.nuxscans",
   "name": "Nux Scans",
   "lang": "en",
@@ -1627,6 +1707,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.nyanukafe",
+  "name": "Nyanu Kafe",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://nyanukafe.com",
+  "sources": [
+   "3025454996745441538"
+  ],
+  "theme": null,
+  "status": "works",
+  "system": "zmio",
+  "rule": "zmio",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "note": "found on a second check"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.nyxscans",
@@ -2029,6 +2129,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.timelesstoons",
+  "name": "TimelessToons",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://timelesstoons.org",
+  "sources": [
+   "9063123408669132087"
+  ],
+  "theme": null,
+  "status": "works",
+  "system": "zmio",
+  "rule": "zmio",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "note": "found on a second check"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.topmanhua",
   "name": "Top Manhua",
   "lang": "en",
@@ -2107,6 +2227,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.writerscans",
+  "name": "Writer Scans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://writerscans.com",
+  "sources": [
+   "561830040001881975"
+  ],
+  "theme": null,
+  "status": "works",
+  "system": "zmio",
+  "rule": "zmio",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "note": "found on a second check"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.yaoihot",
@@ -2869,6 +3009,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.id.inazumanga",
+  "name": "ReYume",
+  "lang": "id",
+  "nsfw": false,
+  "home": "https://www.re-yume.my.id",
+  "sources": [
+   "1645729642561182833"
+  ],
+  "theme": "ZeistManga",
+  "status": "works",
+  "system": "Blogger",
+  "rule": "global: blogger",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "note": "found on a second check"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.id.rosyscans",
   "name": "Rosyscans",
   "lang": "id",
@@ -3147,6 +3307,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.pt.galaxscanlator",
+  "name": "GALAX Scans",
+  "lang": "pt",
+  "nsfw": false,
+  "home": "https://galaxscanlator.blogspot.com",
+  "sources": [
+   "5553519415877811746"
+  ],
+  "theme": "ZeistManga",
+  "status": "works",
+  "system": "Blogger",
+  "rule": "global: blogger",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "note": "found on a second check"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.pt.hanmokkuscan",
@@ -4049,6 +4229,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.vi.zettruyen",
+  "name": "ZetTruyen",
+  "lang": "vi",
+  "nsfw": false,
+  "home": "https://www.zettruyen5.com",
+  "sources": [
+   "893747327087652119"
+  ],
+  "theme": null,
+  "status": "works",
+  "system": "QQ Comment Service",
+  "rule": "qq-comments",
+  "read": "yes",
+  "replies": "yes",
+  "like": "wait",
+  "comment": "wait",
+  "login": "Site",
+  "note": "found on a second check"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.zh.hanman18",
   "name": "HANMAN18",
   "lang": "zh",
@@ -4850,19 +5050,6 @@
   "system": "Commento"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.murimscan",
-  "name": "MurimScan",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://www.murimscans.site",
-  "sources": [
-   "5524031489110351257"
-  ],
-  "theme": "Blogger",
-  "status": "rule",
-  "system": "Valine"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.myreadingcomic",
   "name": "MyReadingComic",
   "lang": "en",
@@ -5253,20 +5440,6 @@
   "note": "/images/comments.svg"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.id.inazumanga",
-  "name": "ReYume",
-  "lang": "id",
-  "nsfw": false,
-  "home": "https://www.re-yume.my.id",
-  "sources": [
-   "1645729642561182833"
-  ],
-  "theme": "ZeistManga",
-  "status": "rule",
-  "system": "Own",
-  "note": "/feeds/comments/default?alt=json&max-results=30"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.id.komikcast",
   "name": "VoraToon",
   "lang": "id",
@@ -5515,20 +5688,6 @@
   "status": "rule",
   "system": "Own",
   "note": "18 mentions of \"comment\""
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.pt.galaxscanlator",
-  "name": "GALAX Scans",
-  "lang": "pt",
-  "nsfw": false,
-  "home": "https://galaxscanlator.blogspot.com",
-  "sources": [
-   "5553519415877811746"
-  ],
-  "theme": "ZeistManga",
-  "status": "rule",
-  "system": "Own",
-  "note": "/feeds/comments/default?alt=json&max-results=30"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.pt.noindexscan",
@@ -6197,20 +6356,6 @@
   "status": "rule",
   "system": "Own",
   "note": "/assets/comment-detail-DeezZOgW.js, /assets/comment-reaction-D4xAKJkl.js"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.vi.zettruyen",
-  "name": "ZetTruyen",
-  "lang": "vi",
-  "nsfw": false,
-  "home": "https://www.zettruyen5.com",
-  "sources": [
-   "893747327087652119"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "69 mentions of \"comment\""
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.zh.sixmh",
@@ -14563,30 +14708,6 @@
   "status": "none"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.suryascans",
-  "name": "Genz Toons",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://genztoons.org",
-  "sources": [
-   "1061713767402958340"
-  ],
-  "theme": null,
-  "status": "none"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.grimscans",
-  "name": "Grim Scans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://grimscans.com",
-  "sources": [
-   "8588684547293952127"
-  ],
-  "theme": null,
-  "status": "none"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.guya",
   "name": "Guya",
   "lang": "en",
@@ -14960,18 +15081,6 @@
   "status": "none"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.mistscans",
-  "name": "Mist Scans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://mistscans.com",
-  "sources": [
-   "80073424419623517"
-  ],
-  "theme": null,
-  "status": "none"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.nexcomic",
   "name": "NexComic",
   "lang": "en",
@@ -14981,18 +15090,6 @@
    "3024771939240549070"
   ],
   "theme": "Iken",
-  "status": "none"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.nyanukafe",
-  "name": "Nyanu Kafe",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://nyanukafe.com",
-  "sources": [
-   "3025454996745441538"
-  ],
-  "theme": null,
   "status": "none"
  },
  {
@@ -15226,18 +15323,6 @@
   "status": "none"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.timelesstoons",
-  "name": "TimelessToons",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://timelesstoons.org",
-  "sources": [
-   "9063123408669132087"
-  ],
-  "theme": null,
-  "status": "none"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.toongodcc",
   "name": "ToonGod (Unoriginal)",
   "lang": "en",
@@ -15333,18 +15418,6 @@
    "3119719730967642939"
   ],
   "theme": "Next.js",
-  "status": "none"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.writerscans",
-  "name": "Writer Scans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://writerscans.com",
-  "sources": [
-   "561830040001881975"
-  ],
-  "theme": null,
   "status": "none"
  },
  {

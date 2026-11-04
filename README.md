@@ -39,6 +39,7 @@ working ones whether reading, replies, liking, commenting and sign-in work. Rege
 
 ```
 python3 tools/survey.py index.json tools/survey.jsonl     # keiyoushi's index.json; resumes where it stopped
+python3 tools/recheck.py tools/survey.jsonl checklist.json tools/recheck.jsonl   # after adding a new comment system
 python3 tools/checklist.py tools/survey.jsonl CHECKLIST.md checklist.json
 ```
 
@@ -56,8 +57,10 @@ See [CHECKLIST.md](CHECKLIST.md) for every extension. Rules written so far:
 | mangadex | MangaDex | ✅ forum | quotes | — |
 | weebcentral | Weeb Central | ✅ | — | — |
 | mangakatana | MangaKatana | ✅ | ✅ | — |
-| zmio | Asmodeus Scans, Siren Scans | ✅ | ✅ | — |
-| qq-comments | Mangabat, Mangakakalot, Kun Manga, Zinmanga | ✅ | ✅ | ⏳ like, reply |
+| zmio | Asmodeus, Siren, Genz Toons, Grim, Mist, Nyanu Kafe, TimelessToons, Writer Scans | ✅ | ✅ | — |
+| qq-comments | Mangabat, Mangakakalot, Kun Manga, Zinmanga, ZetTruyen | ✅ | ✅ | ⏳ like, reply |
+| aethon | Aethon Webcomics | ✅ | — | — |
+| otranslations | O Translations | ✅ | ✅ | — |
 | comicfury | Comic Fury | ✅ | — | — |
 | saymanhwa | SayManhwa | ✅ | — | — |
 | global: wpdiscuz | any wpDiscuz site | ✅ | ✅ | ⏳ |
@@ -65,6 +68,10 @@ See [CHECKLIST.md](CHECKLIST.md) for every extension. Rules written so far:
 | global: wordpress | any WordPress comments | ✅ | ✅ | — |
 | global: mcs | Manga Comments System sites (Violet Scans…) | ✅ | ✅ | — |
 | global: comment-body-articles | YaoiScan and its platform | ✅ | — | — |
+| global: livewire-discussion | RitharScans, Art Lapsa, Kitsune Dawn | ✅ | — | — |
+| global: manga-comments-pro | AquaManga and the plugin's sites | ✅ | ✅ | — |
+| global: discourse | Swords Comic and any Discourse embed | ✅ | — | — |
+| global: blogger | Blogger / ZeistManga sites | ✅ | — | — |
 
 ⏳ written from the site's own requests; needs a signed-in check to mark ✅.
 

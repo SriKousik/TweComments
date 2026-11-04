@@ -113,8 +113,23 @@ STATUS = {
 ORDER = ["complete", "works", "rule", "unsupported", "check", "none", "down"]
 
 
+RECHECK = {}
+RECHECKED = {
+    "zmio": ("zmio", "zmio", "yes", "-"), "QQ Comment Service": ("QQ Comment Service", "qq-comments", "yes", "wait"),
+    "Blogger": ("Blogger", "global: blogger", "-", "-"), "Manga Comments Pro": ("Manga Comments Pro", "global: manga-comments-pro", "yes", "-"),
+    "Manga Comments System": ("Manga Comments System", "global: mcs", "yes", "-"), "Article comments": ("Article comments", "global: comment-body-articles", "-", "-"),
+    "Livewire discussion": ("Livewire discussion", "global: livewire-discussion", "-", "-"), "Discourse": ("Discourse", "global: discourse", "-", "-"),
+    "Koe comments": ("Koe comments", "otranslations", "yes", "-"),
+}
+
+
 def classify(row):
     pkg = row["pkg"]
+    for system in RECHECK.get(pkg, []):
+        if system in RECHECKED and pkg not in MANUAL and pkg not in NOTES:
+            label, rule, replies, like = RECHECKED[system]
+            return dict(status="works", system=label, rule=rule, read="yes", replies=replies, like=like, comment=like,
+                        login="Site" if like == "wait" else "-", note="found on a second check")
     if pkg in MANUAL:
         return dict(MANUAL[pkg])
     if row.get("name") in NO_COMMENTS:
@@ -149,6 +164,12 @@ def classify(row):
 
 def main():
     rows = [json.loads(line) for line in open(SURVEY)]
+    try:
+        for line in open(SURVEY.replace("survey.jsonl", "recheck.jsonl")):
+            item = json.loads(line)
+            RECHECK[item["pkg"]] = item.get("systems2", [])
+    except FileNotFoundError:
+        pass
     entries = []
     for row in rows:
         info = classify(row)

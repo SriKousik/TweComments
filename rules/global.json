@@ -205,6 +205,37 @@
       }
     },
     {
+      "id": "blogger",
+      "name": "Blogger comments",
+      "match": {
+        "detect": "meta[name='generator'][content='blogger' i], link[href*='blogger.com/feeds']"
+      },
+      "type": "api",
+      "vars": {
+        "postId": {
+          "from": "fetch",
+          "regex": "postId['\"]?\\s*[:=]\\s*['\"]?(\\d{8,})",
+          "fallback": [
+            {
+              "from": "fetch",
+              "regex": "post-body-(\\d{15,})"
+            }
+          ]
+        }
+      },
+      "api": {
+        "url": "{origin}/feeds/{postId}/comments/default?alt=json&max-results=100",
+        "list": "feed.entry",
+        "id": "id.$t",
+        "author": "author.0.name.$t",
+        "avatar": "author.0.gd$image.src",
+        "text": "content.$t",
+        "html": true,
+        "time": "published.$t",
+        "total": "feed.openSearch$totalResults.$t"
+      }
+    },
+    {
       "id": "wordpress",
       "name": "WordPress comments",
       "match": {
