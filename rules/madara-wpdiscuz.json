@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "name": "Madara sites with wpDiscuz",
+  "rules": [
+    {
+      "id": "madara-wpdiscuz",
+      "name": "Madara \u00b7 wpDiscuz",
+      "type": "page",
+      "page": {
+        "wait": ".wpd-comment",
+        "item": ".wpd-comment",
+        "author": ".wpd-comment-author",
+        "text": ".wpd-comment-text",
+        "time": ".wpd-comment-date",
+        "avatar": ".wpd-avatar img, img",
+        "likes": ".wpd-vote-result",
+        "spoiler": ".wpd-spoiler, .spoiler",
+        "more": ".wpd-load-more-submit",
+        "total": ".wpd-thread-info",
+        "totalAttr": "data-comments-count"
+      }
+    }
+  ]
+}

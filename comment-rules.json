@@ -1,55 +1,11 @@
 {
-  "version": 1,
-  "name": "Twe starter rules",
-  "rules": [
-    {
-      "id": "wpdiscuz",
-      "name": "wpDiscuz",
-      "match": { "detect": "#wpdcom, .wpd-thread-list, .wpd-comment" },
-      "type": "page",
-      "page": {
-        "wait": ".wpd-comment",
-        "item": ".wpd-comment",
-        "author": ".wpd-comment-author",
-        "text": ".wpd-comment-text",
-        "time": ".wpd-comment-date",
-        "avatar": ".wpd-avatar img, img",
-        "likes": ".wpd-vote-result",
-        "spoiler": ".wpd-spoiler, .spoiler",
-        "more": ".wpd-load-more-submit, .wpd-load-comments"
-      }
-    },
-    {
-      "id": "disqus",
-      "name": "Disqus",
-      "match": { "detect": "#disqus_thread" },
-      "type": "disqus",
-      "vars": {
-        "forum": { "from": "html", "regex": "//([a-z0-9-]+)\\.disqus\\.com/(?:embed|count)\\.js" },
-        "identifier": { "from": "html", "regex": "(?:this\\.page\\.identifier|disqus_identifier)\\s*=\\s*['\"]([^'\"]+)" },
-        "threadUrl": { "from": "html", "regex": "(?:this\\.page\\.url|disqus_url)\\s*=\\s*['\"]([^'\"]+)" }
-      },
-      "disqus": { "forum": "{forum}", "identifier": "{identifier}", "url": "{threadUrl}" }
-    },
-    {
-      "id": "wordpress",
-      "name": "WordPress comments",
-      "match": { "detect": ".comment-list li.comment, ol.commentlist li.comment, #comments article.comment" },
-      "type": "page",
-      "page": {
-        "item": "li.comment, article.comment",
-        "author": ".comment-author .fn, .comment-author b, .fn",
-        "text": ".comment-content, .comment-body > p, .comment-text",
-        "time": ".comment-metadata time, .comment-meta a, time",
-        "avatar": ".avatar, img"
-      }
-    },
-    {
-      "id": "facebook",
-      "name": "Facebook comments",
-      "match": { "detect": ".fb-comments, iframe[src*='facebook.com/plugins/comments']" },
-      "type": "unsupported",
-      "message": "This site uses Facebook comments, which only show inside Facebook's own frame. Open the page in WebView to read them."
-    }
-  ]
+  "version": 2,
+  "name": "TweComments",
+  "global": "rules/global.json",
+  "extensions": {
+    "eu.kanade.tachiyomi.extension.en.mangareadorg": "rules/madara-wpdiscuz.json"
+  },
+  "domains": {
+    "mangaread.org": "rules/madara-wpdiscuz.json"
+  }
 }

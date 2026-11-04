@@ -1,16 +1,33 @@
 # TweComments
 
 Comment rules for Twe: where each manga site keeps its comments and how to read them.
-Add `https://raw.githubusercontent.com/SriKousik/TweComments/main/comment-rules.json` in Twe → Settings → Browse → Comment rules (it's the default).
+Twe uses `https://raw.githubusercontent.com/SriKousik/TweComments/main/comment-rules.json` by default
+(Settings → Browse → Comment rules).
 
+## Layout
 
-Twe reads what readers say about a title or chapter from the source's own website. A **comment
-rules file** tells it where each site keeps its comments and how to read them. Host the file
-anywhere (a raw GitHub link works) and add its address in **Settings → Browse → Comment rules**.
-Twe checks rule files once a day, so when a site changes its layout, fixing the rule in the file
-fixes every copy of Twe, with no app update.
+```
+comment-rules.json          index: links everything below
+rules/global.json           rules for every site (comment systems: wpDiscuz, Disqus, WordPress, …)
+rules/<name>.json           rules for particular extensions or sites
+```
 
-`docs/comment-rules.json` is the starter file (the same rules are built into Twe).
+`comment-rules.json`:
+
+```json
+{
+  "version": 2,
+  "global": "rules/global.json",
+  "extensions": { "eu.kanade.tachiyomi.extension.en.mangareadorg": "rules/madara-wpdiscuz.json" },
+  "domains": { "mangaread.org": "rules/madara-wpdiscuz.json" }
+}
+```
+
+- `extensions` links an extension (its package ID) to a rule file; `domains` links a site.
+  Several extensions or sites can link to the same file (sites on the same theme share one).
+- Rules in a linked file apply to that extension or site directly (no `match` needed).
+- Paths are relative to the index (or full addresses).
+- Twe checks the index once a day and downloads every linked file.
 
 ## Matching order
 
