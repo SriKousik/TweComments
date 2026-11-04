@@ -8,7 +8,16 @@
     "eu.kanade.tachiyomi.extension.all.mangadex": "rules/mangadex.json",
     "eu.kanade.tachiyomi.extension.en.asurascans": "rules/asura.json",
     "eu.kanade.tachiyomi.extension.en.weebcentral": "rules/weebcentral.json",
-    "eu.kanade.tachiyomi.extension.en.mangakatana": "rules/mangakatana.json"
+    "eu.kanade.tachiyomi.extension.en.mangakatana": "rules/mangakatana.json",
+    "eu.kanade.tachiyomi.extension.en.asmotoon": "rules/zmio.json",
+    "eu.kanade.tachiyomi.extension.en.sirenscans": "rules/zmio.json",
+    "eu.kanade.tachiyomi.extension.en.kunmangaonline": "rules/qq-comments.json",
+    "eu.kanade.tachiyomi.extension.en.zinmanganet": "rules/qq-comments.json",
+    "eu.kanade.tachiyomi.extension.en.mangabat": "rules/qq-comments.json",
+    "eu.kanade.tachiyomi.extension.en.mangakakalot": "rules/qq-comments.json",
+    "eu.kanade.tachiyomi.extension.en.zazamanga": "rules/qq-comments.json",
+    "eu.kanade.tachiyomi.extension.all.comicfury": "rules/comicfury.json",
+    "eu.kanade.tachiyomi.extension.all.saymanhwa": "rules/saymanhwa.json"
   },
   "domains": {
     "mangaread.org": "rules/madara-wpdiscuz.json",
@@ -19,7 +28,17 @@
     "asurascans.com": "rules/asura.json",
     "asuracomic.net": "rules/asura.json",
     "weebcentral.com": "rules/weebcentral.json",
-    "mangakatana.com": "rules/mangakatana.json"
+    "mangakatana.com": "rules/mangakatana.json",
+    "asmotoon.com": "rules/zmio.json",
+    "sirenscans.org": "rules/zmio.json",
+    "sirenscans.com": "rules/zmio.json",
+    "kunmanga.online": "rules/qq-comments.json",
+    "zinmanga.net": "rules/qq-comments.json",
+    "mangabats.com": "rules/qq-comments.json",
+    "kakamanga.com": "rules/qq-comments.json",
+    "zazamanga.com": "rules/qq-comments.json",
+    "comicfury.com": "rules/comicfury.json",
+    "saymanhwa.net": "rules/saymanhwa.json"
   },
   "sources": {
     "734865402529567092": "rules/mangageko.json",

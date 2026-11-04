@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "name": "Comic Fury",
+  "rules": [
+    {
+      "id": "comicfury",
+      "name": "Comic Fury",
+      "type": "page",
+      "page": {
+        "item": "div.is--comment-box[id^='comment-']",
+        "author": ".is--comment-author",
+        "time": ".is--comment-time",
+        "text": ".is--comment-content",
+        "avatar": ".is--comment-avatar img"
+      }
+    }
+  ]
+}

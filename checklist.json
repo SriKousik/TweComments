@@ -1,5 +1,27 @@
 [
  {
+  "pkg": "eu.kanade.tachiyomi.extension.all.comicfury",
+  "name": "Comic Fury",
+  "lang": "all",
+  "nsfw": false,
+  "home": "https://comicfury.com",
+  "sources": [
+   "5182817189941556265",
+   "6251704791239468278",
+   "4984634867953711392"
+  ],
+  "theme": null,
+  "system": "Own (in page)",
+  "rule": "comicfury",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "complete",
+  "note": "comments in the page"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.all.mangadex",
   "name": "MangaDex",
   "lang": "all",
@@ -20,6 +42,48 @@
   "login": "-",
   "status": "complete",
   "note": "forum threads via MangaDex API; quotes inline"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.all.saymanhwa",
+  "name": "SayManhwa",
+  "lang": "all",
+  "nsfw": false,
+  "home": "https://saymanhwa.net",
+  "sources": [
+   "7915151531599641879",
+   "718198470352266702",
+   "160957764321519511"
+  ],
+  "theme": null,
+  "system": "Own (in page)",
+  "rule": "saymanhwa",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "complete",
+  "note": "comments in the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.asmotoon",
+  "name": "Asmodeus Scans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://asmotoon.com",
+  "sources": [
+   "2076371496779298312"
+  ],
+  "theme": "Madara",
+  "system": "zmio",
+  "rule": "zmio",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "complete",
+  "note": "zmio API; 2 comments read on a sample"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.asurascans",
@@ -62,6 +126,26 @@
   "note": "71 comments read"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.shojoscans",
+  "name": "Violet Scans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://violetmanga.com",
+  "sources": [
+   "9079184529211162476"
+  ],
+  "theme": "MangaThemesia",
+  "system": "Manga Comments System",
+  "rule": "global: mcs",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "complete",
+  "note": "17 comments on a sample"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.weebcentral",
   "name": "Weeb Central",
   "lang": "en",
@@ -80,6 +164,26 @@
   "login": "-",
   "status": "complete",
   "note": "title and chapter"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.yaoiscanme",
+  "name": "YaoiScan (Unoriginal)",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://yaoiscan.me",
+  "sources": [
+   "2975409305226490397"
+  ],
+  "theme": null,
+  "system": "Article comments",
+  "rule": "global: comment-body-articles",
+  "read": "yes",
+  "replies": "-",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "complete",
+  "note": "posting needs a guest name (not in Twe yet)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.all.mangaomega",
@@ -925,6 +1029,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.kunmangaonline",
+  "name": "Kun Manga Online",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://www.kunmanga.online",
+  "sources": [
+   "7947062020376654174"
+  ],
+  "theme": "Madara",
+  "system": "QQ Comment Service",
+  "rule": "qq-comments",
+  "read": "yes",
+  "replies": "yes",
+  "like": "wait",
+  "comment": "wait",
+  "login": "Site",
+  "status": "works",
+  "note": "API answers"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.lovesjanescans",
   "name": "Lovesjane Scans",
   "lang": "en",
@@ -1025,6 +1149,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.mangabat",
+  "name": "Mangabat",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://www.mangabats.com",
+  "sources": [
+   "4215511432986138970"
+  ],
+  "theme": "MangaBox",
+  "system": "QQ Comment Service",
+  "rule": "qq-comments",
+  "read": "yes",
+  "replies": "yes",
+  "like": "wait",
+  "comment": "wait",
+  "login": "Site",
+  "status": "works",
+  "note": "API read; like/reply written"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangack",
   "name": "Mangack",
   "lang": "en",
@@ -1103,6 +1247,26 @@
   "comment": "wait",
   "login": "WordPress",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.mangakakalot",
+  "name": "Mangakakalot",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://www.kakamanga.com",
+  "sources": [
+   "2528986671771677900"
+  ],
+  "theme": "MangaBox",
+  "system": "QQ Comment Service",
+  "rule": "qq-comments",
+  "read": "yes",
+  "replies": "yes",
+  "like": "wait",
+  "comment": "wait",
+  "login": "Site",
+  "status": "works",
+  "note": "API answers"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangamaniacs",
@@ -1645,6 +1809,26 @@
   "note": "recognised on the page"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.sirenscans",
+  "name": "Siren Scans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://sirenscans.org",
+  "sources": [
+   "5804710058654490234"
+  ],
+  "theme": null,
+  "system": "zmio",
+  "rule": "zmio",
+  "read": "yes",
+  "replies": "yes",
+  "like": "-",
+  "comment": "-",
+  "login": "-",
+  "status": "works",
+  "note": "same zmio setup as Asmodeus"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.sleepytranslations",
   "name": "Sleepy Translations",
   "lang": "en",
@@ -1803,6 +1987,26 @@
   "comment": "-",
   "login": "-",
   "note": "recognised on the page"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.zinmanganet",
+  "name": "Zinmanga.net",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://www.zinmanga.net",
+  "sources": [
+   "1987105317893699901"
+  ],
+  "theme": "Madara",
+  "system": "QQ Comment Service",
+  "rule": "qq-comments",
+  "read": "yes",
+  "replies": "yes",
+  "like": "wait",
+  "comment": "wait",
+  "login": "Site",
+  "status": "works",
+  "note": "API answers"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.es.cerberusseries",
@@ -3739,22 +3943,6 @@
   "note": "14 mentions of \"comment\""
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.all.comicfury",
-  "name": "Comic Fury",
-  "lang": "all",
-  "nsfw": false,
-  "home": "https://comicfury.com",
-  "sources": [
-   "5182817189941556265",
-   "6251704791239468278",
-   "4984634867953711392"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "/read/stsc/comments/3134486"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.all.comicsvalley",
   "name": "Comics Valley",
   "lang": "all",
@@ -3851,7 +4039,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "/api/comment"
+  "note": "Checked: same /api/comment platform as ManhwaOnline (unconfirmed)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.all.mangadna",
@@ -3866,7 +4054,7 @@
   "theme": "MangaThemesia",
   "status": "rule",
   "system": "Own",
-  "note": "/api/comment"
+  "note": "Checked: same /api/comment platform as ManhwaOnline (unconfirmed)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.all.mangaforfree",
@@ -3959,22 +4147,6 @@
   "status": "rule",
   "system": "Own",
   "note": "/comments/"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.all.saymanhwa",
-  "name": "SayManhwa",
-  "lang": "all",
-  "nsfw": false,
-  "home": "https://saymanhwa.net",
-  "sources": [
-   "7915151531599641879",
-   "718198470352266702",
-   "160957764321519511"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "/public/modules/comments/css/comments-v142.css?v=459"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.all.seraphicdeviltry",
@@ -4144,7 +4316,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "/api/comment/"
+  "note": "Checked: Article comments platform (global rule); none on the sampled title"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.aethonwebcomics",
@@ -4158,7 +4330,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "51 mentions of \"comment\""
+  "note": "Checked: WordPress REST: /wp-json/modfarm/v1/comments/{id}/batch"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.allporncomicio",
@@ -4186,7 +4358,7 @@
   "theme": "Madara",
   "status": "rule",
   "system": "Own",
-  "note": "20 mentions of \"comment\""
+  "note": "Checked: Manga Comments Pro WordPress plugin"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.arenascans",
@@ -4214,21 +4386,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "88 mentions of \"comment\""
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.asmotoon",
-  "name": "Asmodeus Scans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://asmotoon.com",
-  "sources": [
-   "2076371496779298312"
-  ],
-  "theme": "Madara",
-  "status": "rule",
-  "system": "Own",
-  "note": "/assets/scripts/series-discussion.js?v=1793711239, /assets/scripts/zmio-comments"
+  "note": "Checked: React discussion component (same as RitharScans, Kitsune Dawn)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.coffeemangaunoriginal",
@@ -4242,7 +4400,7 @@
   "theme": "Liliana",
   "status": "rule",
   "system": "Own",
-  "note": "12 mentions of \"comment\""
+  "note": "Checked: Comments behind a sign-in gate"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangamob",
@@ -4255,7 +4413,8 @@
   ],
   "theme": null,
   "status": "rule",
-  "system": "Commento"
+  "system": "Commento",
+  "note": "Checked: Loaded by script"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.doujins",
@@ -4426,20 +4585,6 @@
   "note": "20 mentions of \"comment\""
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.kaliscanorg",
-  "name": "KaliScan.org (unoriginal)",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://kaliscan.org",
-  "sources": [
-   "5815628626283130746"
-  ],
-  "theme": "Madara",
-  "status": "rule",
-  "system": "Own",
-  "note": "18 mentions of \"comment\""
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.kaliscansorg",
   "name": "KaliScans.org (unoriginal)",
   "lang": "en",
@@ -4451,7 +4596,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "/top/comments, /users/comments"
+  "note": "Checked: Loaded by script (getComments)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.kensscan",
@@ -4465,7 +4610,7 @@
   "theme": "Madara",
   "status": "rule",
   "system": "Own",
-  "note": "26 mentions of \"comment\""
+  "note": "Checked: Own WordPress plugin (kensscan-comments)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.kitsunedawn",
@@ -4479,21 +4624,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "95 mentions of \"comment\""
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.kunmangaonline",
-  "name": "Kun Manga Online",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://www.kunmanga.online",
-  "sources": [
-   "7947062020376654174"
-  ],
-  "theme": "Madara",
-  "status": "rule",
-  "system": "Own",
-  "note": "88 mentions of \"comment\""
+  "note": "Checked: React discussion component (same as Art Lapsa)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.madarascans",
@@ -4521,7 +4652,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "/api/comments, /api/comments/delete, /api/comments/react, /api/comments?post_id="
+  "note": "Checked: /api/comments (unconfirmed)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.manga18free",
@@ -4538,20 +4669,6 @@
   "note": "16 mentions of \"comment\""
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.mangabat",
-  "name": "Mangabat",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://www.mangabats.com",
-  "sources": [
-   "4215511432986138970"
-  ],
-  "theme": "MangaBox",
-  "status": "rule",
-  "system": "Own",
-  "note": "82 mentions of \"comment\""
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.mangaforfreecom",
   "name": "Mangaforfree.com",
   "lang": "en",
@@ -4564,20 +4681,6 @@
   "status": "rule",
   "system": "Own",
   "note": "16 mentions of \"comment\""
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.mangakakalot",
-  "name": "Mangakakalot",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://www.kakamanga.com",
-  "sources": [
-   "2528986671771677900"
-  ],
-  "theme": "MangaBox",
-  "status": "rule",
-  "system": "Own",
-  "note": "82 mentions of \"comment\""
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.manhuanext",
@@ -4633,7 +4736,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "/api/comment/"
+  "note": "Checked: Article comments platform (global rule); none on the sampled title"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.manhwaz",
@@ -4647,7 +4750,7 @@
   "theme": "Iken",
   "status": "rule",
   "system": "Own",
-  "note": "/_astro/CommentPanel.astro_astro_type_script_index_0_lang.UhD4OJa8.js"
+  "note": "Checked: Astro CommentPanel"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.mgreadio",
@@ -4687,7 +4790,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "/api/comment/"
+  "note": "Checked: Article comments platform (global rule); none on the sampled title"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.otranslations",
@@ -4701,21 +4804,7 @@
   "theme": "Astro",
   "status": "rule",
   "system": "Own",
-  "note": "/api/comments/v1"
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.azuki",
-  "name": "Omoi",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://www.omoi.com",
-  "sources": [
-   "8195282477201261072"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "8 mentions of \"comment\""
+  "note": "Checked: Own API: /api/comments/v1"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.orchisasia",
@@ -4760,20 +4849,6 @@
   "note": "13 mentions of \"comment\""
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.qiscans",
-  "name": "Qi Scans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://qimanga.com",
-  "sources": [
-   "5806040666300479660"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "28 mentions of \"comment\""
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.readhorimiyaonline",
   "name": "Read Horimiya Online",
   "lang": "en",
@@ -4799,21 +4874,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "88 mentions of \"comment\""
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.sirenscans",
-  "name": "Siren Scans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://sirenscans.org",
-  "sources": [
-   "5804710058654490234"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "/assets/scripts/series-discussion.js?v=1793711239, /assets/scripts/zmio-comments"
+  "note": "Checked: React discussion component (same as Art Lapsa)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.stonescape",
@@ -4841,7 +4902,7 @@
   "theme": null,
   "status": "rule",
   "system": "Own",
-  "note": "23 mentions of \"comment\""
+  "note": "Checked: Discourse embed"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.tailspace",
@@ -4858,48 +4919,6 @@
   "note": "/assets/comment-utils-CI9ItubT.js"
  },
  {
-  "pkg": "eu.kanade.tachiyomi.extension.en.toonizy",
-  "name": "Toonizy",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://toonizy.com",
-  "sources": [
-   "5404499323728358840"
-  ],
-  "theme": "Madara",
-  "status": "rule",
-  "system": "Own",
-  "note": "22 mentions of \"comment\""
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.shojoscans",
-  "name": "Violet Scans",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://violetmanga.com",
-  "sources": [
-   "9079184529211162476"
-  ],
-  "theme": "MangaThemesia",
-  "status": "rule",
-  "system": "Own",
-  "note": "765 mentions of \"comment\""
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.yaoiscanme",
-  "name": "YaoiScan (Unoriginal)",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://yaoiscan.me",
-  "sources": [
-   "2975409305226490397"
-  ],
-  "theme": null,
-  "status": "rule",
-  "system": "Own",
-  "note": "/api/comment/"
- },
- {
   "pkg": "eu.kanade.tachiyomi.extension.en.zazamanga",
   "name": "Zazamanga",
   "lang": "en",
@@ -4911,21 +4930,7 @@
   "theme": "Madara",
   "status": "rule",
   "system": "Own",
-  "note": "29 mentions of \"comment\""
- },
- {
-  "pkg": "eu.kanade.tachiyomi.extension.en.zinmanganet",
-  "name": "Zinmanga.net",
-  "lang": "en",
-  "nsfw": false,
-  "home": "https://www.zinmanga.net",
-  "sources": [
-   "1987105317893699901"
-  ],
-  "theme": "Madara",
-  "status": "rule",
-  "system": "Own",
-  "note": "88 mentions of \"comment\""
+  "note": "Checked: QQ Comment Service, but its list API refuses (405)"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.es.apollcomics",
@@ -14636,6 +14641,19 @@
   "status": "none"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.kaliscanorg",
+  "name": "KaliScan.org (unoriginal)",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://kaliscan.org",
+  "sources": [
+   "5815628626283130746"
+  ],
+  "theme": "Madara",
+  "status": "none",
+  "note": "checked by hand"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.kaynscans",
   "name": "Kayn Scans",
   "lang": "en",
@@ -14948,6 +14966,19 @@
   "status": "none"
  },
  {
+  "pkg": "eu.kanade.tachiyomi.extension.en.azuki",
+  "name": "Omoi",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://www.omoi.com",
+  "sources": [
+   "8195282477201261072"
+  ],
+  "theme": null,
+  "status": "none",
+  "note": "checked by hand"
+ },
+ {
   "pkg": "eu.kanade.tachiyomi.extension.en.onepunchmanonline",
   "name": "One Punch Man Online",
   "lang": "en",
@@ -14970,6 +15001,19 @@
   ],
   "theme": null,
   "status": "none"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.qiscans",
+  "name": "Qi Scans",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://qimanga.com",
+  "sources": [
+   "5806040666300479660"
+  ],
+  "theme": null,
+  "status": "none",
+  "note": "checked by hand"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.readattackontitanshingekinokyojinmanga",
@@ -15174,6 +15218,19 @@
   ],
   "theme": "Next.js",
   "status": "none"
+ },
+ {
+  "pkg": "eu.kanade.tachiyomi.extension.en.toonizy",
+  "name": "Toonizy",
+  "lang": "en",
+  "nsfw": false,
+  "home": "https://toonizy.com",
+  "sources": [
+   "5404499323728358840"
+  ],
+  "theme": "Madara",
+  "status": "none",
+  "note": "checked by hand"
  },
  {
   "pkg": "eu.kanade.tachiyomi.extension.en.toonz",

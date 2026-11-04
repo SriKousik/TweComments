@@ -46,16 +46,27 @@ Rows tested by hand are kept in `MANUAL` in `tools/checklist.py`; add a site the
 
 ## Sites with rules
 
-| Site | Extension | Read | Replies | Like / comment / reply |
+See [CHECKLIST.md](CHECKLIST.md) for every extension. Rules written so far:
+
+| Rule | Sites | Read | Replies | Like / comment / reply |
 |---|---|---|---|---|
-| MangaRead.org | en.mangareadorg | ✅ wpDiscuz | ✅ View replies | ✅ (WordPress sign-in) |
-| MangaGeko | en.mangarawclub | ✅ API | ✅ | ✅ (site sign-in) |
-| Asura Scans | en.asurascans | ✅ API (+ GIFs) | ✅ nested | read only |
-| MangaDex | all.mangadex | ✅ forum threads | quotes inline | read only |
-| Weeb Central | en.weebcentral | ✅ | — | read only |
-| MangaKatana | en.mangakatana | ✅ API | ✅ | read only |
-| Any wpDiscuz site | (recognised on the page) | ✅ | ✅ | ✅ |
-| Any Disqus / WordPress site | (recognised on the page) | ✅ | ✅ | read only |
+| madara-wpdiscuz | MangaRead.org | ✅ | ✅ View replies | ⏳ (WordPress sign-in) |
+| mangageko | MangaGeko | ✅ | ✅ | ⏳ (site sign-in) |
+| asura | Asura Scans | ✅ (+ GIFs) | ✅ | — |
+| mangadex | MangaDex | ✅ forum | quotes | — |
+| weebcentral | Weeb Central | ✅ | — | — |
+| mangakatana | MangaKatana | ✅ | ✅ | — |
+| zmio | Asmodeus Scans, Siren Scans | ✅ | ✅ | — |
+| qq-comments | Mangabat, Mangakakalot, Kun Manga, Zinmanga | ✅ | ✅ | ⏳ like, reply |
+| comicfury | Comic Fury | ✅ | — | — |
+| saymanhwa | SayManhwa | ✅ | — | — |
+| global: wpdiscuz | any wpDiscuz site | ✅ | ✅ | ⏳ |
+| global: disqus | any Disqus site | ✅ | ✅ | — |
+| global: wordpress | any WordPress comments | ✅ | ✅ | — |
+| global: mcs | Manga Comments System sites (Violet Scans…) | ✅ | ✅ | — |
+| global: comment-body-articles | YaoiScan and its platform | ✅ | — | — |
+
+⏳ written from the site's own requests; needs a signed-in check to mark ✅.
 
 ## Matching order
 
@@ -179,7 +190,7 @@ For comment systems Twe can't read (Facebook's plugin): the reader sees `message
 
 Sent from the site's own page in Twe's hidden web view, so your sign-in there (in WebView) and
 its cookies go with them. Templates can use `{id}` (the comment), `{text}`, `{spoiler}`
-(`true`/`false`), `{cookie:name}` (a cookie's value, e.g. a CSRF token) and the rule's values.
+(`true`/`false`), `{cookie:name}` (a cookie's value, e.g. a CSRF token), `{js:path}` (a page script value), `{meta:name}` (a meta tag's content) and the rule's values.
 
 ```json
 "actions": {

@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "name": "QQ Comment Service",
+  "rules": [
+    {
+      "id": "qq-comments",
+      "name": "QQ Comment Service",
+      "type": "api",
+      "vars": {
+        "model": {
+          "from": "fetch",
+          "regex": "id=\"comment-wrapper\"\\s+data-model=\"([^\"]+)\""
+        },
+        "modelId": {
+          "from": "fetch",
+          "regex": "id=\"comment-wrapper\"\\s+data-model=\"[^\"]+\"\\s+data-id=\"(\\d+)\""
+        }
+      },
+      "api": {
+        "url": "{origin}/api/comments/list?commentable_type={model}&commentable_id={modelId}&page={page}&direction=desc",
+        "headers": {
+          "X-Requested-With": "XMLHttpRequest",
+          "Accept": "application/json"
+        },
+        "list": "comments",
+        "id": "id",
+        "author": "commenter.name",
+        "avatar": "commenter.avata",
+        "text": "content",
+        "html": true,
+        "time": "created_at",
+        "likes": "like_count",
+        "children": "children",
+        "hasMore": "pagination.has_more_pages"
+      },
+      "actions": {
+        "loggedOut": "Unauthenticated",
+        "like": {
+          "url": "{origin}/api/comments/{id}/react",
+          "method": "PUT",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "X-Requested-With": "XMLHttpRequest",
+            "Accept": "application/json"
+          },
+          "body": "action=react&react_type=like&_token={meta:csrf-token}"
+        },
+        "dislike": {
+          "url": "{origin}/api/comments/{id}/react",
+          "method": "PUT",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "X-Requested-With": "XMLHttpRequest",
+            "Accept": "application/json"
+          },
+          "body": "action=react&react_type=dislike&_token={meta:csrf-token}"
+        },
+        "reply": {
+          "url": "{origin}/api/comments/{id}/reply",
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "X-Requested-With": "XMLHttpRequest",
+            "Accept": "application/json"
+          },
+          "body": "content={text}&_token={meta:csrf-token}"
+        }
+      }
+    }
+  ]
+}

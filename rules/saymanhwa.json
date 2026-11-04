@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "name": "SayManhwa",
+  "rules": [
+    {
+      "id": "saymanhwa",
+      "name": "SayManhwa",
+      "type": "page",
+      "page": {
+        "item": "article.comment-item",
+        "author": ".user-name",
+        "time": "time",
+        "text": ".comment-body"
+      }
+    }
+  ]
+}

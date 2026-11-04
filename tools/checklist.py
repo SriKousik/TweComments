@@ -33,7 +33,55 @@ MANUAL = {
                                                          comment="-", login="-", status="complete", note="title and chapter"),
     "eu.kanade.tachiyomi.extension.en.mangakatana": dict(system="Own API", rule="mangakatana", read="yes", replies="yes",
                                                          like="-", comment="-", login="-", status="complete", note="71 comments read"),
+    # English pass (2026-11-04): platforms checked and ruled.
+    "eu.kanade.tachiyomi.extension.en.asmotoon": dict(system="zmio", rule="zmio", read="yes", replies="yes", like="-", comment="-",
+                                                      login="-", status="complete", note="zmio API; 2 comments read on a sample"),
+    "eu.kanade.tachiyomi.extension.en.sirenscans": dict(system="zmio", rule="zmio", read="yes", replies="yes", like="-", comment="-",
+                                                        login="-", status="works", note="same zmio setup as Asmodeus"),
+    "eu.kanade.tachiyomi.extension.en.mangabat": dict(system="QQ Comment Service", rule="qq-comments", read="yes", replies="yes",
+                                                      like="wait", comment="wait", login="Site", status="works", note="API read; like/reply written"),
+    "eu.kanade.tachiyomi.extension.en.mangakakalot": dict(system="QQ Comment Service", rule="qq-comments", read="yes", replies="yes",
+                                                          like="wait", comment="wait", login="Site", status="works", note="API answers"),
+    "eu.kanade.tachiyomi.extension.en.kunmangaonline": dict(system="QQ Comment Service", rule="qq-comments", read="yes", replies="yes",
+                                                            like="wait", comment="wait", login="Site", status="works", note="API answers"),
+    "eu.kanade.tachiyomi.extension.en.zinmanganet": dict(system="QQ Comment Service", rule="qq-comments", read="yes", replies="yes",
+                                                         like="wait", comment="wait", login="Site", status="works", note="API answers"),
+    "eu.kanade.tachiyomi.extension.all.comicfury": dict(system="Own (in page)", rule="comicfury", read="yes", replies="-", like="-",
+                                                        comment="-", login="-", status="complete", note="comments in the page"),
+    "eu.kanade.tachiyomi.extension.all.saymanhwa": dict(system="Own (in page)", rule="saymanhwa", read="yes", replies="-", like="-",
+                                                        comment="-", login="-", status="complete", note="comments in the page"),
+    "eu.kanade.tachiyomi.extension.en.shojoscans": dict(system="Manga Comments System", rule="global: mcs", read="yes", replies="yes",
+                                                        like="-", comment="-", login="-", status="complete", note="17 comments on a sample"),
+    "eu.kanade.tachiyomi.extension.en.yaoiscanme": dict(system="Article comments", rule="global: comment-body-articles", read="yes",
+                                                        replies="-", like="-", comment="-", login="-", status="complete",
+                                                        note="posting needs a guest name (not in Twe yet)"),
 }
+
+# Checked by hand: what's there and what a rule still needs.
+NOTES = {
+    "eu.kanade.tachiyomi.extension.en.zazamanga": "QQ Comment Service, but its list API refuses (405)",
+    "eu.kanade.tachiyomi.extension.en.manhwaonline": "Article comments platform (global rule); none on the sampled title",
+    "eu.kanade.tachiyomi.extension.en.myreadingcomic": "Article comments platform (global rule); none on the sampled title",
+    "eu.kanade.tachiyomi.extension.en.fourporncomic": "Article comments platform (global rule); none on the sampled title",
+    "eu.kanade.tachiyomi.extension.all.manga18me": "same /api/comment platform as ManhwaOnline (unconfirmed)",
+    "eu.kanade.tachiyomi.extension.all.mangadna": "same /api/comment platform as ManhwaOnline (unconfirmed)",
+    "eu.kanade.tachiyomi.extension.en.manga18club": "/api/comments (unconfirmed)",
+    "eu.kanade.tachiyomi.extension.en.aethonwebcomics": "WordPress REST: /wp-json/modfarm/v1/comments/{id}/batch",
+    "eu.kanade.tachiyomi.extension.en.otranslations": "Own API: /api/comments/v1",
+    "eu.kanade.tachiyomi.extension.en.artlapsa": "React discussion component (same as RitharScans, Kitsune Dawn)",
+    "eu.kanade.tachiyomi.extension.en.ritharscans": "React discussion component (same as Art Lapsa)",
+    "eu.kanade.tachiyomi.extension.en.kitsunedawn": "React discussion component (same as Art Lapsa)",
+    "eu.kanade.tachiyomi.extension.en.aquamanga": "Manga Comments Pro WordPress plugin",
+    "eu.kanade.tachiyomi.extension.en.kensscan": "Own WordPress plugin (kensscan-comments)",
+    "eu.kanade.tachiyomi.extension.en.coffeemangaunoriginal": "Comments behind a sign-in gate",
+    "eu.kanade.tachiyomi.extension.en.swordscomic": "Discourse embed",
+    "eu.kanade.tachiyomi.extension.en.manhwaz": "Astro CommentPanel",
+    "eu.kanade.tachiyomi.extension.en.kaliscansorg": "Loaded by script (getComments)",
+    "eu.kanade.tachiyomi.extension.en.mangamob": "Loaded by script",
+}
+
+# Flagged by the survey, but checked: no comment section.
+NO_COMMENTS = {"Toonizy", "KaliScan.org (unoriginal)", "Qi Scans", "Omoi"}
 
 OTHER_SYSTEMS = {"Commento", "Remark42", "Cusdis", "Giscus", "Utterances", "Hyvor", "GraphComment", "Valine", "Twikoo"}
 
@@ -54,6 +102,8 @@ def classify(row):
     pkg = row["pkg"]
     if pkg in MANUAL:
         return dict(MANUAL[pkg])
+    if row.get("name") in NO_COMMENTS:
+        return dict(status="none", note="checked by hand")
     result = row.get("result")
     if result in ("unreachable", "no-site"):
         return dict(status="down", note=row.get("error", "")[:60])
@@ -88,6 +138,10 @@ def main():
     for row in rows:
         info = classify(row)
         entries.append({**{k: row.get(k) for k in ("pkg", "name", "lang", "nsfw", "home", "sources", "theme")}, **info})
+    for entry in entries:
+        if entry["pkg"] in NOTES and entry["status"] in ("rule", "check", "none"):
+            entry["status"] = "rule"
+            entry["note"] = "Checked: " + NOTES[entry["pkg"]]
     entries.sort(key=lambda e: (ORDER.index(e["status"]), e["lang"], e["name"].lower()))
     json.dump(entries, open(OUT_JSON, "w"), indent=1, ensure_ascii=False)
 

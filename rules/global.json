@@ -83,6 +83,36 @@
       }
     },
     {
+      "id": "mcs",
+      "name": "Manga Comments System",
+      "match": {
+        "detect": "li.mcs-comment"
+      },
+      "type": "page",
+      "page": {
+        "item": "li.mcs-comment",
+        "author": ".mcs-comment-author",
+        "time": "time.mcs-comment-date",
+        "text": ".mcs-comment-content-view",
+        "avatar": ".mcs-comment-avatar__img"
+      }
+    },
+    {
+      "id": "comment-body-articles",
+      "name": "Article comments",
+      "match": {
+        "detect": "article.comment-body[id^='div-comment-']"
+      },
+      "type": "page",
+      "page": {
+        "item": "article.comment-body[id^='div-comment-']",
+        "author": ".comment-author .fn",
+        "text": ".comment-content",
+        "time": ".comment-metadata",
+        "avatar": ".comment-avatar img"
+      }
+    },
+    {
       "id": "disqus",
       "name": "Disqus",
       "match": {
