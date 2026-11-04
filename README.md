@@ -45,6 +45,12 @@ python3 tools/checklist.py tools/survey.jsonl CHECKLIST.md checklist.json
 
 Rows tested by hand are kept in `MANUAL` in `tools/checklist.py`; add a site there when you confirm it.
 
+## Blocked sites
+
+Sites behind a Cloudflare check can't be surveyed by script. [BLOCKED-SITES.md](BLOCKED-SITES.md)
+says what Twe needs for them and how to collect what a rule needs with
+[`tools/collect.js`](tools/collect.js), pasted into the browser console on the site.
+
 ## Sites with rules
 
 See [CHECKLIST.md](CHECKLIST.md) for every extension. Rules written so far:
