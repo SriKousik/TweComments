@@ -71,7 +71,7 @@ batch is supported because cursor paging is not yet available in Twe's rule form
 
 ## All blocked sites
 
-Every extension whose site the survey couldn't read (814): behind a Cloudflare check, refusing scripts (403), or with no title page the survey could find from the home page. Check them in Twe, or collect a report for them (section 2). ✅ marks the ones that have a rule since.
+Every extension whose site the survey couldn't read (814): behind a Cloudflare check, refusing scripts (403), or with no title page the survey could find from the home page. Check them in Twe, or collect a report for them (section 2). The English table below records verified reads separately from unverified rules.
 
 | Reason | Count |
 |---|---|
@@ -81,10 +81,12 @@ Every extension whose site the survey couldn't read (814): behind a Cloudflare c
 
 ### English (189)
 
+**English audit:** 189 checked · 37 verified reads · 38 configured/unverified · 23 access/API failures · 2 loader limitations · 89 with no initialized widget in samples or unresolved discovery.
+
 This pass checks English entries only. ✅ means a live API or downloaded/rendered comment
 sample was read and the rule's fields were checked. It does not claim an iOS device or
-signed-in action test. 🟡 means a rule is linked but the sampled thread is empty or still
-needs a read check. ⛔ means access or the upstream comment service failed. 🔎 entries
+signed-in action test. 🟡 marks an unverified rule or discussion system; the sampled thread is empty or still
+needs a usable mapping/read check. ⚠️ marks a loader limitation with a WebView fallback. ⛔ means access or the upstream comment service failed. 🔎 entries
 still need title discovery or a custom rule; they are not marked working.
 
 Progress is saved in [`tools/blocked-english-status.json`](tools/blocked-english-status.json)
@@ -94,192 +96,192 @@ Raw pages and response bodies stay in `/tmp/twe-blocked-english`; cookies are no
 | Extension | Site | Original reason | Rule | Latest check |
 |---|---|---|---|---|
 | 1Manga.co | https://1manga.co | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved · [sample](https://1manga.co/manga/mao) |
-| 8Muses 🔞 | https://comics.8muses.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| AllManga | https://mkissa.to | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| AllPornComic 🔞 | https://allporncomic.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Alpha Manga | https://www.alpha-manga.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Arc-Relight | https://arc-relight.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Arknights Comics | https://arknights.global | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Athrea Scans | https://athreascans.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Atsumaru | https://atsu.moe | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Bakkin | https://bakkin.moe/reader/ | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| BatCave | https://batcave.biz | 403 Forbidden |  | ⛔ Still blocked after service retry |
-| Bbato | https://bato1.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| BookWalker | https://bookwalker.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Borat Scans | https://boratscans.com | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| BrainRotComics | https://brainrotcomics.com | 403 Forbidden |  | ⛔ Request failed; unresolved |
-| CartoonPorn 🔞 | https://cartoonporn.to | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Clone Manga | https://manga.clone-army.org | No title page found |  | 🔎 Widget found; rule/read verification pending |
-| CManhua | https://cmanhua.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| 8Muses 🔞 | https://comics.8muses.com | No title page found |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://comics.8muses.com/porn) |
+| AllManga | https://mkissa.to | No title page found |  | ⛔ Browser could not stabilize after retries; no comment read verified · [sample](https://mkissa.to/manga) |
+| AllPornComic 🔞 | https://allporncomic.com | Cloudflare |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://allporncomic.com/series/ben-10e/) |
+| Alpha Manga | https://www.alpha-manga.com | No title page found |  | 🔎 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://www.alpha-manga.com/manga/44000215) |
+| Arc-Relight | https://arc-relight.com | No title page found |  | 🔎 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://arc-relight.com/reader/babel/) |
+| Arknights Comics | https://arknights.global | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://arknights.global/) |
+| Athrea Scans | https://athreascans.com | Cloudflare | [wordpress](rules/wordpress.json) | 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified · [sample](https://athreascans.com/manga/burn/) |
+| Atsumaru | https://atsu.moe | No title page found | [atsu](rules/atsu.json) | ✅ Working: 7 comments via v2 API; nested replies mapped; first batch only; custom media/avatars not mapped · [sample](https://atsu.moe/manga/-tya) |
+| Bakkin | https://bakkin.moe/reader/ | No title page found |  | 🔎 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://bakkin.moe/reader/) |
+| BatCave | https://batcave.biz | 403 Forbidden |  | ⛔ Access failed after direct and running-service attempts; no readable discussion verified · [sample](https://batcave.biz) |
+| Bbato | https://bato1.com | No title page found |  | 🔎 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://bato1.com/home) |
+| BookWalker | https://bookwalker.com | Cloudflare |  | 🔎 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://bookwalker.com/series/21A94B5XYR80/one-piece) |
+| Borat Scans | https://boratscans.com | 403 Forbidden | [wordpress](rules/wordpress.json) | 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified · [sample](https://boratscans.com/manga/axe-god-the-road-to-invincibility/) |
+| BrainRotComics | https://brainrotcomics.com | 403 Forbidden |  | ⛔ Access failed after direct and running-service attempts; no readable discussion verified · [sample](https://brainrotcomics.com) |
+| CartoonPorn 🔞 | https://cartoonporn.to | Cloudflare |  | 🔎 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://cartoonporn.to/porncomic/the-improbables-the-incredibles-jabcomix-animated/chapter-1/#1) |
+| Clone Manga | https://manga.clone-army.org | No title page found | [clonemanga-disqus](rules/clonemanga-disqus.json) | 🟡 Disqus forum/identifier confirmed in browser; sampled thread is empty · [sample](https://manga.clone-army.org/world_tour.php) |
+| CManhua | https://cmanhua.com | Cloudflare | [cmanhua](rules/cmanhua.json) | 🟡 Comment selectors confirmed in site stylesheet; sampled server-rendered discussion has no comments · [sample](https://cmanhua.com/comic/fangsi) |
 | Cocomic | https://cocomic.co | Cloudflare | [wordpress](rules/wordpress.json) | ✅ Working: 1 comments; author/text selectors verified · [sample](https://cocomic.co/manga/open-the-door/) |
-| Collected Curios | https://www.collectedcurios.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Comic Asura | https://comicasura.net | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| ComicHubFree | https://comichubfree.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| ComicLand | https://comicland.org | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Comix | https://comix.to | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
-| Coolmic | https://coolmic.me | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Cutie Comics 🔞 | https://cutiecomics.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Cyanide & Happiness | https://explosm.net | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| Collected Curios | https://www.collectedcurios.com | No title page found |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://www.collectedcurios.com/links.html) |
+| Comic Asura | https://comicasura.net | No title page found | [comicasura](rules/comicasura.json) | 🟡 QQ API rule linked with string chapter IDs and page count; sampled chapter thread empty · [sample](https://comicasura.net/manga/but-youre-2d/chapter-15) |
+| ComicHubFree | https://comichubfree.com | Cloudflare |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://cdn.bollywoodmenswear.com/tml/wheelPink_IOS_IDN.html?v=2608271415-3#/?pid=20380&d.algId=43&dtype=1&uid=cc336d42-23f6-4837-a3ce-77dd465da562&os=1&lang=en-US&d.pext=29868975&reqId=9c2e037ae0194cd4832b89189b2e4512&d.pst=1&d.adPlat=1&appk=dAGjIcTOAsmLGIVmtxe2cj6QbpdIjp15&d.pubCatId=56&d.mltype=0&jsv=2610261646&brd=1_2611031733&d.rankab=3&did=cc336d42-23f6-4837-a3ce-77dd465da562&d.ptkid=72b97e9db85c9ef3a881c47e16054195&tid=10508) |
+| ComicLand | https://comicland.org | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://comicland.org/) |
+| Comix | https://comix.to | Cloudflare | [comix](rules/comix.json) | ✅ Working: 28 rendered comments/replies; 14 contain images; Load more selector verified; only rendered reply batches · [sample](https://comix.to/title/zgk6j-unbeknownst-to-me-i-am-secretly-dating-the-emperor) |
+| Coolmic | https://coolmic.me | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://coolmic.me/) |
+| Cutie Comics 🔞 | https://cutiecomics.com | Cloudflare |  | ⛔ Browser could not stabilize after retries; no comment read verified · [sample](https://cutiecomics.com/22954-secret-fan-meeting.html) |
+| Cyanide & Happiness | https://explosm.net | No title page found |  | 🔎 6 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://explosm.net/comics/dancer) |
 | Dark Legacy Comics | https://www.darklegacycomics.com | No title page found | [darklegacy-vuukle](rules/darklegacy-vuukle.json) | ✅ Working: 9 comments via Vuukle; HTML images and nested replies mapped; first batch only · [sample](https://www.darklegacycomics.com/1) |
-| Darths & Droids | https://www.darthsanddroids.net | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Digital Comic Museum | https://digitalcomicmuseum.com | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Diva Scans | https://divascans.org | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Doujin.io - J18 🔞 | https://doujin.io | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| DragonTea | https://dragontea.ink | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Eggporncomics 🔞 | https://eggporncomics.com | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
-| Elan School | https://elan.school | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| emaqi | https://emaqi.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Eris Scans | https://erisscans.com | Cloudflare |  | 🔎 Widget found; rule/read verification pending |
-| Ero18x 🔞 | https://ero18x.com | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Erofus 🔞 | https://www.erofus.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Flame Comics | https://flamecomics.xyz | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| GEDE Comix 🔞 | https://gedecomix.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| GingeRTooN 🔞 | https://gingertoon.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| GirlsTop 🔞 | https://en.girlstop.info | No title page found | [girlstop](rules/girlstop.json) | ✅ Working: 8 comments; author/text selectors verified · [sample](https://me.girlstop.info/psto.php?id=256520) |
-| Goda | https://manhuascans.org | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| Darths & Droids | https://www.darthsanddroids.net | No title page found |  | 🔎 3 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://www.darthsanddroids.net/rss.html) |
+| Digital Comic Museum | https://digitalcomicmuseum.com | 403 Forbidden | [digitalcomicmuseum](rules/digitalcomicmuseum.json) | ⛔ WebView required: 2 public comments found, but each spans three sibling table rows; current rule format cannot preserve author/date grouping · [sample](https://digitalcomicmuseum.com/index.php?dlid=4) |
+| Diva Scans | https://divascans.org | Cloudflare | [diva-valir](rules/diva-valir.json) | ✅ Working: 2 title / 13 chapter comments; HTML, spoilers, paging and reply API mapped · [sample](https://divascans.org/series/comic/slave-diary) |
+| Doujin.io - J18 🔞 | https://doujin.io | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://doujin.io/) |
+| DragonTea | https://dragontea.ink | 403 Forbidden |  | 🟡 Load Comments link found; no initialized discussion or successful comment read observed · [sample](https://dragontea.ink/novel/wheel-world/) |
+| Eggporncomics 🔞 | https://eggporncomics.com | Cloudflare |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://eggporncomics.com/) |
+| Elan School | https://elan.school | No title page found | [wordpress](rules/wordpress.json) | 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified · [sample](https://elan.school/fr/) |
+| emaqi | https://emaqi.com | No title page found |  | 🔎 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://emaqi.com/forbidden) |
+| Eris Scans | https://erisscans.com | Cloudflare | [zmio-raw-path](rules/zmio-raw-path.json) | 🟡 Raw-path zmio variant linked; post resolved; sampled thread has no comments · [sample](https://erisscans.com/series/65f60a50e76/) |
+| Ero18x 🔞 | https://ero18x.com | 403 Forbidden |  | 🔎 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://ero18x.com/manga/subzero/) |
+| Erofus 🔞 | https://www.erofus.com | Cloudflare |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://www.erofus.com/comics/zzz-comics) |
+| Flame Comics | https://flamecomics.xyz | Cloudflare | [flamecomics](rules/flamecomics.json) | ✅ Working: 11 comments and 1 reply via API; HTML images mapped; first batch only · [sample](https://flamecomics.xyz/series/24) |
+| GEDE Comix 🔞 | https://gedecomix.com | Cloudflare |  | 🔎 6 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://gedecomix.com/porn-comics/) |
+| GingeRTooN 🔞 | https://gingertoon.com | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://gingertoon.com/) |
+| GirlsTop 🔞 | https://en.girlstop.info | No title page found | [girlstop](rules/girlstop.json) | ✅ Working: 10 comments read by Twe's actual extractor; 1 with images · [sample](https://me.girlstop.info/psto.php?id=256520) |
+| Goda | https://manhuascans.org | Cloudflare |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://manhuascans.org/manga/1-second) |
 | Gourmet Scans | https://gourmetsupremacy.com | Cloudflare | [madara-wpdiscuz](rules/madara-wpdiscuz.json) | ✅ Working: 15 comments; author/text selectors verified · [sample](https://gourmetsupremacy.com/project/lb/) |
-| Gunnerkrigg Court | https://www.gunnerkrigg.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Hades Scans | https://hadesscans.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Hentai4Free 🔞 | https://hentai4free.net | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| HentaiFC 🔞 | https://hentaifc.com | No title page found |  | 🔎 Widget found; rule/read verification pending |
-| HentaiHere 🔞 | https://hentaihere.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| HentaiKun 🔞 | https://hentaikun.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| HentaiNexus 🔞 | https://hentainexus.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| HentaiRead 🔞 | https://hentairead.com | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| HentaiSco 🔞 | https://hentaisco.cc | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| HentaiTnT 🔞 | https://hentaitnt.net | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Hiperdex | https://hiperdex.tv | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
+| Gunnerkrigg Court | https://www.gunnerkrigg.com | No title page found |  | 🟡 Latest ?comments=1 page says comments not approved yet; older page samples had no discussion markup · [sample](https://www.gunnerkrigg.com/cast/) |
+| Hades Scans | https://hadesscans.com | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://hadesscans.com/) |
+| Hentai4Free 🔞 | https://hentai4free.net | Cloudflare |  | ⛔ Browser could not stabilize after retries; no comment read verified · [sample](https://hentai4free.net/bondage-manga/) |
+| HentaiFC 🔞 | https://hentaifc.com | No title page found |  | 🟡 Disqus placeholder found, but no forum/thread initialization observed; rule needs a usable embed configuration · [sample](https://hentaifc.com/e/90580) |
+| HentaiHere 🔞 | https://hentaihere.com | No title page found | [hentaihere](rules/hentaihere.json) | 🟡 HTML comment-feed URL mapped from source; sampled feed empty; first batch and field guesses need a nonempty fixture · [sample](https://hentaihere.com/reader/71744-3-gal-choukyokon-otaku-kun-no-nakadashi-sex-de-meromero-ni-sarechau-gal-3-nin-gu/115049/page-1) |
+| HentaiKun 🔞 | https://hentaikun.com | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://hentaikun.com/) |
+| HentaiNexus 🔞 | https://hentainexus.com | No title page found |  | 🔎 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://hentainexus.com/view/22364) |
+| HentaiRead 🔞 | https://hentairead.com | 403 Forbidden |  | 🟡 React MangaComments widget found; sampled title has 0 comments; endpoint mapping remains unresolved · [sample](https://hentairead.com/hentai/ntreport/) |
+| HentaiSco 🔞 | https://hentaisco.cc | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://hentaisco.cc/) |
+| HentaiTnT 🔞 | https://hentaitnt.net | No title page found | [hentaitnt](rules/hentaitnt.json) | 🟡 Review-page redirect linked; sampled book and community page empty; reading still unverified · [sample](https://hentaitnt.net/love-quest.html) |
+| Hiperdex | https://hiperdex.tv | No title page found | [hiperdex](rules/hiperdex.json) | ✅ Working: native extractor reads 1 image-only comment; rendered batch only · [sample](https://hiperdex.tv/manga/naked-life) |
 | Hive Scans | https://hivetoons.org | Cloudflare |  | ⛔ Disqus forum hiiv returned load error (code 15); not working · [sample](https://hivetoons.org/series/lookism) |
 | HotComics 🔞 | https://hotcomics.io | 403 Forbidden |  | ⛔ Cusdis comment service returned HTTP 502; rule cannot be verified · [sample](https://hotcomics.io/en/bad-guy/cIHiI5CC.html) |
-| ILikeComix 🔞 | https://ilikecomix.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| InfinityScans | https://infinityscans.org | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
-| J-Novel | https://j-novel.club | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| ILikeComix 🔞 | https://ilikecomix.com | Cloudflare |  | 🔎 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://ilikecomix.com/manga/c/au-naturel-pegasus-smith/29-au-naturel-chapter-29/) |
+| InfinityScans | https://infinityscans.org | Cloudflare |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://infinityscans.org/) |
+| J-Novel | https://j-novel.club | Cloudflare | [jnovel-forum](rules/jnovel-forum.json) | ✅ Working: 20 posts per page; pages 1 and 2 verified (86 total); linked series forum only, chapter links not found · [sample](https://j-novel.club/series/slayers) |
 | Kaizen Scan 🔞 | https://kaizenscan.com | 403 Forbidden | [zmio](rules/zmio.json) | ✅ Working: 1 comment via existing zmio API rule · [sample](https://kaizenscan.com/hwan) |
-| Kappa Beast | https://kappabeast.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
+| Kappa Beast | https://kappabeast.com | No title page found |  | 🟡 Client defines series/chapter comment APIs; public catalogue did not provide a verifiable thread ID · [sample](https://kappabeast.com/series/taimashi-tensei) |
 | KingComiX 🔞 | https://kingcomix.com | Cloudflare | [madara-wpdiscuz](rules/madara-wpdiscuz.json) | 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments · [sample](https://kingcomix.com/redacted-yazen/) |
 | Kissmanga.in | https://kissmanga.in | 403 Forbidden | [madara-wpdiscuz](rules/madara-wpdiscuz.json) | ✅ Working: 3 comments read with wpDiscuz selectors · [sample](https://kissmanga.in/kissmanga/fog-land/) |
-| Komix | https://komix.to | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
+| Komix | https://komix.to | Cloudflare |  | ⛔ Browser could not stabilize after retries; no comment read verified · [sample](https://komix.to) |
 | Lagoon Scans | https://lagoonscans.com | Cloudflare | [madara-wpdiscuz](rules/madara-wpdiscuz.json) | 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments · [sample](https://lagoonscans.com/manga/eleceed/) |
-| Leslie&Victims | https://leslie-victims.pages.dev | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Lgbtics 🔞 | https://lgbtics.com | 403 Forbidden |  | ⛔ Request failed; unresolved |
-| LHTranslation | https://lhtranslation.net | Cloudflare | [wordpress](rules/wordpress.json) | ✅ Working: 39 comments read; author/text selectors verified · [sample](https://lhtranslation.net/manga/the-new-gate/) |
-| Lily Manga | https://lilymanga.net | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| LinkManga | https://linkmanga.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Loading Artist | https://loadingartist.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| LoLoBun | https://www.lolobun.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Lua Scans | https://luacomic.org | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| Leslie&Victims | https://leslie-victims.pages.dev | No title page found |  | 🟡 Firebase discussion UI found; title/thread identifiers were not resolved from the sampled page · [sample](https://leslie-victims.pages.dev/) |
+| Lgbtics 🔞 | https://lgbtics.com | 403 Forbidden |  | ⛔ Access failed after direct and running-service attempts; no readable discussion verified · [sample](https://lgbtics.com) |
+| LHTranslation | https://lhtranslation.net | Cloudflare | [wordpress](rules/wordpress.json) | ✅ Working: 38 comments read by Twe's actual extractor · [sample](https://lhtranslation.net/manga/the-new-gate/) |
+| Lily Manga | https://lilymanga.net | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://lilymanga.net/) |
+| LinkManga | https://linkmanga.com | Cloudflare | [wordpress](rules/wordpress.json) | 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified · [sample](https://linkmanga.com/manga/hyouka/) |
+| Loading Artist | https://loadingartist.com | No title page found |  | ⛔ Public Reddit JSON returned HTTP 403; native discussion read unavailable at this check · [sample](https://loadingartist.com/comic/downtime/) |
+| LoLoBun | https://www.lolobun.com | No title page found | [lolobun](rules/lolobun.json) | ✅ Working: 2 comic comments via zero-based API; first 20 roots; replies/avatars need loader support · [sample](https://www.lolobun.com/c/20106) |
+| Lua Scans | https://luacomic.org | Cloudflare |  | 🟡 Series comments accordion found; no comment read response or nonempty comment markup observed · [sample](https://luacomic.org/series/frost) |
 | Luminare Translations | https://luminaretranslations.com | Cloudflare | [luminare](rules/luminare.json) | 🟡 API rule linked; two sampled series returned empty threads; first batch only · [sample](https://luminaretranslations.com/series/sherlock-academy/) |
 | Luna Toons | https://lunatoons.net | 403 Forbidden | [zmio](rules/zmio.json) | 🟡 zmio rule linked; post resolved, sampled API thread has no comments · [sample](https://lunatoons.net/lust) |
-| MadaraDex | https://madaradex.org | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| MadaraDex | https://madaradex.org | Cloudflare |  | 🔎 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://madaradex.org/title/love-cheer/) |
 | Magus Manga | https://magustoon.org | 403 Forbidden |  | ⛔ Disqus forum magusmanga-3 returned load error (code 15); not working · [sample](https://magustoon.org/series/peach-heart) |
 | Manga 18x 🔞 | https://manga18x.net | Cloudflare | [manga18x-disqus](rules/manga18x-disqus.json) | 🟡 Disqus rule linked; API confirms empty sampled thread · [sample](https://manga18x.net/manga/set-it/) |
 | Manga Demon | https://demonicscans.org | Cloudflare | [demonicscans](rules/demonicscans.json) | ✅ Working: 7 title / 2 chapter comments; 62 Eleceed roots and a 4-reply thread; first batch only; media markup not parsed · [sample](https://demonicscans.org/manga/Talker) |
 | Manga Drama 🔞 | https://mangadrama.com | Cloudflare | [mangadrama](rules/mangadrama.json) | ✅ Working: 3 comments; author/text selectors verified · [sample](https://mangadrama.com/manga/shark/) |
-| Manga-Bay | https://manga-bay.biz | 403 Forbidden |  | ⛔ Still blocked after service retry |
-| Manga.uno | https://manga.uno | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
-| MangaCloud | https://mangacloud.org | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
-| MangaDE | https://mangade.io | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| MangaDot | https://mangadot.net | 403 Forbidden | [mangadot](rules/mangadot.json) | ✅ Working: 4 comments; author/text selectors verified · [sample](https://mangadot.net/manga/41) |
-| MangaFox.fun | https://mangafox.fun | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved · [sample](https://mangafox.fun/manga/zipang) |
-| MangaHere.onl | https://mangahere.onl | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved · [sample](https://mangahere.onl/manga/zipang) |
+| Manga-Bay | https://manga-bay.biz | 403 Forbidden |  | ⛔ Access failed after direct and running-service attempts; no readable discussion verified · [sample](https://manga-bay.biz) |
+| Manga.uno | https://manga.uno | Cloudflare |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://manga.uno/) |
+| MangaCloud | https://mangacloud.org | Cloudflare |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://mangacloud.org/) |
+| MangaDE | https://mangade.io | No title page found |  | 🔎 3 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://mangade.io/home) |
+| MangaDot | https://mangadot.net | 403 Forbidden | [mangadot](rules/mangadot.json) | ✅ Working: 8 comments read by Twe's actual extractor · [sample](https://mangadot.net/manga/41) |
+| MangaFox.fun | https://mangafox.fun | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty · [sample](https://mangafox.fun/manga/zipang) |
+| MangaHere.onl | https://mangahere.onl | Cloudflare | [mangahub-remark42-canonical](rules/mangahub-remark42-canonical.json) | 🟡 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty · [sample](https://mangahere.onl/manga/zipang) |
 | MangaHub | https://mangahub.io | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | ✅ Working: 34 nondeleted One Piece comments via Remark42; flat reply parents and HTML images mapped · [sample](https://mangahub.io/manga/one-piece) |
-| MangaK | https://mangak.io | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Mangakakalot.fun | https://mangakakalot.fun | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved · [sample](https://mangakakalot.fun/manga/mao) |
-| MangaLix | https://mangalix.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| MangaMelon | https://mangamelon.com | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
-| MangaNel | https://manganel.me | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved · [sample](https://manganel.me/manga/wee) |
-| MangaNow | https://manganow.to | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| MangaOnline.fun | https://mangaonline.fun | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved · [sample](https://mangaonline.fun/manga/wee) |
-| MangaOwl.io (unoriginal) | https://mangaowl.io | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| MangaPanda.onl | https://mangapanda.onl | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved · [sample](https://mangapanda.onl/manga/zipang) |
-| MangaPark.tv (unoriginal) 🔞 | https://mangapark.tv | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| MangaReader.site | https://mangareader.site | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved · [sample](https://mangareader.site/manga/zipang) |
-| MangaToday | https://mangatoday.fun | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved · [sample](https://mangatoday.fun/manga/wee) |
-| Manhua Plus | https://manhuaplus.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| MangaK | https://mangak.io | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://mangak.io/) |
+| Mangakakalot.fun | https://mangakakalot.fun | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty · [sample](https://mangakakalot.fun/manga/mao) |
+| MangaLix | https://mangalix.com | No title page found |  | 🔎 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://mangalix.com/manga/dandadan) |
+| MangaMelon | https://mangamelon.com | Cloudflare |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://mangamelon.com/) |
+| MangaNel | https://manganel.me | Cloudflare | [mangahub-remark42-canonical](rules/mangahub-remark42-canonical.json) | 🟡 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty · [sample](https://manganel.me/manga/wee) |
+| MangaNow | https://manganow.to | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://manganow.to/) |
+| MangaOnline.fun | https://mangaonline.fun | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty · [sample](https://mangaonline.fun/manga/wee) |
+| MangaOwl.io (unoriginal) | https://mangaowl.io | Cloudflare |  | 🟡 WordPress-style discussion found; sampled page has no comment items; mapping unverified · [sample](https://mangaowl.io/read-1/black-haze-2025/) |
+| MangaPanda.onl | https://mangapanda.onl | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty · [sample](https://mangapanda.onl/manga/zipang) |
+| MangaPark.tv (unoriginal) 🔞 | https://mangapark.tv | Cloudflare |  | 🔎 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://mangapark.tv/manhwa/desharow-mermaid/desharow-mermaid-chap-162/) |
+| MangaReader.site | https://mangareader.site | Cloudflare | [mangahub-remark42-canonical](rules/mangahub-remark42-canonical.json) | 🟡 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty · [sample](https://mangareader.site/manga/zipang) |
+| MangaToday | https://mangatoday.fun | Cloudflare | [mangahub-remark42-canonical](rules/mangahub-remark42-canonical.json) | 🟡 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty · [sample](https://mangatoday.fun/manga/wee) |
+| Manhua Plus | https://manhuaplus.com | Cloudflare |  | 🔎 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://manhuaplus.com/manga/apotheosis/) |
 | ManhuaHot | https://manhuahot.com | Cloudflare | [madara-wpdiscuz](rules/madara-wpdiscuz.json) | 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments · [sample](https://manhuahot.com/manga/whisper/) |
-| ManhuaTop | https://manhuatop.org | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| ManhuaUS | https://manhuaus.com | 403 Forbidden | [wordpress](rules/wordpress.json) | ✅ Working: 853 comments; author/text selectors verified · [sample](https://manhuaus.com/manga/magic-emperor-0/) |
-| Manhwa Comics 🔞 | https://manhwacomics.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Manhwa Reads | https://manhwareads.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Manhwa18.today 🔞 | https://www.manhwa18.today | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| ManhuaTop | https://manhuatop.org | Cloudflare | [manhuatop](rules/manhuatop.json) | ✅ Working: 20 rendered comments; images use page extraction; flat reply layout not nested · [sample](https://manhuatop.org/manhua/pick-me-up/) |
+| ManhuaUS | https://manhuaus.com | 403 Forbidden | [wordpress](rules/wordpress.json) | ✅ Working: 851 comments read by Twe's actual extractor · [sample](https://manhuaus.com/manga/magic-emperor-0/) |
+| Manhwa Comics 🔞 | https://manhwacomics.com | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://manhwacomics.com/) |
+| Manhwa Reads | https://manhwareads.com | Cloudflare |  | 🟡 Discussion count is 0; sampled title has no comment items; mapping unverified · [sample](https://manhwareads.com/manga/bleach/) |
+| Manhwa18.today 🔞 | https://www.manhwa18.today | 403 Forbidden | [wordpress](rules/wordpress.json) | 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified · [sample](https://www.manhwa18.today/manga/slave-code/) |
 | Manhwa68 🔞 | https://manhwa68.com | Cloudflare | [manhwa68-disqus](rules/manhwa68-disqus.json) | 🟡 Disqus rule linked; API confirms empty sampled thread · [sample](https://manhwa68.com/manga/set-it/) |
 | Manhwalike 🔞 | https://manhwalike.com | No title page found | [manhwalike-disqus](rules/manhwalike-disqus.json) | ✅ Working: 2 Disqus posts read · [sample](https://manhwalike.com/manga-queen-bee) |
 | ManhwaRead | https://manhwaread.com | 403 Forbidden | [madara-wpdiscuz](rules/madara-wpdiscuz.json) | ✅ Working: 67 comments read with wpDiscuz selectors · [sample](https://manhwaread.com/manhwa/queen-bee/) |
 | Manhwatop | https://manhwatop.com | Cloudflare | [wordpress](rules/wordpress.json) | ✅ Working: 1 comments read; author/text selectors verified · [sample](https://manhwatop.com/manga/pick-me-up/) |
-| ManhwaZone | https://manhwazone.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Megatokyo | https://megatokyo.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| MeiToon | https://meitoon.org | 403 Forbidden |  | ⛔ Request failed; unresolved |
-| Milftoon 🔞 | https://milftoon.xxx | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| MLBB Lore | https://play.mobilelegends.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Monochrome Custom | https://monochromecms.netlify.app | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Monochrome Scans | https://manga.d34d.one | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| MyAdultComics 🔞 | https://myadultcomics.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| MyHentaiComics 🔞 | https://myhentaicomics.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| MyHentaiGallery 🔞 | https://myhentaigallery.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| NineHentai 🔞 | https://9hentai.so | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Nortverse 🔞 | https://nortverse.com | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| NovelCrow 🔞 | https://novelcrow.com | 403 Forbidden |  | ⛔ Request failed; unresolved |
-| Oglaf 🔞 | https://www.oglaf.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| OneManga.info | https://onemanga.info | Cloudflare | [mangahub-remark42](rules/mangahub-remark42.json) | 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved · [sample](https://onemanga.info/manga/wee) |
-| Only The Best Hentai 🔞 | https://onlythebesthentai.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| oots | https://www.giantitp.com | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Patch Friday | https://patchfriday.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Philia Scans | https://philiascans.org | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| PornComix 🔞 | https://bestporncomix.com | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
-| PornhwaDB Reader 🔞 | https://pornhwareader.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Pornhwaz 🔞 | https://www.pornhwaz.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Questionable Content | https://www.questionablecontent.net | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
+| ManhwaZone | https://manhwazone.com | No title page found |  | 🔎 3 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://manhwazone.com/explore) |
+| Megatokyo | https://megatokyo.com | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://megatokyo.com/) |
+| MeiToon | https://meitoon.org | 403 Forbidden |  | ⛔ Access failed after direct and running-service attempts; no readable discussion verified · [sample](https://meitoon.org) |
+| Milftoon 🔞 | https://milftoon.xxx | Cloudflare |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://milftoon.xxx/comics/workout) |
+| MLBB Lore | https://play.mobilelegends.com | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://play.mobilelegends.com/) |
+| Monochrome Custom | https://monochromecms.netlify.app | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://monochromecms.netlify.app/) |
+| Monochrome Scans | https://manga.d34d.one | No title page found |  | 🔎 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://manga.d34d.one/manga/79141782-bc73-44fe-a1b2-eff842ca6123) |
+| MyAdultComics 🔞 | https://myadultcomics.com | No title page found |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://myadultcomics.com/read.php?i=1637) |
+| MyHentaiComics 🔞 | https://myhentaicomics.com | Cloudflare | [myhentai-comments](rules/myhentai-comments.json) | 🟡 API rule linked; Gallery/Page IDs parsed from source; sampled public thread empty; avatar URL needs loader support · [sample](https://myhentaicomics.com/gallery/thumbnails/64182) |
+| MyHentaiGallery 🔞 | https://myhentaigallery.com | Cloudflare | [myhentai-comments](rules/myhentai-comments.json) | 🟡 API rule linked; Gallery/Page IDs parsed from source; sampled public thread empty; avatar URL needs loader support · [sample](https://myhentaigallery.com/a/60602) |
+| NineHentai 🔞 | https://9hentai.so | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://9hentai.so/) |
+| Nortverse 🔞 | https://nortverse.com | 403 Forbidden | [nortverse](rules/nortverse.json) | ✅ Working: 16 rendered comments; images use page extraction · [sample](https://nortverse.com/comic/mansion-mystery-9/) |
+| NovelCrow 🔞 | https://novelcrow.com | 403 Forbidden |  | ⛔ Access failed after direct and running-service attempts; no readable discussion verified · [sample](https://novelcrow.com) |
+| Oglaf 🔞 | https://www.oglaf.com | No title page found |  | 🔎 3 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://www.oglaf.com/feeds/rss/) |
+| OneManga.info | https://onemanga.info | Cloudflare | [mangahub-remark42-canonical](rules/mangahub-remark42-canonical.json) | 🟡 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty · [sample](https://onemanga.info/manga/wee) |
+| Only The Best Hentai 🔞 | https://onlythebesthentai.com | Cloudflare |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://onlythebesthentai.com/anywhere-door/) |
+| oots | https://www.giantitp.com | 403 Forbidden |  | 🔎 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://www.giantitp.com/comics/oots.html) |
+| Patch Friday | https://patchfriday.com | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://patchfriday.com/) |
+| Philia Scans | https://philiascans.org | Cloudflare |  | 🟡 Reader review section found; sampled reviews empty; no verified comment mapping · [sample](https://philiascans.org/series/in-for-poison-in-for-love) |
+| PornComix 🔞 | https://bestporncomix.com | Cloudflare |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://bestporncomix.com/) |
+| PornhwaDB Reader 🔞 | https://pornhwareader.com | Cloudflare | [pornhwadb-reader](rules/pornhwadb-reader.json) | ✅ Working: 1 public series review; native extractor check recorded separately · [sample](https://pornhwareader.com/series/13/moby-dick) |
+| Pornhwaz 🔞 | https://www.pornhwaz.com | Cloudflare | [pornhwaz](rules/pornhwaz.json) | 🟡 Plugin selectors and reply toggle confirmed in assets; sampled thread has no comments; read still unverified · [sample](https://www.pornhwaz.com/webtoon/scumbag/) |
+| Questionable Content | https://www.questionablecontent.net | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://www.questionablecontent.net/) |
 | Rage Scans | https://ragescans.com | 403 Forbidden | [madara-wpdiscuz](rules/madara-wpdiscuz.json) | 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments · [sample](https://ragescans.com/manga/devil-ice/) |
 | Raven Scans | https://ravenscans.org | 403 Forbidden |  | ⛔ Disqus forum ravenscans returned load error (code 15); not working · [sample](https://ravenscans.org/manga/lookism/) |
-| Read Berserk Manga | https://readberserk.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Read Chainsaw Man Manga Online 🔞 | https://ww6.readchainsawman.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Read Comics Online | https://readcomicsonline.ru | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Read Fairy Tail & Edens Zero Manga Online | https://ww9.readfairytail.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Read Kingdom Manga Online | https://ww6.readkingdom.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Real Life Comics | https://reallifecomics.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Renascans | https://renascans.net | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| Read Berserk Manga | https://readberserk.com | Cloudflare | [comentario-webview](rules/comentario-webview.json) | ⚠️ Public API returns 12 comments, but author IDs require a dictionary join; native rules cannot map authors. WebView fallback provided · [sample](https://readberserk.com/chapter/berserk-the-motion-comic-episode-1-the-black-swordsman-part-1/) |
+| Read Chainsaw Man Manga Online 🔞 | https://ww6.readchainsawman.com | Cloudflare |  | ⛔ Comentario rejects the site origin (HTTP 403 domain verification); upstream configuration error · [sample](https://ww6.readchainsawman.com/chapter/look-back-chapter-1/) |
+| Read Comics Online | https://readcomicsonline.ru | 403 Forbidden |  | 🔎 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://readcomicsonline.ru/comic/2000-ad) |
+| Read Fairy Tail & Edens Zero Manga Online | https://ww9.readfairytail.com | Cloudflare |  | ⛔ Comentario rejects the site origin (HTTP 403 domain verification); upstream configuration error · [sample](https://ww9.readfairytail.com/chapter/heros-chapter-10.5/) |
+| Read Kingdom Manga Online | https://ww6.readkingdom.com | Cloudflare |  | ⛔ Comentario rejects the site origin (HTTP 403 domain verification); upstream configuration error · [sample](https://ww6.readkingdom.com/chapter/kingdom-history-spoilers-chapter-0/) |
+| Real Life Comics | https://reallifecomics.com | No title page found |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://reallifecomics.com/comic-mobile.php/?comic=title-1) |
+| Renascans | https://renascans.net | Cloudflare | [renascans](rules/renascans.json) | 🟡 Series API schema mapped from client; public sample empty; Markdown/spoiler formatting not parsed · [sample](https://renascans.net/manga/widower-osot9qro) |
 | Revival Scans 🔞 | https://www.revivalscans.com | Cloudflare | [revivalscans](rules/revivalscans.json) | 🟡 Series API rule linked; sampled thread is empty; chapter comments not verified · [sample](https://www.revivalscans.com/series/cctv) |
-| Rolia Scan | https://roliascan.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Rose Squad Scans 🔞 | https://rosesquadscans.aishiteru.org | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| S2Manga | https://s2read.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Sabrina Online | https://www.sabrina-online.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| SACACHISPA | https://sacachispa.site | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| ScansGG | https://scans.gg | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
+| Rolia Scan | https://roliascan.com | No title page found |  | 🔎 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://roliascan.com/home/) |
+| Rose Squad Scans 🔞 | https://rosesquadscans.aishiteru.org | No title page found |  | 🔎 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://rosesquadscans.aishiteru.org/wp-login.php?redirect_to=https%3A%2F%2Frosesquadscans.aishiteru.org%2F) |
+| S2Manga | https://s2read.com | Cloudflare | [wordpress](rules/wordpress.json) | ✅ Working: 1 chapter comment; native extractor check recorded separately · [sample](https://s2read.com/manga/ill-be-the-warriors-mother/chapter-95/) |
+| Sabrina Online | https://www.sabrina-online.com | No title page found |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://www.sabrina-online.com/links.html) |
+| SACACHISPA | https://sacachispa.site | No title page found |  | 🟡 Reader and dedicated discussion page checked; sampled chapter has 0 comments; item layout unverified · [sample](https://sacachispa.site/read/7adb4956-0be1-5c0c-bbac-2040fa91394e) |
+| ScansGG | https://scans.gg | Cloudflare |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://scans.gg/) |
 | Scythe Scans | https://scythescans.com | Cloudflare | [madara-wpdiscuz](rules/madara-wpdiscuz.json) | ✅ Working: 3 comments read with wpDiscuz selectors · [sample](https://scythescans.com/manga/the-shepherd-wizard/) |
-| Setsu Scans | https://setsuscans.com | 403 Forbidden |  | ⛔ Request failed; unresolved |
-| SilentQuill | https://silentquill.net | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
+| Setsu Scans | https://setsuscans.com | 403 Forbidden |  | ⛔ Access failed after direct and running-service attempts; no readable discussion verified · [sample](https://setsuscans.com) |
+| SilentQuill | https://silentquill.net | Cloudflare |  | 🟡 Comment component found; sampled series has no comments; item layout remains unverified · [sample](https://silentquill.net/series/the-monstrous-new-life-of-the-fallen-empires-recruit/) |
 | Snafu Comics | https://www.snafu-comics.com | No title page found | [snafucomic-disqus](rules/snafucomic-disqus.json) | ✅ Working: 50 Disqus posts read · [sample](https://www.snafu-comics.com/grimtales) |
-| Solar and Sundry | https://sas-api.fly.dev | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| SpyFakku 🔞 | https://hentalk.pw | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Sunshine Butterfly Scans 🔞 | https://wings.sbs | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| SUPER MEGA | https://www.supermegacomics.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Team Shadowi | https://www.team-shadowi.com | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Temple Scan 🔞 | https://templetoons.com | Cloudflare |  | 🔎 Home checked; title discovery needs follow-up |
-| The Blank 🔞 | https://theblank.net | 403 Forbidden |  | 🔎 Home checked; title discovery needs follow-up |
-| The Property of Hate | https://jolleycomics.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| ToonHey 🔞 | https://toonhey.com | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| Solar and Sundry | https://sas-api.fly.dev | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://sas-api.fly.dev/) |
+| SpyFakku 🔞 | https://hentalk.pw | Cloudflare |  | 🔎 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://hentalk.pw/g/18948) |
+| Sunshine Butterfly Scans 🔞 | https://wings.sbs | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://wings.sbs/) |
+| SUPER MEGA | https://www.supermegacomics.com | No title page found |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://www.supermegacomics.com/index.php) |
+| Team Shadowi | https://www.team-shadowi.com | 403 Forbidden | [teamshadowi](rules/teamshadowi.json) | ✅ Working: 3 root comments and 7 nested replies expanded; rendered images mapped · [sample](https://www.team-shadowi.com/read/first-love-trap/7) |
+| Temple Scan 🔞 | https://templetoons.com | Cloudflare |  | ⛔ Browser still shows an access challenge; no comment read verified · [sample](https://templetoons.com/challenge?redirect=%2F) |
+| The Blank 🔞 | https://theblank.net | 403 Forbidden |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://theblank.net/) |
+| The Property of Hate | https://jolleycomics.com | No title page found |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://jolleycomics.com/Art/) |
+| ToonHey 🔞 | https://toonhey.com | 403 Forbidden |  | 🔎 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://toonhey.com/en/) |
 | Toonily | https://toonily.com | Cloudflare | [toonily](rules/toonily.json) | ✅ Working: title and chapter API each returned 1 comment; offset paging mapped; rich media markup not parsed · [sample](https://toonily.com/serie/overgeared-86ba23b3/) |
-| Toonily.me 🔞 | https://toontop.io | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Toonkotsu | https://toonkotsu.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| Toonily.me 🔞 | https://toontop.io | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://toontop.io/) |
+| Toonkotsu | https://toonkotsu.com | Cloudflare | [toonkotsu](rules/toonkotsu.json) | ✅ Working: 1 series comment + 1 reply and 1 chapter comment via service browser; first 20 per feed; Markdown media not parsed · [sample](https://toonkotsu.com/title/qy17we-the-trashy-pd-has-to-survive-as-an-idol/4924511-chapter-66) |
 | TopManhua.net | https://topmanhua.net | Cloudflare | [topmanhuanet-disqus](rules/topmanhuanet-disqus.json) | ✅ Working: 1 Disqus posts read · [sample](https://topmanhua.net/manga/overgeared/) |
 | Tower Of God Manga Online | https://w82.thetowerofgod.com | Cloudflare |  | ⛔ Disqus forum towerofgod returned load error (code 15); not working · [sample](https://w85.thetowerofgod.com/manga/tower-of-god-chapter-9/) |
-| Valir Scans | https://valirscans.org | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| vgperson | https://vgperson.com | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Vision Haze | https://www.visionhaze.com | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| VIZ | https://www.viz.com | No title page found |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| Voyce.Me | https://www.voyce.me | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| VyvyManga | https://mangavyvy.net | 403 Forbidden |  | ⛔ Request failed; unresolved |
-| War For Rayuba | https://xrabohrok.github.io/WarMap/#/ | No title page found |  | 🔎 Home checked; title discovery needs follow-up |
-| Webdex Scans | https://webdexscans.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| WebNovel | https://www.webnovel.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| WebtoonLib | https://webtoonlib.to | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| Valir Scans | https://valirscans.org | Cloudflare | [diva-valir](rules/diva-valir.json) | ✅ Working: 1 title / 14 chapter comments; HTML, spoilers, paging and reply API mapped · [sample](https://valirscans.org/series/comic/roxana) |
+| vgperson | https://vgperson.com | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://vgperson.com/) |
+| Vision Haze | https://www.visionhaze.com | 403 Forbidden |  | 🔎 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://www.visionhaze.com/about/) |
+| VIZ | https://www.viz.com | No title page found | [viz](rules/viz.json) | ✅ Working: 2 public product comments; spoiler attribute mapped · [sample](https://www.viz.com/manga-books/manga/jujutsu-kaisen-complete-box-set/product/9017) |
+| Voyce.Me | https://www.voyce.me | No title page found |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://www.voyce.me/) |
+| VyvyManga | https://mangavyvy.net | 403 Forbidden |  | ⛔ Access failed after direct and running-service attempts; no readable discussion verified · [sample](https://mangavyvy.net) |
+| War For Rayuba | https://xrabohrok.github.io/WarMap/#/ | No title page found |  | 🔎 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://xrabohrok.github.io/WarMap/#/) |
+| Webdex Scans | https://webdexscans.com | Cloudflare |  | 🔎 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://webdexscans.com/) |
+| WebNovel | https://www.webnovel.com | Cloudflare |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://m.webnovel.com/book/mr.-sunshine_16873587705577105) |
+| WebtoonLib | https://webtoonlib.to | Cloudflare | [webtoonlib](rules/webtoonlib.json) | ✅ Working: 50 series roots + nested replies and 4 chapter roots via public API in service browser; first batch only · [sample](https://webtoonlib.to/series/the-boxer-b6cb3a) |
 | WebtoonXYZ | https://www.webtoon.xyz | 403 Forbidden |  | ⛔ Disqus forum webtoonxyz returned load error (code 15); not working · [sample](https://www.webtoon.xyz/read/get-out/) |
-| Wildtoon 🔞 | https://wildtoon.com | 403 Forbidden |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| Wildtoon 🔞 | https://wildtoon.com | 403 Forbidden | [wordpress](rules/wordpress.json) | 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified · [sample](https://wildtoon.com/webtoon/bunk-bed-official/) |
 | WuxiaWorld | https://wuxiaworld.site | Cloudflare | [madara-wpdiscuz](rules/madara-wpdiscuz.json) | 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments · [sample](https://wuxiaworld.site/novel/pick-me-up/) |
 | XlecX 🔞 | https://xlecx.one | No title page found | [xlecx](rules/xlecx.json) | ✅ Working: 2 comments; author/text selectors verified · [sample](https://xlecx.one/64666-lickin-it.html) |
-| XoManga | https://www.xomanga.site | 403 Forbidden |  | 🔎 Home checked; title discovery needs follow-up |
-| XOXO Comics | https://xoxocomic.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
-| YakshaComics | https://yakshacomics.com | Cloudflare |  | 🔎 Pages checked; custom/dynamic comments need inspection |
+| XoManga | https://www.xomanga.site | 403 Forbidden |  | 🔎 Home rendered; a public title/chapter could not be resolved for comment verification · [sample](https://www.xomanga.site/) |
+| XOXO Comics | https://xoxocomic.com | Cloudflare |  | 🔎 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred · [sample](https://istod.com/wvrv?ofv_id=1662&aff_pub_id=120796&click_id=cr287164819161219142&subid1=120796&subid2=3274293) |
+| YakshaComics | https://yakshacomics.com | Cloudflare | [wordpress](rules/wordpress.json) | 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified · [sample](https://yakshacomics.com/manga/the-mech-mechanic/) |
 | YaoiScan | https://yaoiscan.com | 403 Forbidden | [wordpress](rules/wordpress.json) | ✅ Working: 2 comments; author/text selectors verified · [sample](https://yaoiscan.com/read/hwan/) |
 | Zinmanga | https://mangazin.org | Cloudflare | [madara-wpdiscuz](rules/madara-wpdiscuz.json) | 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments · [sample](https://mangazin.org/manga/breakers/) |
 ### Multi (87)

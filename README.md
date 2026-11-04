@@ -59,8 +59,30 @@ The English audit is resumable: install `beautifulsoup4`, then run
 the existing Turnstile-Slip API at `127.0.0.1:3000`; it never restarts it. For dynamic
 widgets, `node tools/inspect_blocked_browser.mjs` uses its installed browser dependency
 in headless mode (`TURNSTILE_SLIP_ROOT` can override the sibling directory). After
-recording a verified result, run `python tools/update_blocked_english.py` to refresh
-the English progress column without changing the other languages.
+recording a result, run `python tools/update_blocked_english.py` to refresh
+only the English table. `--retry-errors` retries browser failures; `--site NAME` selects
+one site, and `--url URL` tests a specific sample for that site. `--scripts` caches that
+site’s public client scripts locally when a custom widget needs inspection.
+
+All 189 English entries have an audit result: 37 verified reads, 38 configured but
+unverified reads, 23 access/API failures, 2 loader limitations, and 89 entries with no
+initialized widget in the samples or unresolved title/widget discovery. A rule is not
+invented for a page without a usable discussion. The exact remaining work and first-batch,
+media and reply limits are recorded per site in [BLOCKED-SITES.md](BLOCKED-SITES.md).
+
+New rules cover WordPress variants, Toonily, Demonic Scans, Remark42 aliases, Vuukle,
+Atsumaru, Flame Comics, Comix, Diva/Valir, Toonkotsu, WebtoonLib, J-Novel’s public forum,
+LoLoBun and individual page layouts. Empty-thread rules are deliberately not marked working.
+These are read-only checks; no new posting/voting actions were exercised.
+
+`node tools/verify_blocked_native.mjs` runs Twe-ios’s actual JavaScript extractor on the
+saved HTML, including image-only comments and reply nesting. `python tools/verify_blocked_api.py`
+checks the recorded API bodies and title/chapter ID extraction. Both require this audit’s
+local `/tmp/twe-blocked-english` cache; the native check also needs Swift and the sibling
+Twe-ios source (`TWE_IOS_ROOT` can override it). Only compact verification results are committed:
+[page extraction](tools/blocked-native-verification.json) and
+[API field checks](tools/blocked-api-verification.json). Raw bodies and browser cookies stay local.
+An iOS build, device clearance and signed-in actions have not been tested by this audit.
 
 ## Sites with rules
 
@@ -193,6 +215,7 @@ Only `item` is required; missing ones are guessed.
 ### `api` rules (JSON, no web view)
 
 Paths are dotted: `data.comments`, `user.name`, `items.0.text`.
+Use `list: "."` when the response itself is a JSON array.
 
 ```json
 "api": {

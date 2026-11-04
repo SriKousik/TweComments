@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "Pornhwadb Reader",
+  "rules": [
+    {
+      "id": "pornhwadb-reader",
+      "name": "Pornhwadb Reader",
+      "type": "page",
+      "page": {
+        "wait": ".review-card",
+        "item": ".review-card",
+        "author": ".review-author",
+        "text": ".review-text",
+        "time": "time",
+        "avatar": ".review-avatar img",
+        "likes": ".review-action[aria-label^=\"Like,\"]",
+        "replyCount": ".review-action[aria-label^=\"Show replies,\"]",
+        "repliesToggle": ".review-action[aria-label^=\"Show replies,\"]"
+      }
+    }
+  ]
+}

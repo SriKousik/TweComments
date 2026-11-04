@@ -1,0 +1,170 @@
+[
+  {
+    "name": "LHTranslation",
+    "rule": "wordpress",
+    "comments": 38,
+    "withImages": 0,
+    "maxDepth": 2,
+    "more": false
+  },
+  {
+    "name": "Manhwatop",
+    "rule": "wordpress",
+    "comments": 1,
+    "withImages": 0,
+    "maxDepth": 0,
+    "more": false
+  },
+  {
+    "name": "GirlsTop",
+    "rule": "girlstop",
+    "comments": 10,
+    "withImages": 1,
+    "maxDepth": 0,
+    "more": false
+  },
+  {
+    "name": "Manga Drama",
+    "rule": "mangadrama",
+    "comments": 3,
+    "withImages": 0,
+    "maxDepth": 0,
+    "more": false
+  },
+  {
+    "name": "MangaDot",
+    "rule": "mangadot",
+    "comments": 8,
+    "withImages": 0,
+    "maxDepth": 1,
+    "more": false
+  },
+  {
+    "name": "XlecX",
+    "rule": "xlecx",
+    "comments": 2,
+    "withImages": 0,
+    "maxDepth": 0,
+    "more": false
+  },
+  {
+    "name": "Scythe Scans",
+    "rule": "madara-wpdiscuz",
+    "comments": 3,
+    "withImages": 0,
+    "maxDepth": 1,
+    "more": false
+  },
+  {
+    "name": "Kissmanga.in",
+    "rule": "madara-wpdiscuz",
+    "comments": 3,
+    "withImages": 0,
+    "maxDepth": 1,
+    "more": false
+  },
+  {
+    "name": "ManhwaRead",
+    "rule": "madara-wpdiscuz",
+    "comments": 67,
+    "withImages": 0,
+    "maxDepth": 3,
+    "more": true
+  },
+  {
+    "name": "Cocomic",
+    "rule": "wordpress",
+    "comments": 1,
+    "withImages": 0,
+    "maxDepth": 0,
+    "more": false
+  },
+  {
+    "name": "Gourmet Scans",
+    "rule": "madara-wpdiscuz",
+    "comments": 15,
+    "withImages": 0,
+    "maxDepth": 0,
+    "more": true
+  },
+  {
+    "name": "ManhuaUS",
+    "rule": "wordpress",
+    "comments": 851,
+    "withImages": 0,
+    "maxDepth": 4,
+    "more": false
+  },
+  {
+    "name": "YaoiScan",
+    "rule": "wordpress",
+    "comments": 2,
+    "withImages": 0,
+    "maxDepth": 0,
+    "more": false
+  },
+  {
+    "name": "Nortverse",
+    "rule": "nortverse",
+    "comments": 16,
+    "withImages": 0,
+    "maxDepth": 2,
+    "more": false
+  },
+  {
+    "name": "ManhuaTop",
+    "rule": "manhuatop",
+    "comments": 20,
+    "withImages": 0,
+    "maxDepth": 0,
+    "more": false
+  },
+  {
+    "name": "Comix",
+    "rule": "comix",
+    "comments": 28,
+    "withImages": 14,
+    "maxDepth": 2,
+    "more": true
+  },
+  {
+    "name": "Hiperdex",
+    "rule": "hiperdex",
+    "comments": 1,
+    "withImages": 1,
+    "maxDepth": 0,
+    "more": false
+  },
+  {
+    "name": "VIZ",
+    "rule": "viz",
+    "comments": 2,
+    "withImages": 0,
+    "maxDepth": 0,
+    "more": false
+  },
+  {
+    "name": "Team Shadowi",
+    "rule": "teamshadowi",
+    "comments": 10,
+    "withImages": 3,
+    "maxDepth": 3,
+    "more": false
+  },
+  {
+    "name": "PornhwaDB Reader",
+    "rule": "pornhwadb-reader",
+    "comments": 1,
+    "withImages": 0,
+    "maxDepth": 0,
+    "more": false
+  },
+  {
+    "name": "S2Manga",
+    "rule": "wordpress",
+    "comments": 1,
+    "withImages": 0,
+    "maxDepth": 0,
+    "more": false
+  }
+]

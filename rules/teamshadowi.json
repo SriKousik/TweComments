@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "Team Shadowi",
+  "rules": [
+    {
+      "id": "teamshadowi",
+      "name": "Team Shadowi",
+      "type": "page",
+      "page": {
+        "wait": ".ts-cmt[id]",
+        "item": ".ts-cmt[id]",
+        "author": ".comment-username",
+        "text": ".ts-cmt-body",
+        "time": ".ts-cmt-time",
+        "avatar": ".main-comment-avatar img, .reply-avatar img",
+        "likes": ".ts-cmt-action:has(svg.lucide-heart) span",
+        "replyCount": ".ts-cmt-expand",
+        "repliesToggle": ".ts-cmt-expand"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "name": "LoLoBun comic comments",
+  "rules": [
+    {
+      "id": "lolobun",
+      "name": "LoLoBun comic comments",
+      "type": "api",
+      "vars": {
+        "comicId": {
+          "from": "url",
+          "regex": "/c/(\\d+)"
+        }
+      },
+      "api": {
+        "url": "{origin}/ajax/comment.ashx?op=getcmtlist&id={comicId}&pi=0&ps=20&ctype=c",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+          "X-Requested-With": "XMLHttpRequest"
+        },
+        "list": "data",
+        "id": "CommentID",
+        "author": "NickName",
+        "text": "Content",
+        "time": "CommentDate",
+        "likes": "FavCount"
+      }
+    }
+  ]
+}

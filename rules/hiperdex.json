@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "name": "Hiperdex",
+  "rules": [
+    {
+      "id": "hiperdex",
+      "name": "Hiperdex",
+      "type": "page",
+      "page": {
+        "item": "div.flex.gap-3:has(> div.flex-1.min-w-0 > div.whitespace-pre-wrap)",
+        "wait": "div.flex.gap-3:has(> div.flex-1.min-w-0 > div.whitespace-pre-wrap)",
+        "author": "a[href^=\"/user/\"]",
+        "text": "div.whitespace-pre-wrap",
+        "time": "span.text-muted-foreground",
+        "avatar": "[data-slot=\"avatar\"] img",
+        "likes": "button:has(svg.lucide-thumbs-up)"
+      }
+    }
+  ]
+}

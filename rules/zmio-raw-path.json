@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "name": "zmio comments",
+  "rules": [
+    {
+      "id": "zmio-raw-path",
+      "name": "zmio",
+      "type": "api",
+      "vars": {
+        "zHost": {
+          "from": "fetch",
+          "regex": "zmio\\.org/post\\?[^\"]*?host=([^&\"]+)"
+        },
+        "zKind": {
+          "from": "fetch",
+          "regex": "zmio\\.org/post\\?[^\"]*?path=/([a-z-]+)/"
+        },
+        "zId": {
+          "from": "fetch",
+          "regex": "zmio\\.org/post\\?[^\"]*?path=/[a-z-]+/([^/\"&]+)"
+        },
+        "postId": {
+          "from": "json",
+          "url": "https://api.zmio.org/post?host={zHost}&path=/{zKind}/{zId}/",
+          "path": "data.id"
+        },
+        "siteId": {
+          "from": "json",
+          "url": "https://api.zmio.org/post?host={zHost}&path=/{zKind}/{zId}/",
+          "path": "data.site_id"
+        }
+      },
+      "api": {
+        "url": "https://api.zmio.org/comment?site_id={siteId}&post_id={postId}&votes=true",
+        "list": "data",
+        "id": "id",
+        "author": "user_data.title",
+        "text": "content",
+        "time": "created_at",
+        "avatar": "user_data.avatar_path",
+        "likes": "upvotes",
+        "children": "replies",
+        "replyCount": "total_replies",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "name": "Nortverse",
+  "rules": [
+    {
+      "id": "nortverse",
+      "name": "Nortverse",
+      "type": "page",
+      "page": {
+        "item": "li.comment[id]",
+        "author": ".media-heading",
+        "text": ".comment-content",
+        "time": "time",
+        "avatar": "img.comment_avatar"
+      }
+    }
+  ]
+}

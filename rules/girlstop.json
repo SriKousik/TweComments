@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "name": "girlstop",
+  "name": "GirlsTop",
   "rules": [
     {
       "id": "girlstop",
-      "name": "girlstop",
+      "name": "GirlsTop",
       "type": "page",
       "page": {
         "item": "div.comment[id^=\"comment_\"]",

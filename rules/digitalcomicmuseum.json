@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "name": "Digital Comic Museum",
+  "rules": [
+    {
+      "id": "digitalcomicmuseum",
+      "name": "Digital Comic Museum",
+      "type": "unsupported",
+      "message": "Read Digital Comic Museum comments in WebView on the comic\u2019s details page."
+    }
+  ]
+}

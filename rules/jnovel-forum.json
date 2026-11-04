@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "name": "Jnovel Forum",
+  "rules": [
+    {
+      "id": "jnovel-forum",
+      "name": "Jnovel Forum",
+      "type": "api",
+      "vars": {
+        "threadId": {
+          "from": "fetch",
+          "regex": "https://forums\\.j-novel\\.club/topic/(\\d+)"
+        }
+      },
+      "api": {
+        "url": "https://forums.j-novel.club/api/topic/{threadId}?page={page}",
+        "list": "posts",
+        "id": "pid",
+        "author": "user.displayname",
+        "text": "content",
+        "html": true,
+        "time": "timestampISO",
+        "likes": "votes",
+        "lastPage": "pagination.pageCount",
+        "total": "postcount",
+        "avatar": "user.picture"
+      }
+    }
+  ]
+}

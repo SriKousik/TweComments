@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "name": "mangadrama",
+  "name": "Manga Drama",
   "rules": [
     {
       "id": "mangadrama",
-      "name": "mangadrama",
+      "name": "Manga Drama",
       "type": "page",
       "page": {
         "item": "li.comment",

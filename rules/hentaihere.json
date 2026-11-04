@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "name": "HentaiHere comments",
+  "rules": [
+    {
+      "id": "hentaihere",
+      "name": "HentaiHere comments",
+      "type": "page",
+      "vars": {
+        "commentsUrl": {
+          "from": "fetch",
+          "regex": "data-comments=\"(https://(?:www\\.)?hentaihere\\.com/comments/[^\"]+)\""
+        }
+      },
+      "entry": {
+        "url": "{commentsUrl}"
+      },
+      "chapter": {
+        "url": "{commentsUrl}"
+      },
+      "page": {
+        "wait": "[data-comment]",
+        "item": "[data-comment]",
+        "text": "[data-comment-body]",
+        "time": "time",
+        "avatar": "img.avatar, img[alt*=\"avatar\" i], [class*=\"avatar\" i] img"
+      }
+    }
+  ]
+}

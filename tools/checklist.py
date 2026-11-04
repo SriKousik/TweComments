@@ -90,7 +90,8 @@ if blocked_progress.exists():
                            like="wait" if rule == "madara-wpdiscuz" else "-",
                            comment="wait" if rule == "madara-wpdiscuz" else "-",
                            login="WordPress" if rule == "madara-wpdiscuz" else "-",
-                           status="works" if working else "check", note=evidence["note"])
+                           status="unsupported" if evidence.get("status") == "unsupported" else "works" if working else "check",
+                           note=evidence["note"])
 
 # Checked by hand: what's there and what a rule still needs.
 NOTES = {
@@ -125,7 +126,7 @@ STATUS = {
     "complete": ("✅ Complete", "Rule written and checked by hand for everything it supports."),
     "works": ("🟢 Works", "Reading works (checked, or through a comment system Twe reads on any site). Liking and posting need a signed-in check."),
     "rule": ("🔍 Needs rule", "The site has comments, but in a form Twe needs a rule for."),
-    "unsupported": ("⚠️ Unsupported", "Facebook comments: only shown inside Facebook's frame. Twe offers WebView."),
+    "unsupported": ("⚠️ Unsupported", "The comment system needs WebView or new loader support in Twe."),
     "check": ("🛡️ Check in app", "The site blocks scripts (Cloudflare), so this survey couldn't see it. Open Comments in Twe to check."),
     "none": ("➖ No comments", "No comment section found on the site."),
     "down": ("❌ Site down", "The site didn't answer, or the extension has no site."),

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "name": "HentaiTnT reviews",
+  "rules": [
+    {
+      "id": "hentaitnt",
+      "name": "HentaiTnT reviews",
+      "type": "page",
+      "vars": {
+        "reviewId": {
+          "from": "fetch",
+          "regex": "/reviews\\?id=(\\d+)"
+        }
+      },
+      "entry": {
+        "url": "{origin}/reviews?id={reviewId}"
+      },
+      "chapter": {
+        "url": "{origin}/reviews?id={reviewId}"
+      },
+      "page": {
+        "wait": "#comments-list .comment-item[id]",
+        "item": "#comments-list .comment-item[id]",
+        "avatar": "img.avatar, img[alt*=\"avatar\" i], [class*=\"avatar\" i] img",
+        "more": "#load-more-wrapper:not(.hidden):not([hidden]):not([style*=\"display: none\"]):not([style*=\"display:none\"]) #load-more-comments"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "Clone Manga",
+  "rules": [
+    {
+      "id": "clonemanga-disqus",
+      "name": "Clone Manga \u00b7 Disqus",
+      "type": "disqus",
+      "vars": {
+        "identifier": {
+          "from": "html",
+          "regex": "(?:this\\.page\\.identifier|disqus_identifier)\\s*=\\s*[\"\\']([^\"\\']+)"
+        }
+      },
+      "disqus": {
+        "forum": "clonemanga",
+        "identifier": "{identifier}",
+        "url": "{pageUrl}"
+      }
+    }
+  ]
+}

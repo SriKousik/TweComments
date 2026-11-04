@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "CManhua",
+  "rules": [
+    {
+      "id": "cmanhua",
+      "name": "CManhua",
+      "type": "page",
+      "page": {
+        "wait": ".cd-comment-item",
+        "item": ".cd-comment-item",
+        "author": ".cd-comment-author",
+        "text": ".cd-comment-content",
+        "time": ".cd-comment-time",
+        "avatar": "img.cd-comment-avatar, .cd-comment-avatar img, img.cd-comment-avatar-sm"
+      }
+    }
+  ]
+}

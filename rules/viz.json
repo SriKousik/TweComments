@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "VIZ",
+  "rules": [
+    {
+      "id": "viz",
+      "name": "VIZ",
+      "type": "page",
+      "page": {
+        "item": "li.comment[id]",
+        "author": ".color-mid-gray > span.color-red",
+        "text": ".o_comment-content",
+        "time": ".color-mid-gray > span.mar-r-sm",
+        "spoiler": "[is_spoiler=\"true\"]",
+        "avatar": ".comment-avatar img"
+      }
+    }
+  ]
+}

@@ -7,12 +7,12 @@ Rows marked by hand were tested in a browser; update them here when something is
 | Status | Count | Meaning |
 |---|---|---|
 | ✅ Complete | 14 | Rule written and checked by hand for everything it supports. |
-| 🟢 Works | 221 | Reading works (checked, or through a comment system Twe reads on any site). Liking and posting need a signed-in check. |
+| 🟢 Works | 237 | Reading works (checked, or through a comment system Twe reads on any site). Liking and posting need a signed-in check. |
 | 🔍 Needs rule | 158 | The site has comments, but in a form Twe needs a rule for. |
-| ⚠️ Unsupported | 13 | Facebook comments: only shown inside Facebook's frame. Twe offers WebView. |
-| 🛡️ Check in app | 570 | The site blocks scripts (Cloudflare), so this survey couldn't see it. Open Comments in Twe to check. |
+| ⚠️ Unsupported | 15 | The comment system needs WebView or new loader support in Twe. |
+| 🛡️ Check in app | 558 | The site blocks scripts (Cloudflare), so this survey couldn't see it. Open Comments in Twe to check. |
 | ➖ No comments | 178 | No comment section found on the site. |
-| ❌ Site down | 304 | The site didn't answer, or the extension has no site. |
+| ❌ Site down | 298 | The site didn't answer, or the extension has no site. |
 
 Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not available.
 
@@ -35,7 +35,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Weeb Central | en | Own | weebcentral | ✅ | — | — | — | - | title and chapter |
 | YaoiScan (Unoriginal) | en | Article comments | global: comment-body-articles | ✅ | — | — | — | - | posting needs a guest name (not in Twe yet) |
 
-## 🟢 Works (221)
+## 🟢 Works (237)
 
 | Extension | Lang | Comments | Rule | Read | Replies | Like | Comment / reply | Sign-in | Notes |
 |---|---|---|---|---|---|---|---|---|---|
@@ -59,18 +59,22 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | AP Comics 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Art Lapsa | en | Livewire discussion | global: livewire-discussion | ✅ | — | — | — | - | same platform as RitharScans |
 | Aster Scans | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
+| Atsumaru | en | atsu | atsu | ✅ | — | — | — | - | ✅ Working: 7 comments via v2 API; nested replies mapped; first batch only; custom media/avatars not mapped |
 | aurora | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Bun Manga | en | wpDiscuz | global: wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | recognised on the page |
 | buttsmithy 🔞 | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Clown Corps | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Cocomic | en | wordpress | wordpress | ✅ | — | — | — | - | ✅ Working: 1 comments; author/text selectors verified |
+| Comix | en | comix | comix | ✅ | ✅ | — | — | - | ✅ Working: 28 rendered comments/replies; 14 contain images; Load more selector verified; only rendered reply batches |
 | Cucumber Manga 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Dark Legacy Comics | en | darklegacy-vuukle | darklegacy-vuukle | ✅ | — | — | — | - | ✅ Working: 9 comments via Vuukle; HTML images and nested replies mapped; first batch only |
 | Decadence Scans | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
+| Diva Scans | en | diva-valir | diva-valir | ✅ | ✅ | — | — | - | ✅ Working: 2 title / 13 chapter comments; HTML, spoilers, paging and reply API mapped |
+| Flame Comics | en | flamecomics | flamecomics | ✅ | ✅ | — | — | - | ✅ Working: 11 comments and 1 reply via API; HTML images mapped; first batch only |
 | GakaMangas | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | GalaxyDegenScans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Genz Toons | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
-| GirlsTop 🔞 | en | girlstop | girlstop | ✅ | — | — | — | - | ✅ Working: 8 comments; author/text selectors verified |
+| GirlsTop 🔞 | en | girlstop | girlstop | ✅ | — | — | — | - | ✅ Working: 10 comments read by Twe's actual extractor; 1 with images |
 | Gourmet Scans | en | madara-wpdiscuz | madara-wpdiscuz | ✅ | — | ⏳ | ⏳ | WordPress | ✅ Working: 15 comments; author/text selectors verified |
 | Grim Scans | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
 | Grrl Power Comic | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
@@ -79,30 +83,33 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Hentai3z.CC 🔞 | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | HentaiRead.io 🔞 | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Hijala Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| Hiperdex | en | hiperdex | hiperdex | ✅ | — | — | — | - | ✅ Working: native extractor reads 1 image-only comment; rendered batch only |
 | Hyakuro Translations | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | I'm An Evil God | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
+| J-Novel | en | jnovel-forum | jnovel-forum | ✅ | — | — | — | - | ✅ Working: 20 posts per page; pages 1 and 2 verified (86 total); linked series forum only, chapter links not found |
 | Jinmangas | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Kaiji Manga Online | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Kaizen Scan 🔞 | en | zmio | zmio | ✅ | — | — | — | - | ✅ Working: 1 comment via existing zmio API rule |
 | Ken Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Kewn Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | King of Shojo | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
-| Kissmanga.in | en | madara-wpdiscuz | madara-wpdiscuz | ✅ | — | ⏳ | ⏳ | WordPress | ✅ Working: 3 comments read with wpDiscuz selectors |
+| Kissmanga.in | en | madara-wpdiscuz | madara-wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | ✅ Working: 3 comments read with wpDiscuz selectors |
 | Kitsune Dawn 🔞 | en | Livewire discussion | global: livewire-discussion | ✅ | — | — | — | - | same platform as RitharScans |
 | KokoMangas | en | wpDiscuz | global: wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | recognised on the page |
 | KSGroupScans | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Kun Manga Online | en | QQ Comment Service | qq-comments | ✅ | ✅ | ⏳ | ⏳ | Site | API answers |
-| LHTranslation | en | wordpress | wordpress | ✅ | — | — | — | - | ✅ Working: 39 comments read; author/text selectors verified |
+| LHTranslation | en | wordpress | wordpress | ✅ | ✅ | — | — | - | ✅ Working: 38 comments read by Twe's actual extractor |
+| LoLoBun | en | lolobun | lolobun | ✅ | — | — | — | - | ✅ Working: 2 comic comments via zero-based API; first 20 roots; replies/avatars need loader support |
 | Lovesjane Scans | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Manga Dass | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
-| Manga Demon | en | demonicscans | demonicscans | ✅ | — | — | — | - | ✅ Working: 7 title / 2 chapter comments; 62 Eleceed roots and a 4-reply thread; first batch only; media markup not parsed |
+| Manga Demon | en | demonicscans | demonicscans | ✅ | ✅ | — | — | - | ✅ Working: 7 title / 2 chapter comments; 62 Eleceed roots and a 4-reply thread; first batch only; media markup not parsed |
 | Manga District | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Manga Drama 🔞 | en | mangadrama | mangadrama | ✅ | — | — | — | - | ✅ Working: 3 comments; author/text selectors verified |
 | Manga Eclipse | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Manga Trend | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Mangabat | en | QQ Comment Service | qq-comments | ✅ | ✅ | ⏳ | ⏳ | Site | API read; like/reply written |
 | Mangack | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
-| MangaDot | en | mangadot | mangadot | ✅ | — | — | — | - | ✅ Working: 4 comments; author/text selectors verified |
+| MangaDot | en | mangadot | mangadot | ✅ | ✅ | — | — | - | ✅ Working: 8 comments read by Twe's actual extractor |
 | Mangafree 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | MangaGeko | en | Own API | mangageko | ✅ | ✅ | ⏳ | ⏳ | Site | title and chapter comments read; actions need sign-in to confirm |
 | MangaGG | en | wpDiscuz | global: wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | recognised on the page |
@@ -113,23 +120,26 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Mangasushi | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Mangatown | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | ManhuaPlus (Unoriginal) | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
-| ManhuaUS | en | wordpress | wordpress | ✅ | — | — | — | - | ✅ Working: 853 comments; author/text selectors verified |
+| ManhuaTop | en | manhuatop | manhuatop | ✅ | — | — | — | - | ✅ Working: 20 rendered comments; images use page extraction; flat reply layout not nested |
+| ManhuaUS | en | wordpress | wordpress | ✅ | ✅ | — | — | - | ✅ Working: 851 comments read by Twe's actual extractor |
 | Manhwa Toon | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | ManhwaBuddy | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Manhwalike 🔞 | en | manhwalike-disqus | manhwalike-disqus | ✅ | — | — | — | - | ✅ Working: 2 Disqus posts read |
 | ManhwaNex | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
-| ManhwaRead | en | madara-wpdiscuz | madara-wpdiscuz | ✅ | — | ⏳ | ⏳ | WordPress | ✅ Working: 67 comments read with wpDiscuz selectors |
+| ManhwaRead | en | madara-wpdiscuz | madara-wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | ✅ Working: 67 comments read with wpDiscuz selectors |
 | Manhwatop | en | wordpress | wordpress | ✅ | — | — | — | - | ✅ Working: 1 comments read; author/text selectors verified |
 | Mehgazone 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Mist Scans | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
 | Multporn 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | MurimScan | en | Blogger | global: blogger | ✅ | — | — | — | - | found on a second check |
+| Nortverse 🔞 | en | nortverse | nortverse | ✅ | ✅ | — | — | - | ✅ Working: 16 rendered comments; images use page extraction |
 | Nux Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Nyanu Kafe | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
 | Nyx Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | OctopusManga 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Omega Scans 🔞 | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Orion Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| PornhwaDB Reader 🔞 | en | pornhwadb-reader | pornhwadb-reader | ✅ | — | — | — | - | ✅ Working: 1 public series review; native extractor check recorded separately |
 | Rackus | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Randowiz | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | Read Maid Sama Manga Online | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
@@ -141,21 +151,27 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | RokariComics | en | wpDiscuz | global: wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | recognised on the page |
 | Ruby Comics 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | RuriDragon Manga Online | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| S2Manga | en | wordpress | wordpress | ✅ | — | — | — | - | ✅ Working: 1 chapter comment; native extractor check recorded separately |
 | Sana Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
-| Scythe Scans | en | madara-wpdiscuz | madara-wpdiscuz | ✅ | — | ⏳ | ⏳ | WordPress | ✅ Working: 3 comments read with wpDiscuz selectors |
+| Scythe Scans | en | madara-wpdiscuz | madara-wpdiscuz | ✅ | ✅ | ⏳ | ⏳ | WordPress | ✅ Working: 3 comments read with wpDiscuz selectors |
 | Siren Scans | en | zmio | zmio | ✅ | ✅ | — | — | - | same zmio setup as Asmodeus |
 | Sleepy Translations | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | Snafu Comics | en | snafucomic-disqus | snafucomic-disqus | ✅ | — | — | — | - | ✅ Working: 50 Disqus posts read |
 | TCB Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| Team Shadowi | en | teamshadowi | teamshadowi | ✅ | ✅ | — | — | - | ✅ Working: 3 root comments and 7 nested replies expanded; rendered images mapped |
 | Thunder Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
 | TimelessToons | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
 | ToonGod | en | TNGD API | toongod | ✅ | ✅ | — | — | - | 16 title / 6 chapter comments; 3 replies checked; first batch only (cursor paging pending) |
 | Toonily | en | toonily | toonily | ✅ | — | — | — | - | ✅ Working: title and chapter API each returned 1 comment; offset paging mapped; rich media markup not parsed |
+| Toonkotsu | en | toonkotsu | toonkotsu | ✅ | ✅ | — | — | - | ✅ Working: 1 series comment + 1 reply and 1 chapter comment via service browser; first 20 per feed; Markdown media not parsed |
 | Top Manhua | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
 | TopManhua.net | en | topmanhuanet-disqus | topmanhuanet-disqus | ✅ | — | — | — | - | ✅ Working: 1 Disqus posts read |
 | TritiniaScans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| Valir Scans | en | diva-valir | diva-valir | ✅ | ✅ | — | — | - | ✅ Working: 1 title / 14 chapter comments; HTML, spoilers, paging and reply API mapped |
 | Vixen Logic 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
+| VIZ | en | viz | viz | ✅ | — | — | — | - | ✅ Working: 2 public product comments; spoiler attribute mapped |
 | Vortex Scans | en | Disqus | global: disqus | ✅ | ✅ | — | — | - | recognised on the page |
+| WebtoonLib | en | webtoonlib | webtoonlib | ✅ | ✅ | — | — | - | ✅ Working: 50 series roots + nested replies and 4 chapter roots via public API in service browser; first batch only |
 | Writer Scans | en | zmio | zmio | ✅ | ✅ | — | — | - | found on a second check |
 | XlecX 🔞 | en | xlecx | xlecx | ✅ | — | — | — | - | ✅ Working: 2 comments; author/text selectors verified |
 | YaoiHot 🔞 | en | WordPress | global: wordpress | ✅ | ✅ | — | — | - | recognised on the page |
@@ -424,12 +440,14 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Manwa Manhua | zh | https://manwadz.cc |  | Own: /static/mh/css/comment.css, /static/mh/js/comment.js?v=20260411 |
 | MH1234 | zh | https://m.wmh1234.com |  | Own: 9 mentions of "comment" |
 
-## ⚠️ Unsupported (13)
+## ⚠️ Unsupported (15)
 
 | Extension | Lang | Site | Template | Notes |
 |---|---|---|---|---|
+| Digital Comic Museum | en | https://digitalcomicmuseum.com |  | Grouped table rows: ⛔ WebView required: 2 public comments found, but each spans three sibling table rows; current rule format cannot preserve author/date grouping |
 | MangaFox | en | https://fanfox.net | Iken | Facebook:  |
 | Mangahere | en | https://www.mangahere.cc | Iken | Facebook:  |
+| Read Berserk Manga | en | https://readberserk.com |  | comentario-webview: ⚠️ Public API returns 12 comments, but author IDs require a dictionary join; native rules cannot map authors. WebView fallback provided |
 | 108Read 🔞 | th | https://www.108read.com | MangaThemesia | Facebook:  |
 | Cat300 🔞 | th | https://cat-300.com | Madara | Facebook:  |
 | Doujinx-H 🔞 | th | https://doujinx-h.com | Madara | Facebook:  |
@@ -442,7 +460,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | ToomTam-Manga | th | https://toomtam-manga.com | MangaThemesia | Facebook:  |
 | ToonHunter 🔞 | th | https://toonhunter.com | MangaThemesia | Facebook:  |
 
-## 🛡️ Check in app (570)
+## 🛡️ Check in app (558)
 
 | Extension | Lang | Site | Template | Notes |
 |---|---|---|---|---|
@@ -557,31 +575,28 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Alpha Manga | en | https://www.alpha-manga.com |  | no title page found from the home page |
 | Arc-Relight | en | https://arc-relight.com |  | no title page found from the home page |
 | Arknights Comics | en | https://arknights.global |  | no title page found from the home page |
-| Athrea Scans | en | https://athreascans.com |  | Cloudflare |
-| Atsumaru | en | https://atsu.moe |  | no title page found from the home page |
+| Athrea Scans | en | https://athreascans.com |  | wordpress: 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified |
 | Bakkin | en | https://bakkin.moe/reader/ |  | no title page found from the home page |
 | Bbato | en | https://bato1.com |  | no title page found from the home page |
 | BookWalker | en | https://bookwalker.com |  | Cloudflare |
+| Borat Scans | en | https://boratscans.com |  | wordpress: 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified |
 | CartoonPorn 🔞 | en | https://cartoonporn.to |  | Cloudflare |
-| Clone Manga | en | https://manga.clone-army.org |  | no title page found from the home page |
-| CManhua | en | https://cmanhua.com |  | Cloudflare |
+| Clone Manga | en | https://manga.clone-army.org |  | clonemanga-disqus: 🟡 Disqus forum/identifier confirmed in browser; sampled thread is empty |
+| CManhua | en | https://cmanhua.com |  | cmanhua: 🟡 Comment selectors confirmed in site stylesheet; sampled server-rendered discussion has no comments |
 | Collected Curios | en | https://www.collectedcurios.com |  | no title page found from the home page |
-| Comic Asura | en | https://comicasura.net | MangaBox | no title page found from the home page |
+| Comic Asura | en | https://comicasura.net | MangaBox | comicasura: 🟡 QQ API rule linked with string chapter IDs and page count; sampled chapter thread empty |
 | ComicHubFree | en | https://comichubfree.com |  | Cloudflare |
 | ComicLand | en | https://comicland.org |  | no title page found from the home page |
-| Comix | en | https://comix.to |  | Cloudflare |
 | Coolmic | en | https://coolmic.me |  | no title page found from the home page |
 | Cutie Comics 🔞 | en | https://cutiecomics.com |  | Cloudflare |
 | Cyanide & Happiness | en | https://explosm.net | Next.js | no title page found from the home page |
 | Darths & Droids | en | https://www.darthsanddroids.net |  | no title page found from the home page |
-| Diva Scans | en | https://divascans.org |  | Cloudflare |
 | Doujin.io - J18 🔞 | en | https://doujin.io |  | no title page found from the home page |
 | Eggporncomics 🔞 | en | https://eggporncomics.com |  | Cloudflare |
-| Elan School | en | https://elan.school |  | no title page found from the home page |
+| Elan School | en | https://elan.school |  | wordpress: 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified |
 | emaqi | en | https://emaqi.com |  | no title page found from the home page |
-| Eris Scans | en | https://erisscans.com |  | Cloudflare |
+| Eris Scans | en | https://erisscans.com |  | zmio-raw-path: 🟡 Raw-path zmio variant linked; post resolved; sampled thread has no comments |
 | Erofus 🔞 | en | https://www.erofus.com |  | Cloudflare |
-| Flame Comics | en | https://flamecomics.xyz |  | Cloudflare |
 | GEDE Comix 🔞 | en | https://gedecomix.com |  | Cloudflare |
 | GingeRTooN 🔞 | en | https://gingertoon.com | Madara | no title page found from the home page |
 | Goda | en | https://manhuascans.org |  | Cloudflare |
@@ -589,25 +604,22 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Hades Scans | en | https://hadesscans.com |  | no title page found from the home page |
 | Hentai4Free 🔞 | en | https://hentai4free.net |  | Cloudflare |
 | HentaiFC 🔞 | en | https://hentaifc.com |  | no title page found from the home page |
-| HentaiHere 🔞 | en | https://hentaihere.com |  | no title page found from the home page |
+| HentaiHere 🔞 | en | https://hentaihere.com |  | hentaihere: 🟡 HTML comment-feed URL mapped from source; sampled feed empty; first batch and field guesses need a nonempty fixture |
 | HentaiKun 🔞 | en | https://hentaikun.com |  | no title page found from the home page |
 | HentaiNexus 🔞 | en | https://hentainexus.com |  | no title page found from the home page |
 | HentaiSco 🔞 | en | https://hentaisco.cc |  | no title page found from the home page |
-| HentaiTnT 🔞 | en | https://hentaitnt.net |  | no title page found from the home page |
-| Hiperdex | en | https://hiperdex.tv |  | no title page found from the home page |
+| HentaiTnT 🔞 | en | https://hentaitnt.net |  | hentaitnt: 🟡 Review-page redirect linked; sampled book and community page empty; reading still unverified |
 | Hive Scans | en | https://hivetoons.org |  | Cloudflare |
 | ILikeComix 🔞 | en | https://ilikecomix.com |  | Cloudflare |
 | InfinityScans | en | https://infinityscans.org |  | Cloudflare |
-| J-Novel | en | https://j-novel.club |  | Cloudflare |
 | Kappa Beast | en | https://kappabeast.com |  | no title page found from the home page |
 | KingComiX 🔞 | en | https://kingcomix.com |  | madara-wpdiscuz: 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments |
 | Komix | en | https://komix.to |  | Cloudflare |
 | Lagoon Scans | en | https://lagoonscans.com |  | madara-wpdiscuz: 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments |
 | Leslie&Victims | en | https://leslie-victims.pages.dev |  | no title page found from the home page |
 | Lily Manga | en | https://lilymanga.net |  | no title page found from the home page |
-| LinkManga | en | https://linkmanga.com |  | Cloudflare |
+| LinkManga | en | https://linkmanga.com |  | wordpress: 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified |
 | Loading Artist | en | https://loadingartist.com |  | no title page found from the home page |
-| LoLoBun | en | https://www.lolobun.com |  | no title page found from the home page |
 | Lua Scans | en | https://luacomic.org |  | Cloudflare |
 | Luminare Translations | en | https://luminaretranslations.com |  | luminare: 🟡 API rule linked; two sampled series returned empty threads; first batch only |
 | Luna Toons | en | https://lunatoons.net |  | zmio: 🟡 zmio rule linked; post resolved, sampled API thread has no comments |
@@ -616,25 +628,25 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Manga.uno | en | https://manga.uno |  | Cloudflare |
 | MangaCloud | en | https://mangacloud.org |  | Cloudflare |
 | MangaDE | en | https://mangade.io |  | no title page found from the home page |
-| MangaFox.fun | en | https://mangafox.fun |  | mangahub-remark42: 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved |
-| MangaHere.onl | en | https://mangahere.onl |  | mangahub-remark42: 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved |
+| MangaFox.fun | en | https://mangafox.fun |  | mangahub-remark42: 🟡 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty |
+| MangaHere.onl | en | https://mangahere.onl |  | mangahub-remark42-canonical: 🟡 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty |
 | MangaK | en | https://mangak.io |  | no title page found from the home page |
-| Mangakakalot.fun | en | https://mangakakalot.fun |  | mangahub-remark42: 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved |
+| Mangakakalot.fun | en | https://mangakakalot.fun |  | mangahub-remark42: 🟡 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty |
 | MangaLix | en | https://mangalix.com |  | no title page found from the home page |
 | MangaMelon | en | https://mangamelon.com |  | Cloudflare |
-| MangaNel | en | https://manganel.me |  | mangahub-remark42: 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved |
+| MangaNel | en | https://manganel.me |  | mangahub-remark42-canonical: 🟡 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty |
 | MangaNow | en | https://manganow.to |  | no title page found from the home page |
-| MangaOnline.fun | en | https://mangaonline.fun | MangaBox | mangahub-remark42: 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved |
+| MangaOnline.fun | en | https://mangaonline.fun | MangaBox | mangahub-remark42: 🟡 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty |
 | MangaOwl.io (unoriginal) | en | https://mangaowl.io |  | Cloudflare |
-| MangaPanda.onl | en | https://mangapanda.onl |  | mangahub-remark42: 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved |
+| MangaPanda.onl | en | https://mangapanda.onl |  | mangahub-remark42: 🟡 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty |
 | MangaPark.tv (unoriginal) 🔞 | en | https://mangapark.tv |  | Cloudflare |
-| MangaReader.site | en | https://mangareader.site |  | mangahub-remark42: 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved |
-| MangaToday | en | https://mangatoday.fun | MangaBox | mangahub-remark42: 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved |
+| MangaReader.site | en | https://mangareader.site |  | mangahub-remark42-canonical: 🟡 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty |
+| MangaToday | en | https://mangatoday.fun | MangaBox | mangahub-remark42-canonical: 🟡 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty |
 | Manhua Plus | en | https://manhuaplus.com |  | Cloudflare |
 | ManhuaHot | en | https://manhuahot.com |  | madara-wpdiscuz: 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments |
-| ManhuaTop | en | https://manhuatop.org |  | Cloudflare |
 | Manhwa Comics 🔞 | en | https://manhwacomics.com | Madara | no title page found from the home page |
 | Manhwa Reads | en | https://manhwareads.com |  | Cloudflare |
+| Manhwa18.today 🔞 | en | https://www.manhwa18.today |  | wordpress: 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified |
 | Manhwa68 🔞 | en | https://manhwa68.com |  | manhwa68-disqus: 🟡 Disqus rule linked; API confirms empty sampled thread |
 | ManhwaZone | en | https://manhwazone.com |  | no title page found from the home page |
 | Megatokyo | en | https://megatokyo.com |  | no title page found from the home page |
@@ -643,29 +655,26 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Monochrome Custom | en | https://monochromecms.netlify.app |  | no title page found from the home page |
 | Monochrome Scans | en | https://manga.d34d.one |  | no title page found from the home page |
 | MyAdultComics 🔞 | en | https://myadultcomics.com |  | no title page found from the home page |
-| MyHentaiComics 🔞 | en | https://myhentaicomics.com |  | Cloudflare |
-| MyHentaiGallery 🔞 | en | https://myhentaigallery.com |  | Cloudflare |
+| MyHentaiComics 🔞 | en | https://myhentaicomics.com |  | myhentai-comments: 🟡 API rule linked; Gallery/Page IDs parsed from source; sampled public thread empty; avatar URL needs loader support |
+| MyHentaiGallery 🔞 | en | https://myhentaigallery.com |  | myhentai-comments: 🟡 API rule linked; Gallery/Page IDs parsed from source; sampled public thread empty; avatar URL needs loader support |
 | NineHentai 🔞 | en | https://9hentai.so |  | no title page found from the home page |
 | Oglaf 🔞 | en | https://www.oglaf.com |  | no title page found from the home page |
-| OneManga.info | en | https://onemanga.info |  | mangahub-remark42: 🟡 Remark42 rule linked; own-domain read verification pending; original thread URL preserved |
+| OneManga.info | en | https://onemanga.info |  | mangahub-remark42-canonical: 🟡 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty |
 | Only The Best Hentai 🔞 | en | https://onlythebesthentai.com |  | Cloudflare |
 | Patch Friday | en | https://patchfriday.com |  | no title page found from the home page |
 | Philia Scans | en | https://philiascans.org |  | Cloudflare |
 | PornComix 🔞 | en | https://bestporncomix.com |  | Cloudflare |
-| PornhwaDB Reader 🔞 | en | https://pornhwareader.com |  | Cloudflare |
-| Pornhwaz 🔞 | en | https://www.pornhwaz.com |  | Cloudflare |
+| Pornhwaz 🔞 | en | https://www.pornhwaz.com |  | pornhwaz: 🟡 Plugin selectors and reply toggle confirmed in assets; sampled thread has no comments; read still unverified |
 | Questionable Content | en | https://www.questionablecontent.net |  | no title page found from the home page |
 | Rage Scans | en | https://ragescans.com |  | madara-wpdiscuz: 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments |
-| Read Berserk Manga | en | https://readberserk.com |  | Cloudflare |
 | Read Chainsaw Man Manga Online 🔞 | en | https://ww6.readchainsawman.com |  | Cloudflare |
 | Read Fairy Tail & Edens Zero Manga Online | en | https://ww9.readfairytail.com |  | Cloudflare |
 | Read Kingdom Manga Online | en | https://ww6.readkingdom.com |  | Cloudflare |
 | Real Life Comics | en | https://reallifecomics.com |  | no title page found from the home page |
-| Renascans | en | https://renascans.net |  | Cloudflare |
+| Renascans | en | https://renascans.net |  | renascans: 🟡 Series API schema mapped from client; public sample empty; Markdown/spoiler formatting not parsed |
 | Revival Scans 🔞 | en | https://www.revivalscans.com |  | revivalscans: 🟡 Series API rule linked; sampled thread is empty; chapter comments not verified |
 | Rolia Scan | en | https://roliascan.com |  | no title page found from the home page |
 | Rose Squad Scans 🔞 | en | https://rosesquadscans.aishiteru.org |  | no title page found from the home page |
-| S2Manga | en | https://s2read.com |  | Cloudflare |
 | Sabrina Online | en | https://www.sabrina-online.com |  | no title page found from the home page |
 | SACACHISPA | en | https://sacachispa.site |  | no title page found from the home page |
 | ScansGG | en | https://scans.gg |  | Cloudflare |
@@ -677,19 +686,16 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Temple Scan 🔞 | en | https://templetoons.com |  | Cloudflare |
 | The Property of Hate | en | https://jolleycomics.com |  | no title page found from the home page |
 | Toonily.me 🔞 | en | https://toontop.io |  | no title page found from the home page |
-| Toonkotsu | en | https://toonkotsu.com |  | Cloudflare |
 | Tower Of God Manga Online | en | https://w82.thetowerofgod.com |  | Cloudflare |
-| Valir Scans | en | https://valirscans.org | Next.js | Cloudflare |
 | vgperson | en | https://vgperson.com |  | no title page found from the home page |
-| VIZ | en | https://www.viz.com |  | no title page found from the home page |
 | Voyce.Me | en | https://www.voyce.me | Next.js | no title page found from the home page |
 | War For Rayuba | en | https://xrabohrok.github.io/WarMap/#/ |  | no title page found from the home page |
 | Webdex Scans | en | https://webdexscans.com |  | Cloudflare |
 | WebNovel | en | https://www.webnovel.com |  | Cloudflare |
-| WebtoonLib | en | https://webtoonlib.to |  | Cloudflare |
+| Wildtoon 🔞 | en | https://wildtoon.com |  | wordpress: 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified |
 | WuxiaWorld | en | https://wuxiaworld.site |  | madara-wpdiscuz: 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments |
 | XOXO Comics | en | https://xoxocomic.com |  | Cloudflare |
-| YakshaComics | en | https://yakshacomics.com |  | Cloudflare |
+| YakshaComics | en | https://yakshacomics.com |  | wordpress: 🟡 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified |
 | Zinmanga | en | https://mangazin.org |  | madara-wpdiscuz: 🟡 Rule linked: wpDiscuz widget confirmed; sampled thread has no rendered comments |
 | Catharsis World | es | https://newcatharsis.dig-it.info |  | no title page found from the home page |
 | Catoons 🔞 | es | https://cattoons.org |  | no title page found from the home page |
@@ -1200,7 +1206,7 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | NNHanman 🔞 | zh | https://nnhanman.xyz |  |  |
 | Toptoon.net | zh | https://www.toptoon.net |  |  |
 
-## ❌ Site down (304)
+## ❌ Site down (298)
 
 | Extension | Lang | Site | Template | Notes |
 |---|---|---|---|---|
@@ -1244,10 +1250,8 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Aunt Manhwa 🔞 | en | https://auntmanhwa.com |  | <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
 | Bakkin Self-hosted | en | http://127.0.0.1/ |  | <urlopen error [Errno 111] Connection refused> |
 | BatCave | en | https://batcave.biz |  | HTTP Error 403: Forbidden |
-| Borat Scans | en | https://boratscans.com |  | HTTP Error 403: Forbidden |
 | BrainRotComics | en | https://brainrotcomics.com |  | HTTP Error 403: Forbidden |
 | ComicK Fanmade | en | https://comickfan.com |  | The read operation timed out |
-| Digital Comic Museum | en | https://digitalcomicmuseum.com |  | HTTP Error 403: Forbidden |
 | DragonTea | en | https://dragontea.ink |  | HTTP Error 403: Forbidden |
 | EbookRenta | en | https://www.ebookrenta.com |  | HTTP Error 503: Service Temporarily Unavailable |
 | El Goonish Shive | en | https://www.egscomics.com |  | HTTP Error 426: Upgrade Required |
@@ -1262,11 +1266,9 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | MangaHe | en | https://mangahe.com |  | HTTP Error 404: Not Found |
 | Mangatellers | en | https://reader.mangatellers.gr |  | HTTP Error 500: Internal Server Error |
 | Manhua Zonghe 🔞 | en | https://www.manhuazonghe.com |  | HTTP Error 503: Service Unavailable |
-| Manhwa18.today 🔞 | en | https://www.manhwa18.today |  | HTTP Error 403: Forbidden |
 | ManhwaManhua 🔞 | en | https://manhwamanhua.com |  | <urlopen error [Errno 104] Connection reset by peer> |
 | MeiToon | en | https://meitoon.org |  | HTTP Error 403: Forbidden |
 | New Manhwa | en | https://saymanhwa.com |  | <urlopen error [Errno -2] Name or service not known> |
-| Nortverse 🔞 | en | https://nortverse.com |  | HTTP Error 403: Forbidden |
 | NovelCrow 🔞 | en | https://novelcrow.com |  | HTTP Error 403: Forbidden |
 | Nuvia Toon | en | https://nuviatoon.net |  | <urlopen error [Errno -2] Name or service not known> |
 | oots | en | https://www.giantitp.com |  | HTTP Error 403: Forbidden |
@@ -1277,7 +1279,6 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | Read Comics Online | en | https://readcomicsonline.ru |  | HTTP Error 403: Forbidden |
 | Saturday Morning Breakfast Comics | en | https://smbc-comics.com |  | HTTP Error 500: Internal Server Error |
 | Setsu Scans | en | https://setsuscans.com |  | HTTP Error 403: Forbidden |
-| Team Shadowi | en | https://www.team-shadowi.com |  | HTTP Error 403: Forbidden |
 | The Blank 🔞 | en | https://theblank.net |  | HTTP Error 403: Forbidden |
 | TodayManga | en | https://todaymanga.com |  | HTTP Error 502: Bad Gateway |
 | ToonHey 🔞 | en | https://toonhey.com |  | HTTP Error 403: Forbidden |
@@ -1285,7 +1286,6 @@ Feature columns: ✅ works · ⏳ written, needs a signed-in check · — not av
 | VyvyManga | en | https://mangavyvy.net |  | HTTP Error 403: Forbidden |
 | WebtoonScan | en | https://webtoonscan.com |  | <urlopen error timed out> |
 | WebtoonXYZ | en | https://www.webtoon.xyz |  | HTTP Error 403: Forbidden |
-| Wildtoon 🔞 | en | https://wildtoon.com |  | HTTP Error 403: Forbidden |
 | XoManga | en | https://www.xomanga.site |  | HTTP Error 403: Forbidden |
 | XYZ Comics 🔞 | en | https://xyzcomics.com |  | <urlopen error [Errno 104] Connection reset by peer> |
 | Yaoihub 🔞 | en | https://yaoihub.org |  | HTTP Error 502: Bad Gateway |

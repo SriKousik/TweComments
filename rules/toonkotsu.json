@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "name": "Toonkotsu",
+  "rules": [
+    {
+      "id": "toonkotsu",
+      "name": "Toonkotsu",
+      "type": "api",
+      "vars": {
+        "seriesId": {
+          "from": "fetch",
+          "regex": "/share/(?:title|chapter)/(\\d+)"
+        }
+      },
+      "entry": {
+        "vars": {
+          "scope": {
+            "from": "value",
+            "value": "offset"
+          },
+          "targetId": {
+            "from": "value",
+            "value": "0"
+          }
+        }
+      },
+      "chapter": {
+        "vars": {
+          "scope": {
+            "from": "value",
+            "value": "chapterId"
+          },
+          "targetId": {
+            "from": "url",
+            "regex": "/title/[^/]+/(\\d+)-"
+          }
+        }
+      },
+      "api": {
+        "url": "{origin}/api/v1/community?seriesId={seriesId}&{scope}={targetId}&sort=newest&limit=20",
+        "list": "comments",
+        "id": "id",
+        "author": "author.displayName",
+        "text": "text",
+        "time": "createdAt",
+        "avatar": "author.avatar",
+        "likes": "score",
+        "spoiler": "spoiler",
+        "parent": "parentId",
+        "replyCount": "replyCount",
+        "total": "pagination.comments",
+        "replies": {
+          "url": "{origin}/api/v1/community?seriesId={seriesId}&{scope}={targetId}&parentId={id}&sort=oldest&limit=20",
+          "list": "comments"
+        }
+      }
+    }
+  ]
+}

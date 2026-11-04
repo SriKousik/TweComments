@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "ManhuaTop",
+  "rules": [
+    {
+      "id": "manhuatop",
+      "name": "ManhuaTop",
+      "type": "page",
+      "page": {
+        "wait": "#comments article.comment",
+        "item": "#comments article.comment",
+        "author": ".comment-meta strong",
+        "text": ".rich-content",
+        "time": "time",
+        "avatar": "img.comment-avatar, .comment-avatar img"
+      }
+    }
+  ]
+}

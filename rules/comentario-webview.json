@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "name": "Comentario discussion",
+  "rules": [
+    {
+      "id": "comentario-webview",
+      "name": "Comentario discussion",
+      "type": "unsupported",
+      "message": "Open this chapter in WebView and select Load Comments to read its discussion."
+    }
+  ]
+}

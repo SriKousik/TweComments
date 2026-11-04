@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "name": "Diva / Valir comments",
+  "rules": [
+    {
+      "id": "diva-valir",
+      "name": "Diva / Valir comments",
+      "type": "api",
+      "entry": {
+        "vars": {
+          "targetType": {
+            "from": "value",
+            "value": "SERIES"
+          },
+          "targetId": {
+            "from": "fetch",
+            "regex": "\\bseries[\\\\\"]+\\s*:\\s*\\{\\s*[\\\\\"]+id[\\\\\"]+\\s*:\\s*[\\\\\"]+([a-z0-9]+)"
+          }
+        }
+      },
+      "chapter": {
+        "vars": {
+          "targetType": {
+            "from": "value",
+            "value": "CHAPTER"
+          },
+          "targetId": {
+            "from": "fetch",
+            "regex": "\\bchapter[\\\\\"]+\\s*:\\s*\\{\\s*[\\\\\"]+id[\\\\\"]+\\s*:\\s*[\\\\\"]+([a-z0-9]+)"
+          }
+        }
+      },
+      "api": {
+        "url": "{origin}/api/comments?targetType={targetType}&targetId={targetId}&sort=liked&page={page}&limit=20&v=2",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": "comments",
+        "id": "id",
+        "author": "author.displayName",
+        "text": "content",
+        "html": true,
+        "time": "createdAt",
+        "avatar": "author.avatar",
+        "likes": "likeCount",
+        "spoiler": "isSpoiler",
+        "parent": "parentId",
+        "replyCount": "replyCount",
+        "lastPage": "pagination.totalPages",
+        "hasMore": "pagination.hasMore",
+        "total": "pagination.totalCount",
+        "replies": {
+          "url": "{origin}/api/comments?targetType={targetType}&targetId={targetId}&parentId={id}&sort=oldest&page={page}&limit=20&v=2",
+          "list": "comments",
+          "lastPage": "pagination.totalPages"
+        }
+      }
+    }
+  ]
+}

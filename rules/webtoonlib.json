@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "name": "WebtoonLib",
+  "rules": [
+    {
+      "id": "webtoonlib",
+      "name": "WebtoonLib",
+      "type": "api",
+      "entry": {
+        "vars": {
+          "scope": {
+            "from": "value",
+            "value": "webtoonId"
+          },
+          "targetId": {
+            "from": "fetch",
+            "regex": "webtoon[\\\\\"]+\\s*:\\s*\\{[\\\\\"]+id[\\\\\"]+\\s*:\\s*[\\\\\"]+([a-z0-9]+)"
+          }
+        }
+      },
+      "chapter": {
+        "vars": {
+          "scope": {
+            "from": "value",
+            "value": "chapterId"
+          },
+          "targetId": {
+            "from": "fetch",
+            "regex": "id[\\\\\"]+\\s*:\\s*[\\\\\"]+([a-z0-9]+)[\\\\\"]+\\s*,\\s*[\\\\\"]+webtoonId[\\\\\"]+\\s*:\\s*[\\\\\"]+[a-z0-9]+[\\\\\"]+\\s*,\\s*[\\\\\"]+number[\\\\\"]+\\s*:"
+          }
+        }
+      },
+      "api": {
+        "url": "https://api.webtoonlib.to/comments/page?{scope}={targetId}&offset=0&sort=newest",
+        "list": "items",
+        "id": "id",
+        "author": "user",
+        "text": "content",
+        "time": "date",
+        "avatar": "avatar",
+        "likes": "likes",
+        "children": "replies",
+        "parent": "parentId",
+        "total": "total"
+      }
+    }
+  ]
+}

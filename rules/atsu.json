@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "name": "Atsumaru",
+  "rules": [
+    {
+      "id": "atsu",
+      "name": "Atsumaru",
+      "type": "api",
+      "vars": {
+        "sectionId": {
+          "from": "fetch",
+          "regex": "commentSectionId[^a-z0-9]+([a-f0-9-]{36})"
+        }
+      },
+      "api": {
+        "url": "{origin}/api/comments/v2/threads?sectionId={sectionId}&maxDepth=3&sort=hot",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": "comments",
+        "id": "id",
+        "author": "user.usernameDisplay",
+        "text": "content",
+        "time": "createdAt",
+        "likes": "score",
+        "spoiler": "spoiler",
+        "children": "replies",
+        "parent": "parentId",
+        "replyCount": "descendantCount"
+      }
+    }
+  ]
+}

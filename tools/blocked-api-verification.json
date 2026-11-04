@@ -1,0 +1,100 @@
+[
+  {
+    "rule": "atsu",
+    "sample": "bca5837c559dbc30460695d07af6d768c2674e608a81f67af23f6022e002288f.response.json",
+    "roots": 7,
+    "includingReplies": 7,
+    "authorAndText": true
+  },
+  {
+    "rule": "flamecomics",
+    "sample": "2bb99cf4c9dc70512b7b3c14d17cfe2b1e1120b1bf400120165f530d8524ab23.response.json",
+    "roots": 11,
+    "includingReplies": 11,
+    "authorAndText": true
+  },
+  {
+    "rule": "diva-valir",
+    "sample": "diva-discussion.json",
+    "roots": 2,
+    "includingReplies": 2,
+    "authorAndText": true
+  },
+  {
+    "rule": "diva-valir",
+    "sample": "valir-discussion.json",
+    "roots": 1,
+    "includingReplies": 1,
+    "authorAndText": true
+  },
+  {
+    "rule": "diva-valir",
+    "sample": "diva-chapter-comments.json",
+    "roots": 13,
+    "includingReplies": 13,
+    "authorAndText": true
+  },
+  {
+    "rule": "diva-valir",
+    "sample": "valir-chapter-comments.json",
+    "roots": 14,
+    "includingReplies": 14,
+    "authorAndText": true
+  },
+  {
+    "rule": "lolobun",
+    "sample": "lolobun-comments.json",
+    "roots": 2,
+    "includingReplies": 2,
+    "authorAndText": true
+  },
+  {
+    "rule": "jnovel-forum",
+    "sample": "jnovel-forum.json",
+    "roots": 20,
+    "includingReplies": 20,
+    "authorAndText": true
+  },
+  {
+    "rule": "jnovel-forum",
+    "sample": "jnovel-page2.json",
+    "roots": 20,
+    "includingReplies": 20,
+    "authorAndText": true
+  },
+  {
+    "rule": "webtoonlib",
+    "sample": "webtoonlib-api-0.json",
+    "roots": 50,
+    "includingReplies": 53,
+    "authorAndText": true
+  },
+  {
+    "rule": "webtoonlib",
+    "sample": "webtoon-chapter.json",
+    "roots": 4,
+    "includingReplies": 5,
+    "authorAndText": true
+  },
+  {
+    "rule": "toonkotsu",
+    "sample": "toon-final-0.json",
+    "roots": 1,
+    "includingReplies": 1,
+    "authorAndText": true
+  },
+  {
+    "rule": "toonkotsu",
+    "sample": "toon-api-1.json",
+    "roots": 1,
+    "includingReplies": 1,
+    "authorAndText": true
+  },
+  {
+    "rule": "toonkotsu",
+    "sample": "toon-final-1.json",
+    "roots": 1,
+    "includingReplies": 1,
+    "authorAndText": true
+  }
+]

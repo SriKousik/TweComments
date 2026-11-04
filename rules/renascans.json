@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "name": "Renascans",
+  "rules": [
+    {
+      "id": "renascans",
+      "name": "Renascans",
+      "type": "api",
+      "vars": {
+        "slug": {
+          "from": "url",
+          "regex": "/manga/([^/?#]+)"
+        }
+      },
+      "api": {
+        "url": "{origin}/api/v1/manga/{slug}/comments",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": ".",
+        "id": "id",
+        "author": "username",
+        "text": "content",
+        "time": "created_at",
+        "avatar": "avatar_url",
+        "likes": "score",
+        "parent": "parent_id"
+      }
+    }
+  ]
+}

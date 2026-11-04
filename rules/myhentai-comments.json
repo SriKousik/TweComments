@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "name": "MyHentai gallery comments",
+  "rules": [
+    {
+      "id": "myhentai-comments",
+      "name": "MyHentai gallery comments",
+      "type": "api",
+      "vars": {
+        "moduleName": {
+          "from": "fetch",
+          "regex": "<input(?=[^>]*\\bid=[\"\\']moduleName[\"\\'])(?=[^>]*\\bvalue=[\"\\']([^\"\\']+)[\"\\'])[^>]*>"
+        },
+        "moduleId": {
+          "from": "fetch",
+          "regex": "<input(?=[^>]*\\bid=[\"\\']moduleId[\"\\'])(?=[^>]*\\bvalue=[\"\\']([^\"\\']+)[\"\\'])[^>]*>"
+        }
+      },
+      "api": {
+        "url": "{origin}/comment/list/{moduleName}/{moduleId}",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": ".",
+        "id": "id",
+        "author": "name",
+        "text": "text",
+        "html": true,
+        "time": "createdAt",
+        "parent": "parentId"
+      }
+    }
+  ]
+}

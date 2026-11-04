@@ -5,7 +5,14 @@
     "status": "working",
     "rule": "wordpress",
     "url": "https://lhtranslation.net/manga/the-new-gate/",
-    "note": "\u2705 Working: 39 comments read; author/text selectors verified"
+    "note": "\u2705 Working: 38 comments read by Twe's actual extractor",
+    "native": {
+      "comments": 38,
+      "withImages": 0,
+      "maxDepth": 2,
+      "more": false
+    },
+    "replies": "yes"
   },
   "eu.kanade.tachiyomi.extension.en.manhwatop": {
     "home": "https://manhwatop.com",
@@ -13,7 +20,13 @@
     "status": "working",
     "rule": "wordpress",
     "url": "https://manhwatop.com/manga/pick-me-up/",
-    "note": "\u2705 Working: 1 comments read; author/text selectors verified"
+    "note": "\u2705 Working: 1 comments read; author/text selectors verified",
+    "native": {
+      "comments": 1,
+      "withImages": 0,
+      "maxDepth": 0,
+      "more": false
+    }
   },
   "eu.kanade.tachiyomi.extension.en.girlstop": {
     "home": "https://en.girlstop.info",
@@ -21,7 +34,13 @@
     "rule": "girlstop",
     "status": "working",
     "url": "https://me.girlstop.info/psto.php?id=256520",
-    "note": "\u2705 Working: 8 comments; author/text selectors verified"
+    "note": "\u2705 Working: 10 comments read by Twe's actual extractor; 1 with images",
+    "native": {
+      "comments": 10,
+      "withImages": 1,
+      "maxDepth": 0,
+      "more": false
+    }
   },
   "eu.kanade.tachiyomi.extension.en.mangadrama": {
     "home": "https://mangadrama.com",
@@ -29,7 +48,13 @@
     "rule": "mangadrama",
     "status": "working",
     "url": "https://mangadrama.com/manga/shark/",
-    "note": "\u2705 Working: 3 comments; author/text selectors verified"
+    "note": "\u2705 Working: 3 comments; author/text selectors verified",
+    "native": {
+      "comments": 3,
+      "withImages": 0,
+      "maxDepth": 0,
+      "more": false
+    }
   },
   "eu.kanade.tachiyomi.extension.en.mangadotnet": {
     "home": "https://mangadot.net",
@@ -37,7 +62,14 @@
     "rule": "mangadot",
     "status": "working",
     "url": "https://mangadot.net/manga/41",
-    "note": "\u2705 Working: 4 comments; author/text selectors verified"
+    "note": "\u2705 Working: 8 comments read by Twe's actual extractor",
+    "native": {
+      "comments": 8,
+      "withImages": 0,
+      "maxDepth": 1,
+      "more": false
+    },
+    "replies": "yes"
   },
   "eu.kanade.tachiyomi.extension.en.xlecx": {
     "home": "https://xlecx.one",
@@ -45,7 +77,13 @@
     "rule": "xlecx",
     "status": "working",
     "url": "https://xlecx.one/64666-lickin-it.html",
-    "note": "\u2705 Working: 2 comments; author/text selectors verified"
+    "note": "\u2705 Working: 2 comments; author/text selectors verified",
+    "native": {
+      "comments": 2,
+      "withImages": 0,
+      "maxDepth": 0,
+      "more": false
+    }
   },
   "eu.kanade.tachiyomi.extension.en.kingcomix": {
     "home": "https://kingcomix.com",
@@ -77,7 +115,14 @@
     "rule": "madara-wpdiscuz",
     "status": "working",
     "url": "https://scythescans.com/manga/the-shepherd-wizard/",
-    "note": "\u2705 Working: 3 comments read with wpDiscuz selectors"
+    "note": "\u2705 Working: 3 comments read with wpDiscuz selectors",
+    "native": {
+      "comments": 3,
+      "withImages": 0,
+      "maxDepth": 1,
+      "more": false
+    },
+    "replies": "yes"
   },
   "eu.kanade.tachiyomi.extension.en.wuxiaworld": {
     "home": "https://wuxiaworld.site",
@@ -101,7 +146,14 @@
     "rule": "madara-wpdiscuz",
     "status": "working",
     "url": "https://kissmanga.in/kissmanga/fog-land/",
-    "note": "\u2705 Working: 3 comments read with wpDiscuz selectors"
+    "note": "\u2705 Working: 3 comments read with wpDiscuz selectors",
+    "native": {
+      "comments": 3,
+      "withImages": 0,
+      "maxDepth": 1,
+      "more": false
+    },
+    "replies": "yes"
   },
   "eu.kanade.tachiyomi.extension.en.manhwaread": {
     "home": "https://manhwaread.com",
@@ -109,7 +161,14 @@
     "rule": "madara-wpdiscuz",
     "status": "working",
     "url": "https://manhwaread.com/manhwa/queen-bee/",
-    "note": "\u2705 Working: 67 comments read with wpDiscuz selectors"
+    "note": "\u2705 Working: 67 comments read with wpDiscuz selectors",
+    "native": {
+      "comments": 67,
+      "withImages": 0,
+      "maxDepth": 3,
+      "more": true
+    },
+    "replies": "yes"
   },
   "eu.kanade.tachiyomi.extension.en.ragescans": {
     "home": "https://ragescans.com",
@@ -133,15 +192,15 @@
     "rule": "mangahub-remark42",
     "status": "configured",
     "url": "https://mangafox.fun/manga/zipang",
-    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+    "note": "\ud83d\udfe1 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty"
   },
   "eu.kanade.tachiyomi.extension.en.mangahereonl": {
     "home": "https://mangahere.onl",
     "name": "MangaHere.onl",
-    "rule": "mangahub-remark42",
+    "rule": "mangahub-remark42-canonical",
     "status": "configured",
     "url": "https://mangahere.onl/manga/zipang",
-    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+    "note": "\ud83d\udfe1 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty"
   },
   "eu.kanade.tachiyomi.extension.en.mangahubio": {
     "home": "https://mangahub.io",
@@ -157,15 +216,15 @@
     "rule": "mangahub-remark42",
     "status": "configured",
     "url": "https://mangakakalot.fun/manga/mao",
-    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+    "note": "\ud83d\udfe1 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty"
   },
   "eu.kanade.tachiyomi.extension.en.manganel": {
     "home": "https://manganel.me",
     "name": "MangaNel",
-    "rule": "mangahub-remark42",
+    "rule": "mangahub-remark42-canonical",
     "status": "configured",
     "url": "https://manganel.me/manga/wee",
-    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+    "note": "\ud83d\udfe1 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty"
   },
   "eu.kanade.tachiyomi.extension.en.mangaonlinefun": {
     "home": "https://mangaonline.fun",
@@ -173,7 +232,7 @@
     "rule": "mangahub-remark42",
     "status": "configured",
     "url": "https://mangaonline.fun/manga/wee",
-    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+    "note": "\ud83d\udfe1 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty"
   },
   "eu.kanade.tachiyomi.extension.en.mangapandaonl": {
     "home": "https://mangapanda.onl",
@@ -181,31 +240,31 @@
     "rule": "mangahub-remark42",
     "status": "configured",
     "url": "https://mangapanda.onl/manga/zipang",
-    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+    "note": "\ud83d\udfe1 Rule linked: browser confirms own-domain Remark42 URL; sampled API thread empty"
   },
   "eu.kanade.tachiyomi.extension.en.mangareadersite": {
     "home": "https://mangareader.site",
     "name": "MangaReader.site",
-    "rule": "mangahub-remark42",
+    "rule": "mangahub-remark42-canonical",
     "status": "configured",
     "url": "https://mangareader.site/manga/zipang",
-    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+    "note": "\ud83d\udfe1 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty"
   },
   "eu.kanade.tachiyomi.extension.en.mangatoday": {
     "home": "https://mangatoday.fun",
     "name": "MangaToday",
-    "rule": "mangahub-remark42",
+    "rule": "mangahub-remark42-canonical",
     "status": "configured",
     "url": "https://mangatoday.fun/manga/wee",
-    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+    "note": "\ud83d\udfe1 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty"
   },
   "eu.kanade.tachiyomi.extension.en.onemangainfo": {
     "home": "https://onemanga.info",
     "name": "OneManga.info",
-    "rule": "mangahub-remark42",
+    "rule": "mangahub-remark42-canonical",
     "status": "configured",
     "url": "https://onemanga.info/manga/wee",
-    "note": "\ud83d\udfe1 Remark42 rule linked; own-domain read verification pending; original thread URL preserved"
+    "note": "\ud83d\udfe1 Rule linked: browser confirms shared mangahub.io thread URL; sampled thread empty"
   },
   "eu.kanade.tachiyomi.extension.en.manga18x": {
     "home": "https://manga18x.net",
@@ -261,7 +320,8 @@
     "rule": "demonicscans",
     "status": "working",
     "url": "https://demonicscans.org/manga/Talker",
-    "note": "\u2705 Working: 7 title / 2 chapter comments; 62 Eleceed roots and a 4-reply thread; first batch only; media markup not parsed"
+    "note": "\u2705 Working: 7 title / 2 chapter comments; 62 Eleceed roots and a 4-reply thread; first batch only; media markup not parsed",
+    "replies": "yes"
   },
   "eu.kanade.tachiyomi.extension.en.cocomic": {
     "home": "https://cocomic.co",
@@ -269,7 +329,13 @@
     "rule": "wordpress",
     "status": "working",
     "url": "https://cocomic.co/manga/open-the-door/",
-    "note": "\u2705 Working: 1 comments; author/text selectors verified"
+    "note": "\u2705 Working: 1 comments; author/text selectors verified",
+    "native": {
+      "comments": 1,
+      "withImages": 0,
+      "maxDepth": 0,
+      "more": false
+    }
   },
   "eu.kanade.tachiyomi.extension.en.gourmetscans": {
     "home": "https://gourmetsupremacy.com",
@@ -277,7 +343,13 @@
     "rule": "madara-wpdiscuz",
     "status": "working",
     "url": "https://gourmetsupremacy.com/project/lb/",
-    "note": "\u2705 Working: 15 comments; author/text selectors verified"
+    "note": "\u2705 Working: 15 comments; author/text selectors verified",
+    "native": {
+      "comments": 15,
+      "withImages": 0,
+      "maxDepth": 0,
+      "more": true
+    }
   },
   "eu.kanade.tachiyomi.extension.en.manhuaus": {
     "home": "https://manhuaus.com",
@@ -285,7 +357,14 @@
     "rule": "wordpress",
     "status": "working",
     "url": "https://manhuaus.com/manga/magic-emperor-0/",
-    "note": "\u2705 Working: 853 comments; author/text selectors verified"
+    "note": "\u2705 Working: 851 comments read by Twe's actual extractor",
+    "native": {
+      "comments": 851,
+      "withImages": 0,
+      "maxDepth": 4,
+      "more": false
+    },
+    "replies": "yes"
   },
   "eu.kanade.tachiyomi.extension.en.yaoiscan": {
     "home": "https://yaoiscan.com",
@@ -293,7 +372,13 @@
     "rule": "wordpress",
     "status": "working",
     "url": "https://yaoiscan.com/read/hwan/",
-    "note": "\u2705 Working: 2 comments; author/text selectors verified"
+    "note": "\u2705 Working: 2 comments; author/text selectors verified",
+    "native": {
+      "comments": 2,
+      "withImages": 0,
+      "maxDepth": 0,
+      "more": false
+    }
   },
   "eu.kanade.tachiyomi.extension.en.darklegacycomics": {
     "home": "https://www.darklegacycomics.com",
@@ -376,5 +461,1089 @@
     "status": "unavailable",
     "url": "https://www.webtoon.xyz/read/get-out/",
     "note": "\u26d4 Disqus forum webtoonxyz returned load error (code 15); not working"
+  },
+  "eu.kanade.tachiyomi.extension.en.nortverse": {
+    "home": "https://nortverse.com",
+    "name": "Nortverse",
+    "rule": "nortverse",
+    "status": "working",
+    "url": "https://nortverse.com/comic/mansion-mystery-9/",
+    "note": "\u2705 Working: 16 rendered comments; images use page extraction",
+    "replies": "yes",
+    "native": {
+      "comments": 16,
+      "withImages": 0,
+      "maxDepth": 2,
+      "more": false
+    }
+  },
+  "eu.kanade.tachiyomi.extension.en.manhuatop": {
+    "home": "https://manhuatop.org",
+    "name": "ManhuaTop",
+    "rule": "manhuatop",
+    "status": "working",
+    "url": "https://manhuatop.org/manhua/pick-me-up/",
+    "note": "\u2705 Working: 20 rendered comments; images use page extraction; flat reply layout not nested",
+    "replies": "-",
+    "native": {
+      "comments": 20,
+      "withImages": 0,
+      "maxDepth": 0,
+      "more": false
+    }
+  },
+  "eu.kanade.tachiyomi.extension.en.atsumaru": {
+    "home": "https://atsu.moe",
+    "name": "Atsumaru",
+    "rule": "atsu",
+    "status": "working",
+    "url": "https://atsu.moe/manga/-tya",
+    "note": "\u2705 Working: 7 comments via v2 API; nested replies mapped; first batch only; custom media/avatars not mapped",
+    "replies": "-"
+  },
+  "eu.kanade.tachiyomi.extension.en.flamecomics": {
+    "home": "https://flamecomics.xyz",
+    "name": "Flame Comics",
+    "rule": "flamecomics",
+    "status": "working",
+    "url": "https://flamecomics.xyz/series/24",
+    "note": "\u2705 Working: 11 comments and 1 reply via API; HTML images mapped; first batch only",
+    "replies": "yes"
+  },
+  "eu.kanade.tachiyomi.extension.en.comix": {
+    "home": "https://comix.to",
+    "name": "Comix",
+    "rule": "comix",
+    "status": "working",
+    "url": "https://comix.to/title/zgk6j-unbeknownst-to-me-i-am-secretly-dating-the-emperor",
+    "note": "\u2705 Working: 28 rendered comments/replies; 14 contain images; Load more selector verified; only rendered reply batches",
+    "replies": "yes",
+    "native": {
+      "comments": 28,
+      "withImages": 14,
+      "maxDepth": 2,
+      "more": true
+    }
+  },
+  "eu.kanade.tachiyomi.extension.en.clonemanga": {
+    "home": "https://manga.clone-army.org",
+    "name": "Clone Manga",
+    "rule": "clonemanga-disqus",
+    "status": "configured",
+    "url": "https://manga.clone-army.org/world_tour.php",
+    "note": "\ud83d\udfe1 Disqus forum/identifier confirmed in browser; sampled thread is empty"
+  },
+  "eu.kanade.tachiyomi.extension.en.hiperdex": {
+    "home": "https://hiperdex.tv",
+    "name": "Hiperdex",
+    "rule": "hiperdex",
+    "status": "working",
+    "url": "https://hiperdex.tv/manga/naked-life",
+    "note": "\u2705 Working: native extractor reads 1 image-only comment; rendered batch only",
+    "native": {
+      "comments": 1,
+      "withImages": 1,
+      "maxDepth": 0,
+      "more": false
+    }
+  },
+  "eu.kanade.tachiyomi.extension.en.vizshonenjump": {
+    "home": "https://www.viz.com",
+    "name": "VIZ",
+    "rule": "viz",
+    "status": "working",
+    "url": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-complete-box-set/product/9017",
+    "note": "\u2705 Working: 2 public product comments; spoiler attribute mapped",
+    "native": {
+      "comments": 2,
+      "withImages": 0,
+      "maxDepth": 0,
+      "more": false
+    }
+  },
+  "eu.kanade.tachiyomi.extension.en.comicasura": {
+    "home": "https://comicasura.net",
+    "name": "Comic Asura",
+    "rule": "comicasura",
+    "status": "configured",
+    "url": "https://comicasura.net/manga/but-youre-2d/chapter-15",
+    "note": "\ud83d\udfe1 QQ API rule linked with string chapter IDs and page count; sampled chapter thread empty"
+  },
+  "eu.kanade.tachiyomi.extension.en.readchainsawmanmangaonline": {
+    "home": "https://ww6.readchainsawman.com",
+    "name": "Read Chainsaw Man Manga Online",
+    "status": "unavailable",
+    "url": "https://ww6.readchainsawman.com/chapter/look-back-chapter-1/",
+    "note": "\u26d4 Comentario rejects the site origin (HTTP 403 domain verification); upstream configuration error"
+  },
+  "eu.kanade.tachiyomi.extension.en.readfairytailedenszeromangaonline": {
+    "home": "https://ww9.readfairytail.com",
+    "name": "Read Fairy Tail & Edens Zero Manga Online",
+    "status": "unavailable",
+    "url": "https://ww9.readfairytail.com/chapter/heros-chapter-10.5/",
+    "note": "\u26d4 Comentario rejects the site origin (HTTP 403 domain verification); upstream configuration error"
+  },
+  "eu.kanade.tachiyomi.extension.en.readkingdommangaonline": {
+    "home": "https://ww6.readkingdom.com",
+    "name": "Read Kingdom Manga Online",
+    "status": "unavailable",
+    "url": "https://ww6.readkingdom.com/chapter/kingdom-history-spoilers-chapter-0/",
+    "note": "\u26d4 Comentario rejects the site origin (HTTP 403 domain verification); upstream configuration error"
+  },
+  "eu.kanade.tachiyomi.extension.en.divascans": {
+    "home": "https://divascans.org",
+    "name": "Diva Scans",
+    "rule": "diva-valir",
+    "status": "working",
+    "url": "https://divascans.org/series/comic/slave-diary",
+    "note": "\u2705 Working: 2 title / 13 chapter comments; HTML, spoilers, paging and reply API mapped",
+    "replies": "yes",
+    "chapterUrl": "https://divascans.org/series/comic/slave-diary/chapter/1"
+  },
+  "eu.kanade.tachiyomi.extension.en.valirscans": {
+    "home": "https://valirscans.org",
+    "name": "Valir Scans",
+    "rule": "diva-valir",
+    "status": "working",
+    "url": "https://valirscans.org/series/comic/roxana",
+    "note": "\u2705 Working: 1 title / 14 chapter comments; HTML, spoilers, paging and reply API mapped",
+    "replies": "yes",
+    "chapterUrl": "https://valirscans.org/series/comic/roxana/chapter/1"
+  },
+  "eu.kanade.tachiyomi.extension.en.teamshadowi": {
+    "home": "https://www.team-shadowi.com",
+    "name": "Team Shadowi",
+    "rule": "teamshadowi",
+    "status": "working",
+    "url": "https://www.team-shadowi.com/read/first-love-trap/7",
+    "note": "\u2705 Working: 3 root comments and 7 nested replies expanded; rendered images mapped",
+    "replies": "yes",
+    "native": {
+      "comments": 10,
+      "withImages": 3,
+      "maxDepth": 3,
+      "more": false
+    }
+  },
+  "eu.kanade.tachiyomi.extension.en.erisscans": {
+    "home": "https://erisscans.com",
+    "name": "Eris Scans",
+    "rule": "zmio-raw-path",
+    "status": "configured",
+    "url": "https://erisscans.com/series/65f60a50e76/",
+    "note": "\ud83d\udfe1 Raw-path zmio variant linked; post resolved; sampled thread has no comments",
+    "replies": "-"
+  },
+  "eu.kanade.tachiyomi.extension.en.myhentaicomics": {
+    "home": "https://myhentaicomics.com",
+    "name": "MyHentaiComics",
+    "rule": "myhentai-comments",
+    "status": "configured",
+    "url": "https://myhentaicomics.com/gallery/thumbnails/64182",
+    "note": "\ud83d\udfe1 API rule linked; Gallery/Page IDs parsed from source; sampled public thread empty; avatar URL needs loader support"
+  },
+  "eu.kanade.tachiyomi.extension.en.myhentaigallery": {
+    "home": "https://myhentaigallery.com",
+    "name": "MyHentaiGallery",
+    "rule": "myhentai-comments",
+    "status": "configured",
+    "url": "https://myhentaigallery.com/a/60602",
+    "note": "\ud83d\udfe1 API rule linked; Gallery/Page IDs parsed from source; sampled public thread empty; avatar URL needs loader support"
+  },
+  "eu.kanade.tachiyomi.extension.en.pornhwaz": {
+    "home": "https://www.pornhwaz.com",
+    "name": "Pornhwaz",
+    "rule": "pornhwaz",
+    "status": "configured",
+    "url": "https://www.pornhwaz.com/webtoon/scumbag/",
+    "note": "\ud83d\udfe1 Plugin selectors and reply toggle confirmed in assets; sampled thread has no comments; read still unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.renascans": {
+    "home": "https://renascans.net",
+    "name": "Renascans",
+    "rule": "renascans",
+    "status": "configured",
+    "url": "https://renascans.net/manga/widower-osot9qro",
+    "note": "\ud83d\udfe1 Series API schema mapped from client; public sample empty; Markdown/spoiler formatting not parsed"
+  },
+  "eu.kanade.tachiyomi.extension.en.cmanhua": {
+    "home": "https://cmanhua.com",
+    "name": "CManhua",
+    "rule": "cmanhua",
+    "status": "configured",
+    "url": "https://cmanhua.com/comic/fangsi",
+    "note": "\ud83d\udfe1 Comment selectors confirmed in site stylesheet; sampled server-rendered discussion has no comments"
+  },
+  "eu.kanade.tachiyomi.extension.en.lolobun": {
+    "home": "https://www.lolobun.com",
+    "name": "LoLoBun",
+    "rule": "lolobun",
+    "status": "working",
+    "url": "https://www.lolobun.com/c/20106",
+    "note": "\u2705 Working: 2 comic comments via zero-based API; first 20 roots; replies/avatars need loader support"
+  },
+  "eu.kanade.tachiyomi.extension.en.hentaihere": {
+    "home": "https://hentaihere.com",
+    "name": "HentaiHere",
+    "rule": "hentaihere",
+    "status": "configured",
+    "url": "https://hentaihere.com/reader/71744-3-gal-choukyokon-otaku-kun-no-nakadashi-sex-de-meromero-ni-sarechau-gal-3-nin-gu/115049/page-1",
+    "note": "\ud83d\udfe1 HTML comment-feed URL mapped from source; sampled feed empty; first batch and field guesses need a nonempty fixture"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhwaxxl": {
+    "home": "https://hentaitnt.net",
+    "name": "HentaiTnT",
+    "rule": "hentaitnt",
+    "status": "configured",
+    "url": "https://hentaitnt.net/love-quest.html",
+    "note": "\ud83d\udfe1 Review-page redirect linked; sampled book and community page empty; reading still unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.digitalcomicmuseum": {
+    "home": "https://digitalcomicmuseum.com",
+    "name": "Digital Comic Museum",
+    "rule": "digitalcomicmuseum",
+    "status": "unsupported",
+    "url": "https://digitalcomicmuseum.com/index.php?dlid=4",
+    "note": "\u26d4 WebView required: 2 public comments found, but each spans three sibling table rows; current rule format cannot preserve author/date grouping",
+    "system": "Grouped table rows"
+  },
+  "eu.kanade.tachiyomi.extension.en.jnovel": {
+    "name": "J-Novel",
+    "home": "https://j-novel.club",
+    "status": "working",
+    "rule": "jnovel-forum",
+    "url": "https://j-novel.club/series/slayers",
+    "note": "\u2705 Working: 20 posts per page; pages 1 and 2 verified (86 total); linked series forum only, chapter links not found"
+  },
+  "eu.kanade.tachiyomi.extension.en.pornhwadbreader": {
+    "name": "PornhwaDB Reader",
+    "home": "https://pornhwareader.com",
+    "status": "working",
+    "rule": "pornhwadb-reader",
+    "url": "https://pornhwareader.com/series/13/moby-dick",
+    "note": "\u2705 Working: 1 public series review; native extractor check recorded separately",
+    "native": {
+      "comments": 1,
+      "withImages": 0,
+      "maxDepth": 0,
+      "more": false
+    }
+  },
+  "eu.kanade.tachiyomi.extension.en.webtoonlib": {
+    "home": "https://webtoonlib.to",
+    "name": "WebtoonLib",
+    "status": "working",
+    "rule": "webtoonlib",
+    "url": "https://webtoonlib.to/series/the-boxer-b6cb3a",
+    "note": "\u2705 Working: 50 series roots + nested replies and 4 chapter roots via public API in service browser; first batch only",
+    "replies": "yes"
+  },
+  "eu.kanade.tachiyomi.extension.en.s2manga": {
+    "name": "S2Manga",
+    "home": "https://s2read.com",
+    "status": "working",
+    "rule": "wordpress",
+    "url": "https://s2read.com/manga/ill-be-the-warriors-mother/chapter-95/",
+    "note": "\u2705 Working: 1 chapter comment; native extractor check recorded separately",
+    "native": {
+      "comments": 1,
+      "withImages": 0,
+      "maxDepth": 0,
+      "more": false
+    }
+  },
+  "eu.kanade.tachiyomi.extension.en.toonkotsu": {
+    "home": "https://toonkotsu.com",
+    "name": "Toonkotsu",
+    "status": "working",
+    "rule": "toonkotsu",
+    "url": "https://toonkotsu.com/title/qy17we-the-trashy-pd-has-to-survive-as-an-idol/4924511-chapter-66",
+    "note": "\u2705 Working: 1 series comment + 1 reply and 1 chapter comment via service browser; first 20 per feed; Markdown media not parsed",
+    "replies": "yes"
+  },
+  "eu.kanade.tachiyomi.extension.en.linkmanga": {
+    "home": "https://linkmanga.com",
+    "name": "LinkManga",
+    "status": "configured",
+    "rule": "wordpress",
+    "url": "https://linkmanga.com/manga/hyouka/",
+    "note": "\ud83d\udfe1 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.yakshacomics": {
+    "home": "https://yakshacomics.com",
+    "name": "YakshaComics",
+    "status": "configured",
+    "rule": "wordpress",
+    "url": "https://yakshacomics.com/manga/the-mech-mechanic/",
+    "note": "\ud83d\udfe1 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.wildtoon": {
+    "home": "https://wildtoon.com",
+    "name": "Wildtoon",
+    "status": "configured",
+    "rule": "wordpress",
+    "url": "https://wildtoon.com/webtoon/bunk-bed-official/",
+    "note": "\ud83d\udfe1 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhwa18today": {
+    "home": "https://www.manhwa18.today",
+    "name": "Manhwa18.today",
+    "status": "configured",
+    "rule": "wordpress",
+    "url": "https://www.manhwa18.today/manga/slave-code/",
+    "note": "\ud83d\udfe1 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.elanschool": {
+    "home": "https://elan.school",
+    "name": "Elan School",
+    "status": "configured",
+    "rule": "wordpress",
+    "url": "https://elan.school/fr/",
+    "note": "\ud83d\udfe1 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.athreascans": {
+    "home": "https://athreascans.com",
+    "name": "Athrea Scans",
+    "status": "configured",
+    "rule": "wordpress",
+    "url": "https://athreascans.com/manga/burn/",
+    "note": "\ud83d\udfe1 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.boratscans": {
+    "home": "https://boratscans.com",
+    "name": "Borat Scans",
+    "status": "configured",
+    "rule": "wordpress",
+    "url": "https://boratscans.com/manga/axe-god-the-road-to-invincibility/",
+    "note": "\ud83d\udfe1 Standard WordPress discussion/form found; sampled thread empty; comment extraction remains unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.readberserkmanga": {
+    "home": "https://readberserk.com",
+    "name": "Read Berserk Manga",
+    "status": "unsupported",
+    "rule": "comentario-webview",
+    "url": "https://readberserk.com/chapter/berserk-the-motion-comic-episode-1-the-black-swordsman-part-1/",
+    "note": "\u26a0\ufe0f Public API returns 12 comments, but author IDs require a dictionary join; native rules cannot map authors. WebView fallback provided"
+  },
+  "eu.kanade.tachiyomi.extension.en.eightmuses": {
+    "name": "8Muses",
+    "home": "https://comics.8muses.com",
+    "status": "inspected",
+    "url": "https://comics.8muses.com/porn",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.allanime": {
+    "name": "AllManga",
+    "home": "https://mkissa.to",
+    "status": "unavailable",
+    "url": "https://mkissa.to/manga",
+    "note": "\u26d4 Browser could not stabilize after retries; no comment read verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.allporncomic": {
+    "name": "AllPornComic",
+    "home": "https://allporncomic.com",
+    "status": "inspected",
+    "url": "https://allporncomic.com/series/ben-10e/",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.alphamanga": {
+    "name": "Alpha Manga",
+    "home": "https://www.alpha-manga.com",
+    "status": "inspected",
+    "url": "https://www.alpha-manga.com/manga/44000215",
+    "note": "\ud83d\udd0e 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.arcrelight": {
+    "name": "Arc-Relight",
+    "home": "https://arc-relight.com",
+    "status": "inspected",
+    "url": "https://arc-relight.com/reader/babel/",
+    "note": "\ud83d\udd0e 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.arknightscomics": {
+    "name": "Arknights Comics",
+    "home": "https://arknights.global",
+    "status": "needs-inspection",
+    "url": "https://arknights.global/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.bakkin": {
+    "name": "Bakkin",
+    "home": "https://bakkin.moe/reader/",
+    "status": "inspected",
+    "url": "https://bakkin.moe/reader/",
+    "note": "\ud83d\udd0e 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.bbato": {
+    "name": "Bbato",
+    "home": "https://bato1.com",
+    "status": "inspected",
+    "url": "https://bato1.com/home",
+    "note": "\ud83d\udd0e 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.bookwalker": {
+    "name": "BookWalker",
+    "home": "https://bookwalker.com",
+    "status": "inspected",
+    "url": "https://bookwalker.com/series/21A94B5XYR80/one-piece",
+    "note": "\ud83d\udd0e 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.cartoonporn": {
+    "name": "CartoonPorn",
+    "home": "https://cartoonporn.to",
+    "status": "inspected",
+    "url": "https://cartoonporn.to/porncomic/the-improbables-the-incredibles-jabcomix-animated/chapter-1/#1",
+    "note": "\ud83d\udd0e 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.collectedcurios": {
+    "name": "Collected Curios",
+    "home": "https://www.collectedcurios.com",
+    "status": "inspected",
+    "url": "https://www.collectedcurios.com/links.html",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.comichubfree": {
+    "name": "ComicHubFree",
+    "home": "https://comichubfree.com",
+    "status": "inspected",
+    "url": "https://cdn.bollywoodmenswear.com/tml/wheelPink_IOS_IDN.html?v=2608271415-3#/?pid=20380&d.algId=43&dtype=1&uid=cc336d42-23f6-4837-a3ce-77dd465da562&os=1&lang=en-US&d.pext=29868975&reqId=9c2e037ae0194cd4832b89189b2e4512&d.pst=1&d.adPlat=1&appk=dAGjIcTOAsmLGIVmtxe2cj6QbpdIjp15&d.pubCatId=56&d.mltype=0&jsv=2610261646&brd=1_2611031733&d.rankab=3&did=cc336d42-23f6-4837-a3ce-77dd465da562&d.ptkid=72b97e9db85c9ef3a881c47e16054195&tid=10508",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.comicland": {
+    "name": "ComicLand",
+    "home": "https://comicland.org",
+    "status": "needs-inspection",
+    "url": "https://comicland.org/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.coolmic": {
+    "name": "Coolmic",
+    "home": "https://coolmic.me",
+    "status": "needs-inspection",
+    "url": "https://coolmic.me/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.cutiecomics": {
+    "name": "Cutie Comics",
+    "home": "https://cutiecomics.com",
+    "status": "unavailable",
+    "url": "https://cutiecomics.com/22954-secret-fan-meeting.html",
+    "note": "\u26d4 Browser could not stabilize after retries; no comment read verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.explosm": {
+    "name": "Cyanide & Happiness",
+    "home": "https://explosm.net",
+    "status": "inspected",
+    "url": "https://explosm.net/comics/dancer",
+    "note": "\ud83d\udd0e 6 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.darthsdroids": {
+    "name": "Darths & Droids",
+    "home": "https://www.darthsanddroids.net",
+    "status": "inspected",
+    "url": "https://www.darthsanddroids.net/rss.html",
+    "note": "\ud83d\udd0e 3 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.doujinio": {
+    "name": "Doujin.io - J18",
+    "home": "https://doujin.io",
+    "status": "needs-inspection",
+    "url": "https://doujin.io/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.eggporncomics": {
+    "name": "Eggporncomics",
+    "home": "https://eggporncomics.com",
+    "status": "needs-inspection",
+    "url": "https://eggporncomics.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.emaqi": {
+    "name": "emaqi",
+    "home": "https://emaqi.com",
+    "status": "inspected",
+    "url": "https://emaqi.com/forbidden",
+    "note": "\ud83d\udd0e 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.erofus": {
+    "name": "Erofus",
+    "home": "https://www.erofus.com",
+    "status": "inspected",
+    "url": "https://www.erofus.com/comics/zzz-comics",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.gedecomix": {
+    "name": "GEDE Comix",
+    "home": "https://gedecomix.com",
+    "status": "inspected",
+    "url": "https://gedecomix.com/porn-comics/",
+    "note": "\ud83d\udd0e 6 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.gingertoon": {
+    "name": "GingeRTooN",
+    "home": "https://gingertoon.com",
+    "status": "needs-inspection",
+    "url": "https://gingertoon.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.goda": {
+    "name": "Goda",
+    "home": "https://manhuascans.org",
+    "status": "inspected",
+    "url": "https://manhuascans.org/manga/1-second",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.gunnerkriggcourt": {
+    "name": "Gunnerkrigg Court",
+    "home": "https://www.gunnerkrigg.com",
+    "status": "needs-rule",
+    "url": "https://www.gunnerkrigg.com/cast/",
+    "note": "\ud83d\udfe1 Latest ?comments=1 page says comments not approved yet; older page samples had no discussion markup"
+  },
+  "eu.kanade.tachiyomi.extension.en.hadesscans": {
+    "name": "Hades Scans",
+    "home": "https://hadesscans.com",
+    "status": "needs-inspection",
+    "url": "https://hadesscans.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.hentai4free": {
+    "name": "Hentai4Free",
+    "home": "https://hentai4free.net",
+    "status": "unavailable",
+    "url": "https://hentai4free.net/bondage-manga/",
+    "note": "\u26d4 Browser could not stabilize after retries; no comment read verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.hentaifc": {
+    "name": "HentaiFC",
+    "home": "https://hentaifc.com",
+    "status": "needs-rule",
+    "url": "https://hentaifc.com/e/90580",
+    "note": "\ud83d\udfe1 Disqus placeholder found, but no forum/thread initialization observed; rule needs a usable embed configuration"
+  },
+  "eu.kanade.tachiyomi.extension.en.hentaikun": {
+    "name": "HentaiKun",
+    "home": "https://hentaikun.com",
+    "status": "needs-inspection",
+    "url": "https://hentaikun.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.hentainexus": {
+    "name": "HentaiNexus",
+    "home": "https://hentainexus.com",
+    "status": "inspected",
+    "url": "https://hentainexus.com/view/22364",
+    "note": "\ud83d\udd0e 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.hentaisco": {
+    "name": "HentaiSco",
+    "home": "https://hentaisco.cc",
+    "status": "needs-inspection",
+    "url": "https://hentaisco.cc/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.ilikecomix": {
+    "name": "ILikeComix",
+    "home": "https://ilikecomix.com",
+    "status": "inspected",
+    "url": "https://ilikecomix.com/manga/c/au-naturel-pegasus-smith/29-au-naturel-chapter-29/",
+    "note": "\ud83d\udd0e 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.infinityscans": {
+    "name": "InfinityScans",
+    "home": "https://infinityscans.org",
+    "status": "needs-inspection",
+    "url": "https://infinityscans.org/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.kappabeast": {
+    "name": "Kappa Beast",
+    "home": "https://kappabeast.com",
+    "status": "needs-rule",
+    "url": "https://kappabeast.com/series/taimashi-tensei",
+    "note": "\ud83d\udfe1 Client defines series/chapter comment APIs; public catalogue did not provide a verifiable thread ID"
+  },
+  "eu.kanade.tachiyomi.extension.en.komix": {
+    "name": "Komix",
+    "home": "https://komix.to",
+    "status": "unavailable",
+    "url": "https://komix.to",
+    "note": "\u26d4 Browser could not stabilize after retries; no comment read verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.leslievictims": {
+    "name": "Leslie&Victims",
+    "home": "https://leslie-victims.pages.dev",
+    "status": "needs-rule",
+    "url": "https://leslie-victims.pages.dev/",
+    "note": "\ud83d\udfe1 Firebase discussion UI found; title/thread identifiers were not resolved from the sampled page"
+  },
+  "eu.kanade.tachiyomi.extension.en.lilymanga": {
+    "name": "Lily Manga",
+    "home": "https://lilymanga.net",
+    "status": "needs-inspection",
+    "url": "https://lilymanga.net/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.loadingartist": {
+    "name": "Loading Artist",
+    "home": "https://loadingartist.com",
+    "status": "unavailable",
+    "url": "https://loadingartist.com/comic/downtime/",
+    "note": "\u26d4 Public Reddit JSON returned HTTP 403; native discussion read unavailable at this check"
+  },
+  "eu.kanade.tachiyomi.extension.en.luascans": {
+    "name": "Lua Scans",
+    "home": "https://luacomic.org",
+    "status": "needs-rule",
+    "url": "https://luacomic.org/series/frost",
+    "note": "\ud83d\udfe1 Series comments accordion found; no comment read response or nonempty comment markup observed"
+  },
+  "eu.kanade.tachiyomi.extension.en.madaradex": {
+    "name": "MadaraDex",
+    "home": "https://madaradex.org",
+    "status": "inspected",
+    "url": "https://madaradex.org/title/love-cheer/",
+    "note": "\ud83d\udd0e 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangauno": {
+    "name": "Manga.uno",
+    "home": "https://manga.uno",
+    "status": "needs-inspection",
+    "url": "https://manga.uno/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangacloud": {
+    "name": "MangaCloud",
+    "home": "https://mangacloud.org",
+    "status": "needs-inspection",
+    "url": "https://mangacloud.org/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangade": {
+    "name": "MangaDE",
+    "home": "https://mangade.io",
+    "status": "inspected",
+    "url": "https://mangade.io/home",
+    "note": "\ud83d\udd0e 3 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangabuddy": {
+    "name": "MangaK",
+    "home": "https://mangak.io",
+    "status": "needs-inspection",
+    "url": "https://mangak.io/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangalix": {
+    "name": "MangaLix",
+    "home": "https://mangalix.com",
+    "status": "inspected",
+    "url": "https://mangalix.com/manga/dandadan",
+    "note": "\ud83d\udd0e 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangamelon": {
+    "name": "MangaMelon",
+    "home": "https://mangamelon.com",
+    "status": "needs-inspection",
+    "url": "https://mangamelon.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.manganow": {
+    "name": "MangaNow",
+    "home": "https://manganow.to",
+    "status": "needs-inspection",
+    "url": "https://manganow.to/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangaowlio": {
+    "name": "MangaOwl.io (unoriginal)",
+    "home": "https://mangaowl.io",
+    "status": "needs-rule",
+    "url": "https://mangaowl.io/read-1/black-haze-2025/",
+    "note": "\ud83d\udfe1 WordPress-style discussion found; sampled page has no comment items; mapping unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangaparktv": {
+    "name": "MangaPark.tv (unoriginal)",
+    "home": "https://mangapark.tv",
+    "status": "inspected",
+    "url": "https://mangapark.tv/manhwa/desharow-mermaid/desharow-mermaid-chap-162/",
+    "note": "\ud83d\udd0e 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhuaplus": {
+    "name": "Manhua Plus",
+    "home": "https://manhuaplus.com",
+    "status": "inspected",
+    "url": "https://manhuaplus.com/manga/apotheosis/",
+    "note": "\ud83d\udd0e 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhwacomics": {
+    "name": "Manhwa Comics",
+    "home": "https://manhwacomics.com",
+    "status": "needs-inspection",
+    "url": "https://manhwacomics.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhwareads": {
+    "name": "Manhwa Reads",
+    "home": "https://manhwareads.com",
+    "status": "needs-rule",
+    "url": "https://manhwareads.com/manga/bleach/",
+    "note": "\ud83d\udfe1 Discussion count is 0; sampled title has no comment items; mapping unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.manhwazone": {
+    "name": "ManhwaZone",
+    "home": "https://manhwazone.com",
+    "status": "inspected",
+    "url": "https://manhwazone.com/explore",
+    "note": "\ud83d\udd0e 3 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.megatokyo": {
+    "name": "Megatokyo",
+    "home": "https://megatokyo.com",
+    "status": "needs-inspection",
+    "url": "https://megatokyo.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.milftoon": {
+    "name": "Milftoon",
+    "home": "https://milftoon.xxx",
+    "status": "inspected",
+    "url": "https://milftoon.xxx/comics/workout",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.mlbblore": {
+    "name": "MLBB Lore",
+    "home": "https://play.mobilelegends.com",
+    "status": "needs-inspection",
+    "url": "https://play.mobilelegends.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.monochromecustom": {
+    "name": "Monochrome Custom",
+    "home": "https://monochromecms.netlify.app",
+    "status": "needs-inspection",
+    "url": "https://monochromecms.netlify.app/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.monochromescans": {
+    "name": "Monochrome Scans",
+    "home": "https://manga.d34d.one",
+    "status": "inspected",
+    "url": "https://manga.d34d.one/manga/79141782-bc73-44fe-a1b2-eff842ca6123",
+    "note": "\ud83d\udd0e 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.myadultcomics": {
+    "name": "MyAdultComics",
+    "home": "https://myadultcomics.com",
+    "status": "inspected",
+    "url": "https://myadultcomics.com/read.php?i=1637",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.ninehentai": {
+    "name": "NineHentai",
+    "home": "https://9hentai.so",
+    "status": "needs-inspection",
+    "url": "https://9hentai.so/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.oglaf": {
+    "name": "Oglaf",
+    "home": "https://www.oglaf.com",
+    "status": "inspected",
+    "url": "https://www.oglaf.com/feeds/rss/",
+    "note": "\ud83d\udd0e 3 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.onlythebesthentai": {
+    "name": "Only The Best Hentai",
+    "home": "https://onlythebesthentai.com",
+    "status": "inspected",
+    "url": "https://onlythebesthentai.com/anywhere-door/",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.patchfriday": {
+    "name": "Patch Friday",
+    "home": "https://patchfriday.com",
+    "status": "needs-inspection",
+    "url": "https://patchfriday.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.philiascans": {
+    "name": "Philia Scans",
+    "home": "https://philiascans.org",
+    "status": "needs-rule",
+    "url": "https://philiascans.org/series/in-for-poison-in-for-love",
+    "note": "\ud83d\udfe1 Reader review section found; sampled reviews empty; no verified comment mapping"
+  },
+  "eu.kanade.tachiyomi.extension.en.porncomix": {
+    "name": "PornComix",
+    "home": "https://bestporncomix.com",
+    "status": "needs-inspection",
+    "url": "https://bestporncomix.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.questionablecontent": {
+    "name": "Questionable Content",
+    "home": "https://www.questionablecontent.net",
+    "status": "needs-inspection",
+    "url": "https://www.questionablecontent.net/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.reallifecomics": {
+    "name": "Real Life Comics",
+    "home": "https://reallifecomics.com",
+    "status": "inspected",
+    "url": "https://reallifecomics.com/comic-mobile.php/?comic=title-1",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.roliascan": {
+    "name": "Rolia Scan",
+    "home": "https://roliascan.com",
+    "status": "inspected",
+    "url": "https://roliascan.com/home/",
+    "note": "\ud83d\udd0e 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.rosesquadscans": {
+    "name": "Rose Squad Scans",
+    "home": "https://rosesquadscans.aishiteru.org",
+    "status": "inspected",
+    "url": "https://rosesquadscans.aishiteru.org/wp-login.php?redirect_to=https%3A%2F%2Frosesquadscans.aishiteru.org%2F",
+    "note": "\ud83d\udd0e 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.sabrinaonline": {
+    "name": "Sabrina Online",
+    "home": "https://www.sabrina-online.com",
+    "status": "inspected",
+    "url": "https://www.sabrina-online.com/links.html",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.sacachispa": {
+    "name": "SACACHISPA",
+    "home": "https://sacachispa.site",
+    "status": "needs-rule",
+    "url": "https://sacachispa.site/read/7adb4956-0be1-5c0c-bbac-2040fa91394e",
+    "note": "\ud83d\udfe1 Reader and dedicated discussion page checked; sampled chapter has 0 comments; item layout unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.scansgg": {
+    "name": "ScansGG",
+    "home": "https://scans.gg",
+    "status": "needs-inspection",
+    "url": "https://scans.gg/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.armageddon": {
+    "name": "SilentQuill",
+    "home": "https://silentquill.net",
+    "status": "needs-rule",
+    "url": "https://silentquill.net/series/the-monstrous-new-life-of-the-fallen-empires-recruit/",
+    "note": "\ud83d\udfe1 Comment component found; sampled series has no comments; item layout remains unverified"
+  },
+  "eu.kanade.tachiyomi.extension.en.solarandsundry": {
+    "name": "Solar and Sundry",
+    "home": "https://sas-api.fly.dev",
+    "status": "needs-inspection",
+    "url": "https://sas-api.fly.dev/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.spyfakku": {
+    "name": "SpyFakku",
+    "home": "https://hentalk.pw",
+    "status": "inspected",
+    "url": "https://hentalk.pw/g/18948",
+    "note": "\ud83d\udd0e 8 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.sunshinebutterflyscans": {
+    "name": "Sunshine Butterfly Scans",
+    "home": "https://wings.sbs",
+    "status": "needs-inspection",
+    "url": "https://wings.sbs/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.supermega": {
+    "name": "SUPER MEGA",
+    "home": "https://www.supermegacomics.com",
+    "status": "inspected",
+    "url": "https://www.supermegacomics.com/index.php",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.templescan": {
+    "name": "Temple Scan",
+    "home": "https://templetoons.com",
+    "status": "unavailable",
+    "url": "https://templetoons.com/challenge?redirect=%2F",
+    "note": "\u26d4 Browser still shows an access challenge; no comment read verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.thepropertyofhate": {
+    "name": "The Property of Hate",
+    "home": "https://jolleycomics.com",
+    "status": "inspected",
+    "url": "https://jolleycomics.com/Art/",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.toonilyme": {
+    "name": "Toonily.me",
+    "home": "https://toontop.io",
+    "status": "needs-inspection",
+    "url": "https://toontop.io/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.vgperson": {
+    "name": "vgperson",
+    "home": "https://vgperson.com",
+    "status": "needs-inspection",
+    "url": "https://vgperson.com/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.voyceme": {
+    "name": "Voyce.Me",
+    "home": "https://www.voyce.me",
+    "status": "needs-inspection",
+    "url": "https://www.voyce.me/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.warforrayuba": {
+    "name": "War For Rayuba",
+    "home": "https://xrabohrok.github.io/WarMap/#/",
+    "status": "inspected",
+    "url": "https://xrabohrok.github.io/WarMap/#/",
+    "note": "\ud83d\udd0e 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.webdexscans": {
+    "name": "Webdex Scans",
+    "home": "https://webdexscans.com",
+    "status": "inspected",
+    "url": "https://webdexscans.com/",
+    "note": "\ud83d\udd0e 2 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.webnovel": {
+    "name": "WebNovel",
+    "home": "https://www.webnovel.com",
+    "status": "inspected",
+    "url": "https://m.webnovel.com/book/mr.-sunshine_16873587705577105",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.xoxocomics": {
+    "name": "XOXO Comics",
+    "home": "https://xoxocomic.com",
+    "status": "inspected",
+    "url": "https://istod.com/wvrv?ofv_id=1662&aff_pub_id=120796&click_id=cr287164819161219142&subid1=120796&subid2=3274293",
+    "note": "\ud83d\udd0e 7 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.batcave": {
+    "name": "BatCave",
+    "home": "https://batcave.biz",
+    "status": "unavailable",
+    "url": "https://batcave.biz",
+    "note": "\u26d4 Access failed after direct and running-service attempts; no readable discussion verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.aryascans": {
+    "name": "BrainRotComics",
+    "home": "https://brainrotcomics.com",
+    "status": "unavailable",
+    "url": "https://brainrotcomics.com",
+    "note": "\u26d4 Access failed after direct and running-service attempts; no readable discussion verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.dragontea": {
+    "name": "DragonTea",
+    "home": "https://dragontea.ink",
+    "status": "needs-rule",
+    "url": "https://dragontea.ink/novel/wheel-world/",
+    "note": "\ud83d\udfe1 Load Comments link found; no initialized discussion or successful comment read observed"
+  },
+  "eu.kanade.tachiyomi.extension.en.ero18x": {
+    "name": "Ero18x",
+    "home": "https://ero18x.com",
+    "status": "inspected",
+    "url": "https://ero18x.com/manga/subzero/",
+    "note": "\ud83d\udd0e 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.hentairead": {
+    "name": "HentaiRead",
+    "home": "https://hentairead.com",
+    "status": "needs-rule",
+    "url": "https://hentairead.com/hentai/ntreport/",
+    "note": "\ud83d\udfe1 React MangaComments widget found; sampled title has 0 comments; endpoint mapping remains unresolved"
+  },
+  "eu.kanade.tachiyomi.extension.en.lgbtics": {
+    "name": "Lgbtics",
+    "home": "https://lgbtics.com",
+    "status": "unavailable",
+    "url": "https://lgbtics.com",
+    "note": "\u26d4 Access failed after direct and running-service attempts; no readable discussion verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.mangabay": {
+    "name": "Manga-Bay",
+    "home": "https://manga-bay.biz",
+    "status": "unavailable",
+    "url": "https://manga-bay.biz",
+    "note": "\u26d4 Access failed after direct and running-service attempts; no readable discussion verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.meitoon": {
+    "name": "MeiToon",
+    "home": "https://meitoon.org",
+    "status": "unavailable",
+    "url": "https://meitoon.org",
+    "note": "\u26d4 Access failed after direct and running-service attempts; no readable discussion verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.novelcrow": {
+    "name": "NovelCrow",
+    "home": "https://novelcrow.com",
+    "status": "unavailable",
+    "url": "https://novelcrow.com",
+    "note": "\u26d4 Access failed after direct and running-service attempts; no readable discussion verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.oots": {
+    "name": "oots",
+    "home": "https://www.giantitp.com",
+    "status": "inspected",
+    "url": "https://www.giantitp.com/comics/oots.html",
+    "note": "\ud83d\udd0e 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.readcomicsonline": {
+    "name": "Read Comics Online",
+    "home": "https://readcomicsonline.ru",
+    "status": "inspected",
+    "url": "https://readcomicsonline.ru/comic/2000-ad",
+    "note": "\ud83d\udd0e 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.setsuscans": {
+    "name": "Setsu Scans",
+    "home": "https://setsuscans.com",
+    "status": "unavailable",
+    "url": "https://setsuscans.com",
+    "note": "\u26d4 Access failed after direct and running-service attempts; no readable discussion verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.theblank": {
+    "name": "The Blank",
+    "home": "https://theblank.net",
+    "status": "needs-inspection",
+    "url": "https://theblank.net/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
+  },
+  "eu.kanade.tachiyomi.extension.en.heytoon": {
+    "name": "ToonHey",
+    "home": "https://toonhey.com",
+    "status": "inspected",
+    "url": "https://toonhey.com/en/",
+    "note": "\ud83d\udd0e 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.visionhaze": {
+    "name": "Vision Haze",
+    "home": "https://www.visionhaze.com",
+    "status": "inspected",
+    "url": "https://www.visionhaze.com/about/",
+    "note": "\ud83d\udd0e 4 saved page samples checked, including browser rendering; no initialized comment widget found; no rule inferred"
+  },
+  "eu.kanade.tachiyomi.extension.en.vyvymanga": {
+    "name": "VyvyManga",
+    "home": "https://mangavyvy.net",
+    "status": "unavailable",
+    "url": "https://mangavyvy.net",
+    "note": "\u26d4 Access failed after direct and running-service attempts; no readable discussion verified"
+  },
+  "eu.kanade.tachiyomi.extension.en.xomanga": {
+    "name": "XoManga",
+    "home": "https://www.xomanga.site",
+    "status": "needs-inspection",
+    "url": "https://www.xomanga.site/",
+    "note": "\ud83d\udd0e Home rendered; a public title/chapter could not be resolved for comment verification"
   }
 }

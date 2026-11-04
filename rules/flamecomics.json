@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "name": "Flame Comics",
+  "rules": [
+    {
+      "id": "flamecomics",
+      "name": "Flame Comics",
+      "type": "api",
+      "vars": {
+        "threadPath": {
+          "from": "url",
+          "regex": "https?://[^/]+([^?#]+?)/?(?:[?#]|$)"
+        }
+      },
+      "api": {
+        "url": "{origin}/api/comments/get?path={threadPath}&sort=best",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
+        },
+        "list": "comments",
+        "id": "post_id",
+        "author": "author",
+        "text": "content",
+        "html": true,
+        "time": "create_time",
+        "avatar": "author_avatar",
+        "likes": "likes",
+        "parent": "parent_id",
+        "replyCount": "children_count",
+        "replies": {
+          "url": "{origin}/api/comments/{id}/get?sort=best",
+          "list": "comments"
+        }
+      }
+    }
+  ]
+}

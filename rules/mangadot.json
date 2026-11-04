@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "name": "mangadot",
+  "name": "MangaDot",
   "rules": [
     {
       "id": "mangadot",
-      "name": "mangadot",
+      "name": "MangaDot",
       "type": "page",
       "page": {
         "item": "div[id^=\"comment-\"]",

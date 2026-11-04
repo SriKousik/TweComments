@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "Pornhwaz comments",
+  "rules": [
+    {
+      "id": "pornhwaz",
+      "name": "Pornhwaz comments",
+      "type": "page",
+      "page": {
+        "wait": ".wbtz-comment-item",
+        "item": ".wbtz-comment-item",
+        "author": ".wbtz-author-name",
+        "text": ".wbtz-comment-text-body",
+        "time": "time",
+        "avatar": "img.wbtz-avatar-img",
+        "likes": ".wbtz-upvote",
+        "spoiler": ".wbtz-spoiler",
+        "more": ".wbtz-load-more-wrap:not([hidden]):not([style*=\"display: none\"]):not([style*=\"display:none\"]) #wbtz-load-more-btn",
+        "total": ".wbtz-discussion-count-num",
+        "replyCount": ".wbtz-toggle-replies-btn",
+        "repliesToggle": ".wbtz-toggle-replies-btn"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "Comix",
+  "rules": [
+    {
+      "id": "comix",
+      "name": "Comix",
+      "type": "page",
+      "page": {
+        "wait": ".cm-item[id]",
+        "item": ".cm-item[id]",
+        "author": ".cm-item__user a",
+        "text": ".cm-item__content",
+        "time": ".cm-item__time",
+        "avatar": ".cm-item__avatar img",
+        "likes": ".cm-item__ctrl--like span",
+        "more": ".cm-foot__btn",
+        "total": ".cm-widget__title"
+      }
+    }
+  ]
+}

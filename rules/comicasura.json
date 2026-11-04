@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "name": "Comic Asura",
+  "rules": [
+    {
+      "id": "comicasura",
+      "name": "Comic Asura",
+      "type": "api",
+      "vars": {
+        "model": {
+          "from": "fetch",
+          "regex": "id=\"comment-wrapper\"[^>]*data-model=\"([^\"]+)\""
+        },
+        "modelId": {
+          "from": "fetch",
+          "regex": "id=\"comment-wrapper\"[^>]*data-id=\"([^\"]+)\""
+        }
+      },
+      "api": {
+        "url": "{origin}/api/comments/list?commentable_type={model}&commentable_id={modelId}&page={page}&direction=desc",
+        "headers": {
+          "X-Requested-With": "XMLHttpRequest",
+          "Accept": "application/json"
+        },
+        "list": "comments",
+        "id": "id",
+        "author": "commenter.name",
+        "avatar": "commenter.avata",
+        "text": "content",
+        "html": true,
+        "time": "created_at",
+        "likes": "like_count",
+        "children": "children",
+        "lastPage": "pagination.last_page"
+      }
+    }
+  ]
+}

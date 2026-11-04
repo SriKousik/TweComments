@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "name": "xlecx",
+  "name": "XlecX",
   "rules": [
     {
       "id": "xlecx",
-      "name": "xlecx",
+      "name": "XlecX",
       "type": "page",
       "page": {
         "item": "div[id^=\"comment-id-\"]",
